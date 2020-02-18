@@ -1,0 +1,19 @@
+state={
+	id=806
+	name="STATE_806"
+
+	history={
+		owner = ENG
+		add_core_of = MLA
+		buildings = {
+			infrastructure = 2
+            }
+	}
+
+	provinces={
+		4355 12199 
+	}
+	manpower=350000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

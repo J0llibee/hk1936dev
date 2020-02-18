@@ -1,0 +1,23 @@
+state={
+	id=798
+	name="STATE_798"
+
+	history={
+		owner = KOR
+		victory_points = {
+			7125 10 
+		}
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 2
+            }
+
+	}
+
+	provinces={
+		7125 7221 12040 
+	}
+	manpower=2460000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

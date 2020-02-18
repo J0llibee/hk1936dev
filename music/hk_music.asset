@@ -1,0 +1,33 @@
+
+# MAIN THEME
+music = {
+	name = "Glory to Hong Kong"
+	file = "Glory_to_Hong_Kong.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Amazing Grace"
+	file = "Amazing_Grace.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Greensleeves"
+	file = "Greensleeves_DSE.ogg"
+	volume = 1
+}
+
+music = {
+	name = "God Save the King"
+	file = "God_Save_the_King.ogg"
+	volume = 1
+}
+
+music = {
+	name = "March of the Indomitable"
+	file = "March_of_the_Indomitable.ogg"
+	volume = 0.65
+}
+
+

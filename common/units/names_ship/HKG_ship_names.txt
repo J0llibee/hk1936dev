@@ -1,0 +1,22 @@
+﻿##### Britain NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+HKG_DD_HISTORICAL = {
+
+	for_countries = { HKG }
+
+	can_use = {
+		not = { has_government = communism }
+	}
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "HMS "							
+	fallback_name = "Destroyer %s"					
+
+	unique = {											
+		"Waglan" "Taitam" "Lyemun" "Lantau" "Aberdeen" "Admiralty" 
+		
+	}
+}
+

@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_RTHK_art"
+		texturefile = "//gfx//interface//topbar//musicplayer//my-station_HKG.dds"
+		noOfFrames = 2
+	}
+	
+}

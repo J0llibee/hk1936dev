@@ -1,0 +1,37 @@
+﻿add_namespace = canton
+
+
+#######Choose Capital###########
+country_event = {
+	id = canton.1
+	title = canton.1.t
+	desc = canton.1.d
+	picture = GFX_report_event_Yuen_Long_Attack
+	
+	trigger = {
+	tag = HKG
+	has_cosmetic_tag = CTN_unified
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = canton.1.a
+		
+		set_capital = 789
+		set_province_name = { id = 13221 name = "Central"}
+    	}
+    option = {
+		name = canton.1.b
+		
+		set_capital = 592
+		set_province_name = { id = 1047 name = "Canton"}
+    	}
+    option = {
+		name = canton.1.c
+		
+		set_capital = 594
+    	}
+}

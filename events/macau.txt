@@ -1,0 +1,72 @@
+
+add_namespace = MCU
+
+#Governer Barbosa arrived
+country_event = {
+	id = MCU.1
+	title = MCU.1.t
+	desc = MCU.1.d
+	picture = GFX_report_event_Barbosa
+	
+	trigger = {
+		tag = MCU
+		has_government = neutrality
+		date > 1937.4.11
+		date < 1937.5.1
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 2 }	
+
+	option = {
+		name = MCU.1.a
+		set_country_flag = governor_barbosa		
+		create_country_leader = {
+	name = "Artur Tamagnini de Sousa Barbosa"
+	desc = "POLITICS_BARBOSA_DESC"
+	picture = "gfx//leaders//MCU//Portrait_MCU_Artur_Barbosa.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+			traits = {
+				
+			}
+		}		
+	}
+
+}
+
+#Governer Teixeira arrived
+country_event = {
+	id = MCU.2
+	title = MCU.2.t
+	desc = MCU.2.d
+	picture = GFX_report_event_Barbosa
+	
+	trigger = {
+		tag = MCU
+		has_government = neutrality
+		date > 1940.10.29
+		date < 1940.11.15
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 2 }	
+
+	option = {
+		name = MCU.2.a
+		set_country_flag = governor_teixeira		
+		create_country_leader = {
+	name = "Gabriel Maurício Teixeira"
+	desc = "POLITICS_BARBOSA_DESC"
+	picture = "gfx//leaders//MCU//Portrait_MCU_Gabriel_Teixeira.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+			traits = {
+				
+			}
+		}		
+	}
+
+}

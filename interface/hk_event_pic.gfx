@@ -1,0 +1,59 @@
+spriteTypes = {	
+
+spriteType = {  
+
+	name = "GFX_report_event_Yuen_Long_Attack"  
+
+	texturefile = "gfx/event_pictures/report_event_Yuen_Long_Attack.dds"
+}
+
+spriteType = {  
+
+	name = "GFX_report_event_ROC_refugee"  
+
+	texturefile = "gfx/event_pictures/report_event_ROC_refugee.dds"
+}
+
+spriteType = {  
+
+	name = "GFX_report_event_Chongking_conference"  
+
+	texturefile = "gfx/event_pictures/report_event_Chongking_conference.dds"
+}
+
+spriteType = {  
+
+	name = "report_event_gandar"  
+
+	texturefile = "gfx/event_pictures/report_event_gandar.dds"
+}
+
+spriteType = {  
+
+	name = "GFX_report_event_ho_dead"  
+
+	texturefile = "gfx/event_pictures/report_event_ho_dead.dds"
+}
+
+spriteType = {  
+
+	name = "GFX_report_event_Maltby_arrived"  
+
+	texturefile = "gfx/event_pictures/report_event_Maltby_arrived.dds"
+}
+
+spriteType = {  
+
+	name = "GFX_report_event_northcote"  
+
+	texturefile = "gfx/event_pictures/report_event_northcote.dds"
+}
+
+spriteType = {  
+
+	name = "GFX_report_event_Mark_Young"  
+
+	texturefile = "gfx/event_pictures/report_event_Mark_Young.dds"
+}
+
+}

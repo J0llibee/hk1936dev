@@ -1,0 +1,30 @@
+ai_historical_focus_list_HKG = {
+    ai_national_focuses = {
+    HKG_Finish_the_Shing_Mun_Reservoir_Project
+    HKG_Canton_Railroad_extension
+    HKG_War_preperation
+    HKG_HK_Defence_Scheme_1936
+    HKG_Comprehensive_Defense_Strategy
+    HKG_Gin_Drinkers_Line
+    HKG_New_Naval_Plan
+    HKG_Kowloon_industrial_zone
+	HKG_Aberdeen_Dockyard #1937.3
+	HKG_Taikoo_Dockyard
+	HKG_Whampoa_Dockyard
+	HKG_Support_Chiang  # 1937.8
+	HKG_Declare_HK_as_a_free_trade_zone
+	HKG_JAP_won_t_attack_HK
+    HKG_Strengthen_the_Fareast_Outpost
+    HKG_Secret_Plan_Hong_Kong_Island_First
+    HKG_Northcote_College_of_Education 
+    HKG_Runway_13_31 # 1938.10
+    HKG_Empire_Ships
+    HKG_Our_Own_Minesweeper
+    HKG_Continue_the_construction_of_Shek_Kong_Airfield
+    HKG_Anti_Air_in_Victoria
+    HKG_HK_Fighter_Squad
+    HKG_Anti_Air_in_Kowloon
+    HKG_Canadian_Force
+    HKG_Defense
+    }
+}

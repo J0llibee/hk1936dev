@@ -1,0 +1,58 @@
+
+music_station = "RTHK"
+
+music = {
+	song = "Glory to Hong Kong"
+	chance = {
+		modifier = {
+			factor = 0.15
+			
+			original_tag = HKG
+		}		
+	}
+}
+
+music = {
+	song = "March of the Indomitable"
+	chance = {
+		modifier = {
+			factor = 0.15
+			
+			original_tag = HKG
+		}		
+	}
+}
+
+music = {
+	song = "Amazing Grace"
+	chance = {
+		modifier = {
+			factor = 0.15
+			
+			original_tag = HKG
+		}		
+	}
+}
+
+music = {
+	song = "Greensleeves"
+	chance = {
+		modifier = {
+			factor = 0.15
+			
+			original_tag = HKG
+		}		
+	}
+}
+
+music = {
+	song = "God Save the King"
+	chance = {
+		modifier = {
+			factor = 0.15
+			
+			original_tag = HKG
+		}		
+	}
+}
+
