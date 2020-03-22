@@ -20,14 +20,14 @@ state={
 				naval_base = 4
 				coastal_bunker = 1
 				}
-			13229 = {
+			13245 = {
 				naval_base = 4
 				coastal_bunker = 1
 				}
 				}
 				}
 	provinces={
-		7387 13229
+		7387 13245
 	}
 }
 

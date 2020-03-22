@@ -17,7 +17,7 @@ focus_tree = {
 		x = 5
 		y = 0
 			completion_reward = {
-					790 = {
+					829 = {
 							add_building_construction = {
 									type = infrastructure
 									level = 1
@@ -59,7 +59,7 @@ focus_tree = {
         focus = HKG_Canton_Railroad_extension
         }
 			completion_reward = {
-					788 = {
+					827 = {
 							add_building_construction = {
 									type = infrastructure
 									level = 2
@@ -80,10 +80,10 @@ focus_tree = {
         focus = HKG_Start_Hiram_s_Highway_Project
         }
         available = {
-			HKG = { controls_state = 791 }
+			HKG = { controls_state = 830 }
 			}
 			completion_reward = {
-					791 = {
+					830 = {
 									add_building_construction = { type = bunker province = 7108 level = 3 instant_build = yes }
 								}
 						}
@@ -99,7 +99,7 @@ focus_tree = {
         focus = HKG_Fortify_Shumchun
         }
 			completion_reward = {
-					791 = {
+					830 = {
 					add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
@@ -107,7 +107,7 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					791 = {
+					830 = {
 							add_building_construction = {
 									type = infrastructure
 									level = 2
@@ -128,7 +128,7 @@ focus_tree = {
         focus = HKG_Canton_Railroad_extension
         }
 			completion_reward = {
-					788 = {
+					827 = {
 					add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
@@ -150,7 +150,7 @@ focus_tree = {
         focus = HKG_Kowloon_industrial_zone
         }
 			completion_reward = {
-					790 = {
+					829 = {
 					add_resource = {
     				type = steel
     				amount = 4
@@ -171,12 +171,12 @@ focus_tree = {
         focus = HKG_Ma_On_Shan_Iron_Ore
         }
 			completion_reward = {
-					790 = {
+					829 = {
 					add_resource = {
     				type = tungsten
     				amount = 2
 					}
-					790 = {
+					829 = {
 							add_building_construction = {
 									type = infrastructure
 									level = 2
@@ -199,7 +199,7 @@ focus_tree = {
         focus = HKG_Kowloon_industrial_zone
         				}
 			completion_reward = {
-					790 = {
+					829 = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = fuel_silo
@@ -317,7 +317,7 @@ focus_tree = {
 				category = cat_mobile_warfare
 				category = cat_superior_firepower
 			}
-				789 = {
+				828 = {
 				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
 				}
 				}
@@ -345,13 +345,13 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		cost = 10.00
 		available = {
-			HKG = { controls_state = 789 }
+			HKG = { controls_state = 828 }
 		}
 		prerequisite = { focus = HKG_Motorized_Garrison }
 		x = 22
 		y = 5
 			completion_reward = {
-				789 = {
+				828 = {
 				add_building_construction = { type = coastal_bunker province = 13218 level = 4 instant_build = yes }
 				add_building_construction = { type = coastal_bunker province = 13220 level = 4 instant_build = yes }
 				add_building_construction = { type = coastal_bunker province = 13221 level = 4 instant_build = yes }
@@ -375,7 +375,7 @@ focus_tree = {
 			category = cat_mass_assault
 			}
 			army_experience = 20
-			789 = {
+			828 = {
 				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
 				}
 				}
@@ -388,17 +388,17 @@ focus_tree = {
 		prerequisite = { focus = HKG_Comprehensive_Defense_Strategy }
 		available = {
 			has_completed_focus = HKG_Finish_the_Shing_Mun_Reservoir_Project
-			HKG = { controls_state = 788 }
-			HKG = { controls_state = 790 }
+			HKG = { controls_state = 827 }
+			HKG = { controls_state = 829 }
 			}
 		x = 24
 		y = 4
 			completion_reward = {
-				788 = {
+				827 = {
 				add_building_construction = { type = bunker province = 13222 level = 3 instant_build = yes }
 				add_building_construction = { type = bunker province = 13223 level = 3 instant_build = yes }
 								}
-				790 = {
+				829 = {
 				add_building_construction = { type = bunker province = 13225 level = 5 instant_build = yes }
 								}
 	}
@@ -411,12 +411,12 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = { focus = HKG_Gin_Drinkers_Line }
 		available = {
-			HKG = { controls_state = 788 }
+			HKG = { controls_state = 827 }
 			}
 		x = 24
 		y = 5
 			completion_reward = {
-					788 = {
+					827 = {
 				add_building_construction = { type = bunker province = 13222 level = 3 instant_build = yes }
 				add_building_construction = { type = bunker province = 13223 level = 3 instant_build = yes }
 								}
@@ -461,7 +461,7 @@ focus_tree = {
 		prerequisite = { focus = HKG_New_Naval_Plan }
 
 			completion_reward = {
-					789 = {
+					828 = {
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = dockyard
@@ -483,7 +483,7 @@ focus_tree = {
 		prerequisite = { focus = HKG_New_Naval_Plan }
 		
 			completion_reward = {
-					789 = {
+					828 = {
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = dockyard
@@ -504,7 +504,7 @@ focus_tree = {
 		prerequisite = { focus = HKG_New_Naval_Plan }
 		
 			completion_reward = {
-					788 = {
+					827 = {
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = dockyard
@@ -557,10 +557,10 @@ focus_tree = {
 		cost = 8.00
 		prerequisite = { focus = HKG_War_preperation }
 		available = {
-			HKG = { controls_state = 788 }
+			HKG = { controls_state = 827 }
 			}
 			completion_reward = {
-					788 = {
+					827 = {
 							add_building_construction = {
 									type = air_base
 									level = 2
@@ -580,11 +580,11 @@ focus_tree = {
 		cost = 8.00
 		prerequisite = { focus = HKG_Runway_13_31 }
 		available = {
-			HKG = { controls_state = 790 }
+			HKG = { controls_state = 829 }
 			}
 			completion_reward = {
 					air_experience = 10
-					790 = {
+					829 = {
 							add_building_construction = {
 									type = air_base
 									level = 2
@@ -603,8 +603,8 @@ focus_tree = {
 		prerequisite = { focus = HKG_Continue_the_construction_of_Shek_Kong_Airfield }
 		prerequisite = { focus = HKG_HK_Defence_Scheme_1936 }
 		available = {
-			HKG = { controls_state = 788 }
-			788 = {air_base > 4}
+			HKG = { controls_state = 827 }
+			827 = {air_base > 4}
 			}
 			completion_reward = {
 					add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 50 }
@@ -621,10 +621,10 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = { focus = HKG_Continue_the_construction_of_Shek_Kong_Airfield }
 		available = {
-			HKG = { controls_state = 789}
+			HKG = { controls_state = 828}
 			}
 			completion_reward = {
-					789 = {
+					828 = {
 							add_building_construction = {
 									type = anti_air_building
 									level = 3
@@ -658,10 +658,10 @@ focus_tree = {
 		prerequisite = { focus = HKG_Anti_Air_in_Victoria }
 		prerequisite = { focus = HKG_HK_Fighter_Squad }
 		available = {
-			HKG = { controls_state = 788 }
+			HKG = { controls_state = 827 }
 			}
 			completion_reward = {
-					788 = {
+					827 = {
 							add_building_construction = {
 									type = anti_air_building
 									level = 2
@@ -729,10 +729,10 @@ focus_tree = {
 		cost = 10		
 		prerequisite = { focus = HKG_JAP_won_t_attack_HK }
 			completion_reward = {
-						789 = {
+						828 = {
 									add_building_construction = { type = naval_base province = 13221 level = 2 instant_build = yes }
 								}
-						790 = {
+						829 = {
 									add_building_construction = { type = bunker province = 13224 level = 2 instant_build = yes }
 									add_building_construction = { type = bunker province = 13226 level = 2 instant_build = yes }
 									add_building_construction = { type = bunker province = 13227 level = 2 instant_build = yes }
@@ -754,13 +754,13 @@ focus_tree = {
      		remove_idea = HK_Conscription_Policy
     		   add_idea = HK_Conscription_Policy_2
 									}
-						790 = {
+						829 = {
 						remove_building = {
     					type = industrial_complex
     					level = 2
 						}
 						}
-						789 = {
+						828 = {
 						add_extra_state_shared_building_slots = 3
 						add_building_construction = {
     					type = industrial_complex
@@ -988,9 +988,9 @@ focus_tree = {
 		cost = 7
 		available = { has_defensive_war = yes }
 		available = { has_full_control_of_state = 326 }
-		available = { has_full_control_of_state = 788 }
-		available = { has_full_control_of_state = 789 }
-		available = { has_full_control_of_state = 790 }
+		available = { has_full_control_of_state = 827 }
+		available = { has_full_control_of_state = 828 }
+		available = { has_full_control_of_state = 829 }
 		prerequisite = { focus = HKG_Push_the_Japanese_away }
 			completion_reward = {
 			white_peace = JAP
@@ -1240,7 +1240,7 @@ focus_tree = {
 		prerequisite = { focus = HKG_Own_Road_to_Democrats }
 			completion_reward = {
 
-			790 = {
+			829 = {
 				add_building_construction = { type = bunker province = 13224 level = 3 instant_build = yes }
 				add_building_construction = { type = bunker province = 13226 level = 3 instant_build = yes }
 				add_building_construction = { type = bunker province = 13227 level = 3 instant_build = yes }

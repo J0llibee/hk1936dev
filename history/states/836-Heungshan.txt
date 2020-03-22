@@ -1,0 +1,21 @@
+state={
+	id=836
+	name="STATE_836"
+	manpower = 100000
+	state_category = town
+	history={
+	buildings = {
+			infrastructure = 2
+            }
+		owner = GXC
+		add_core_of = GXC
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+            13251 3
+            }
+            }
+	provinces={
+		13251
+	}
+}

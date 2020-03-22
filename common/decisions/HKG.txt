@@ -13,7 +13,6 @@ Battle_of_Hong_Kong = {
 			}
 
 		
-
 		cost = 50
 		fire_only_once = yes
 		ai_will_do = {
@@ -53,8 +52,9 @@ Battle_of_Hong_Kong = {
 
 		complete_effect = {
 			JAP = {
-			set_state_controller = 788
-			set_state_controller = 790
+			set_state_controller = 829
+			set_state_controller = 827
+			set_state_controller = 823
 			}
 			}
 			}
@@ -88,5 +88,5 @@ Battle_of_Hong_Kong = {
 			}
 
 	}
-			
+		
 			

@@ -1,7 +1,7 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12251;10321;sea;8313;-1;-1;-1;-1;;Andaman
-13233;13234;sea;5269;-1;-1;-1;-1;;Ilhas
-13234;4189;sea;5269;-1;-1;-1;-1;;Macau-Ilhas
+13249;13250;sea;5269;-1;-1;-1;-1;;Ilhas
+13250;4189;sea;5269;-1;-1;-1;-1;;Macau-Ilhas
 7413;1419;sea;5294;-1;-1;-1;-1;;Moluccas
 10141;1419;sea;5267;-1;-1;-1;-1;;Moluccas
 480;9431;sea;8621;-1;-1;-1;-1;;Netherlands outlier

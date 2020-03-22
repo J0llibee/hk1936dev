@@ -842,6 +842,8 @@ political_advisor = {
 	high_command = {
 		HKG_arthur_bartholomew = {
 
+		ledger = army
+		
 		picture = generic_army_europe_1	
 		
 			allowed = {
@@ -865,6 +867,8 @@ political_advisor = {
 	
 		HKG_christopher_maltby = {
 
+		ledger = army
+
 		picture = generic_army_europe_2			
 			
 			allowed = {
@@ -886,6 +890,8 @@ political_advisor = {
 		}
 
 		HKG_lindsay_ride = {
+
+		ledger = army
 
 		picture = lindsay_ride
 		
@@ -910,6 +916,8 @@ political_advisor = {
 		
 		HKG_frederic_dreyer = {
 
+			ledger = navy
+
 			picture = generic_navy_europe_1
 			
 			allowed = {
@@ -931,6 +939,8 @@ political_advisor = {
 			}
 		}
 		HKG_percy_noble = {
+
+		ledger = navy
 
 		picture = generic_navy_europe_3				
 			
@@ -954,6 +964,8 @@ political_advisor = {
 		}		
 		HKG_chitang = {
 
+		ledger = army
+
 		picture = generic_army_asia_1			
 			
 			allowed = {
@@ -972,6 +984,8 @@ political_advisor = {
 			}
 		}			
 		HKG_bai = {
+
+		ledger = army
 
 		picture = generic_army_asia_2		
 			
@@ -992,6 +1006,8 @@ political_advisor = {
 		}				
 		HKG_albert_wong = {
 
+		ledger = army
+
 		picture = generic_army_asia_3	
 			
 			allowed = {
@@ -1010,6 +1026,8 @@ political_advisor = {
 			}
 		}	
 		HKG_james_lam = {
+
+		ledger = army
 
 		picture = generic_army_asia_4	
 			
@@ -1030,6 +1048,8 @@ political_advisor = {
 		}
 		HKG_bernard_cheung = {
 
+			ledger = navy
+
 			picture = generic_navy_asia_2
 			
 			allowed = {
@@ -1047,6 +1067,8 @@ political_advisor = {
 
 		HKG_edward_tsui = {
 
+			ledger = air
+
 			picture = generic_air_asia_1
 			
 			allowed = {
@@ -1063,6 +1085,8 @@ political_advisor = {
 		}
 
 		HKG_choi = {
+
+			ledger = air
 
 			picture = generic_army_asia_3
 		
@@ -1085,6 +1109,8 @@ political_advisor = {
 	theorist = {
 			HKG_arthur_grasett = {
 
+			ledger = army
+
 			picture = arthur_grasett
 			
 			allowed = {
@@ -1105,6 +1131,8 @@ political_advisor = {
 			traits = { grand_battle_plan_expert }
 		}
 		HKG_percy_noble_theo = {
+
+		ledger = navy
 
 		picture = generic_navy_europe_3				
 			
@@ -1130,6 +1158,8 @@ political_advisor = {
 		}	
 		HKG_robert_brooke_popham_theo = {
 
+			ledger = air
+
 			picture = generic_air_europe_1
 			
 			allowed = {
@@ -1153,7 +1183,9 @@ political_advisor = {
 			}
 		}
 		HKG_liao_lei = {
-					
+			
+			ledger = army
+
 			picture = generic_army_asia_3
 
 			allowed = {
@@ -1171,7 +1203,9 @@ political_advisor = {
 			traits = { military_theorist }
 		}
 		HKG_lin_wei_cheng_theo = {
-					
+			
+			ledger = air
+
 			picture = generic_air_asia_3
 				
 			allowed = {
@@ -1190,7 +1224,8 @@ political_advisor = {
 		}
 		HKG_chen_wen_lin_theo = {
 					
-					
+			ledger = navy
+		
 			allowed = {
 				original_tag = HKG
 			}

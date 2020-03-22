@@ -2,7 +2,7 @@ state={
 	id=824
 	name="STATE_824"
 	provinces={
-		13233 13234 
+		13249 13250 
 	}
 		history=
 	{
@@ -12,15 +12,15 @@ state={
 		add_core_of = MCU
 		buildings = {
 			infrastructure = 2
-			13233 = {
+			13249 = {
 				naval_base = 2
 			}
 		}
 		victory_points = {
-			13233 3 
+			13249 3 
 		}
 		victory_points = {
-			13234 3 
+			13250 3 
 		}
             }
 	manpower=78000

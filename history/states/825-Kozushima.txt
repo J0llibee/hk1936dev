@@ -7,7 +7,7 @@ state={
 		add_core_of = JAP
 		buildings = {
 			infrastructure = 2
-			13236 = {
+			13252 = {
 				naval_base = 2
 
 			}
@@ -15,7 +15,7 @@ state={
 		}
             }
 	provinces={
-		13236
+		13252
 	}
 	manpower=1234
 	buildings_max_level_factor=1.000

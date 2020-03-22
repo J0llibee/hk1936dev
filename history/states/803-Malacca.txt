@@ -7,7 +7,7 @@ state={
 		owner = STR
 		buildings = {
 			infrastructure = 2
-			13228 = {
+			13244 = {
 				naval_base = 2
 
 			}
@@ -15,7 +15,7 @@ state={
 		}
 		}
 	provinces={
-		13228 
+		13244 
 	}
 	manpower=200000
 	buildings_max_level_factor=1.000

@@ -1,0 +1,27 @@
+state={
+	id=829
+	name="STATE_829"
+	manpower = 135547
+	state_category = pastoral
+	resources = {
+        steel = 6
+        tungsten = 2
+    }
+	history=
+	{
+		owner = HKG
+		add_core_of = HKG
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+            13241 10
+            }
+        buildings = {
+			infrastructure = 2
+            }
+            }
+	provinces={
+		13241 13242 13243 
+	}
+}
+

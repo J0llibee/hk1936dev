@@ -1,0 +1,17 @@
+##### HONG KONG ######
+
+
+Battle_of_Hong_Kong = {
+	
+	icon = generic_prepare_civil_war
+
+	allowed = {
+		original_tag = HKG
+	}
+
+	visible = {
+		has_completed_focus = HKG_Governor_Young
+	}
+}
+
+

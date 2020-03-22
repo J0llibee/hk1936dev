@@ -4,7 +4,7 @@ state={
 	manpower = 34000
 	state_category = pastoral
 	provinces={
-		13224 
+		13240 
 	}
 	history=
 	{
@@ -13,7 +13,7 @@ state={
 		add_core_of = CHI
 		add_core_of = PRC
 		victory_points = {
-            13224 3
+            13240 3
             }
     buildings = {
 			infrastructure = 2

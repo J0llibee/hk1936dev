@@ -1,10 +1,10 @@
 ﻿units = {
 	fleet = {			
-			name = "Eastern Fleet"
-			naval_base = 13221
+			name = "Far East Fleet"
+			naval_base = 13237
 			task_force = {	
 			name = "China Station"	
-			location = 13221 # Hong Kong	
+			location = 13237 # Hong Kong	
 			ship = { name = "HMS Eagle" definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = ENG version_name = "Eagle Class" } } 
 				air_wings = {
 					cv_fighter_equipment_0 =  { owner = "ENG" amount = 20 }
