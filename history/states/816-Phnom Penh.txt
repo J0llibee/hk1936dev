@@ -6,6 +6,9 @@ state={
 		owner = IND
 		add_core_of = CAM
 		add_core_of = IND
+		victory_points = {
+			7376 1 
+		}
 		buildings = {
 			infrastructure = 1
 			7432 = {

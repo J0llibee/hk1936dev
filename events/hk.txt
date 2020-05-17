@@ -57,10 +57,10 @@ country_event = {
 
 	option = {
 	name = HKG.2.a
-	790 = {add_manpower = 300000}
-	790 = {
+	829 = {add_manpower = 300000}
+	829 = {
     					 add_extra_state_shared_building_slots = 2 }
-	790 = {
+	829 = {
 							add_building_construction = {
 									type = industrial_complex
 									level = 2
@@ -158,9 +158,9 @@ country_event = {
 		name = HKG.5.a
 			
 		CHI = { remove_state_core = 326 } 
-		CHI = { remove_state_core = 788 } 
-		CHI = { remove_state_core = 789 } 
-		CHI = { remove_state_core = 790 }
+		CHI = { remove_state_core = 827 } 
+		CHI = { remove_state_core = 828 } 
+		CHI = { remove_state_core = 829 }
 		CHI = { remove_state_core = 823 }
 			}
 		}
@@ -172,16 +172,9 @@ country_event = {
 	desc = HKG.6.d
 	picture = GFX_report_event_Maltby_arrived
 	
-	trigger = {
-		tag = HKG
-		has_government = neutrality
-		date > 1941.6.20
-		date < 1941.7.20
-	}	
+	is_triggered_only = yes	
 
 	fire_only_once = yes
-
-	mean_time_to_happen = { days = 1 }
 
 	option = {
 		name = HKG.6.a
@@ -212,94 +205,7 @@ country_event = {
 			}
 		}
 
-#######Yuen Long Attack###########
-country_event = {
-	id = HKG.7
-	title = HKG.7.t
-	desc = HKG.7.d
-	picture = GFX_report_event_Yuen_Long_Attack
-	
-	trigger = {
-		tag = HKG
-		date > 1936.7.21
-		date < 1936.7.23
-	}	
 
-	fire_only_once = yes
-
-	mean_time_to_happen = { days = 1 }
-
-	option = {
-		name = HKG.7.a
-		hidden_effect = {
-		YUE = {add_state_core = 823}
-		SOV = {transfer_state = 823}
-		SOV = {release = YUE}
-		YUE = {load_oob = "YUE_1936"}
-		YUE = {declare_war_on = {
-    	target = HKG
-    	type = annex_everything
-    	}
-}
-	
-}
-}
-
-option = {
-		name = HKG.7.b
-		hidden_effect = {
-		add_political_power = 5
-		sound_effect = "Carrie_Liberate_HK"
-	
-}
-}
-
-option = {
-		name = HKG.7.c
-		hidden_effect = {
-		YUE = {add_state_core = 823}
-		SOV = {transfer_state = 823}
-		SOV = {release = YUE}
-		YUE = {load_oob = "YUE_1936"}
-		YUE = {declare_war_on = {
-    	target = HKG
-    	type = annex_everything
-    	}
-}
-		YUE = { change_tag_from = ROOT }
-	
-}
-}
-
-}	
-
-#######Annex Yuen Long###########
-country_event = {
-	id = HKG.8
-	title = HKG.8.t
-	desc = HKG.8.d
-	picture = GFX_report_event_ho_dead
-	
-	trigger = {
-	tag = HKG
-	is_in_faction_with = YUE
-	}
-
-	fire_only_once = yes
-
-	mean_time_to_happen = { days = 1 }
-
-	option = {
-		name = HKG.8.a
-		hidden_effect = {
-		annex_country = {
-    	target = YUE
-    	transfer_troops = yes
-		}
-    	}
-}
-	
-}
 
 #########First General Election###########
 
@@ -413,13 +319,33 @@ country_event = {
 }
 
 }
-}			
+}
 
-#######Wallis Arrived###########
+# cross Shumchun river			
 country_event = {
 	id = HKG.10
 	title = HKG.10.t
 	desc = HKG.10.d
+	is_triggered_only = yes
+	
+	trigger = {
+		AND = {
+    	original_tag = HKG
+    	has_war_with = JAP
+    	NOT = { has_full_control_of_state = 829 }
+	}
+	}
+	
+	option = {
+	name = HKG.10.a
+	}
+}
+
+#######Wallis Arrived###########
+country_event = {
+	id = HKG.18
+	title = HKG.18.t
+	desc = HKG.18.d
 	picture = GFX_report_event_Maltby_arrived
 	
 	trigger = {
@@ -434,7 +360,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
 	option = {
-		name = HKG.10.a
+		name = HKG.18.a
 	create_corps_commander = {
 	name = "Cederic Wallis"
 	portrait_path = "gfx/leaders/HKG/Portrait_HKG_Cederic_Wallis.dds"

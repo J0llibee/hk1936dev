@@ -9,8 +9,10 @@ ai_historical_focus_list_HKG = {
     HKG_New_Naval_Plan
     HKG_Kowloon_industrial_zone
 	HKG_Aberdeen_Dockyard #1937.3
+	HKG_Queen_Mary_Hospital
 	HKG_Taikoo_Dockyard
 	HKG_Whampoa_Dockyard
+	HKG_Strengthen_Devil_s_Peak_Line
 	HKG_Support_Chiang  # 1937.8
 	HKG_Declare_HK_as_a_free_trade_zone
 	HKG_JAP_won_t_attack_HK

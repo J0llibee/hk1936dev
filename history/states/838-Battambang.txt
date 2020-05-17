@@ -1,0 +1,21 @@
+state={
+	id=838
+	name="STATE_838"
+	history={
+		add_core_of = CAM
+		add_core_of = IND
+		owner = IND
+		victory_points = {
+			10177 1 
+		}
+		buildings={
+		infrastructure = 1
+		}
+		}
+	provinces={
+		1353 4251 10134 10177 
+	}
+	manpower=80000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

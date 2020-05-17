@@ -9,10 +9,13 @@ state={
 	}
 
 	history={
-		owner = GXC
-		add_core_of = GXC
+		owner = CTN
+		add_core_of = CTN
 		add_core_of = CHI
 		add_core_of = PRC
+		victory_points = {
+			9938  3
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -25,7 +28,7 @@ state={
 
 		}
 		1938.10.25 = {
-			remove_core_of = GXC
+			remove_core_of = CTN
 			owner = CHI
 			JAP = {
 				set_province_controller = 1202
@@ -41,7 +44,7 @@ state={
 	}
 
 	provinces={
-		1078 1120 1162 1202 4050 4165 4207 7067 7141 7182 9938 9970 9978 9997 10080 12014 12095 
+		1078 1120 1162 1202 4050 4165 4207 7067 7141 7182 9938 9970 9978 9997 10080 10121 12014 12095 
 	}
 	manpower=12700000
 	buildings_max_level_factor=1.000

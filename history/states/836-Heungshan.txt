@@ -7,8 +7,8 @@ state={
 	buildings = {
 			infrastructure = 2
             }
-		owner = GXC
-		add_core_of = GXC
+		owner = CTN
+		add_core_of = CTN
 		add_core_of = CHI
 		add_core_of = PRC
 		victory_points = {

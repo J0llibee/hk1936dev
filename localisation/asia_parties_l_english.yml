@@ -43,4 +43,22 @@
  MCU_fascism_party:0 "PFM"
  MCU_fascism_party_long:0 "Partido Facist de Macau"
  MCU_neutrality_party:0 "Governo Colonial"
-
+ 
+ SIA_neutrality_party:0 "Khana Ratsadon"
+ SIA_neutrality_party_long:0 "Khana Ratsadon"
+ SIA_democratic_party:0 "ST"
+ SIA_democratic_party_long:0 "Seri Thai"
+ SIA_neutrality_party:0 "Khana Ratsadon"
+ SIA_neutrality_party_long:0 "Khana Ratsadon - Civilian"
+ SIA_fascism_party:0 "Khana Ratsadon"
+ SIA_fascism_party_long:0 "Khana Ratsadon - Military"
+ SIA_communism_party:0 "CPT"
+ SIA_communism_party_long:0 "Communist Party of Thailand"
+ 
+ BRM_fascism_party:0 "BNA"
+ BRM_fascism_party_long:0 "Burma National Army"
+ BRM_democratic_party:0 "AFPFL"
+ BRM_democratic_party_long:0 "Anti-Fascist People's Freedom League"
+ BRM_communism_party:0 "CPB"
+ BRM_communism_party_long:0 "Communist Party of Burma"
+ BRM_neutrality_party:0 "Konbaung Dynasty"

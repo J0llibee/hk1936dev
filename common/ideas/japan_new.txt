@@ -1,0 +1,64 @@
+ideas = {
+
+	country = {
+		JAP_aftermath_of_ichi_go = {
+
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_purge
+			
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.15
+				defense_bonus_against = 0.2
+			}
+
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = -0.15
+				defense_bonus_against = 0.2
+			}
+
+			targeted_modifier = {
+				tag = SHX
+				attack_bonus_against = -0.15
+				defense_bonus_against = 0.2
+			}
+
+			targeted_modifier = {
+				tag = XSM
+				attack_bonus_against = -0.15
+				defense_bonus_against = 0.2
+			}
+
+			targeted_modifier = {
+				tag = YUN
+				attack_bonus_against = -0.15
+				defense_bonus_against = 0.2
+			}
+
+			targeted_modifier = {
+				tag = GXC
+				attack_bonus_against = -0.15
+				defense_bonus_against = 0.2
+			}
+
+			targeted_modifier = {
+				tag = SIK
+				attack_bonus_against = -0.15
+				defense_bonus_against = 0.2
+			}
+			}
+		
+		
+	}
+	}	

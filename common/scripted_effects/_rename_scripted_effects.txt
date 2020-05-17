@@ -1,0 +1,26 @@
+enable_renaming = {
+	set_global_flag = allowrenaming_flag
+
+	### set endo states ###
+	every_state = {
+		meta_effect = {
+			text = {
+				set_state_name = [endo_state_flag]
+			}
+			endo_state_flag = "STATE_[THIS.GetId]"
+		}
+	}
+	do_all_renames = yes
+	}
+
+	do_all_renames = {
+	### CHI ###
+	every_state = {
+		limit = {
+			controller = {
+				tag = CHI
+			}
+		}
+		do_chinese_renames_in_asia = yes
+	}
+	}

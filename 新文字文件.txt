@@ -1,0 +1,88 @@
+#######Yuen Long Attack###########
+#####country_event = {
+	id = HKG.7
+	title = HKG.7.t
+	desc = HKG.7.d
+	picture = GFX_report_event_Yuen_Long_Attack
+	
+	trigger = {
+		tag = HKG
+		date > 1936.7.21
+		date < 1936.7.23
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = HKG.7.a
+		hidden_effect = {
+		YUE = {add_state_core = 823}
+		SOV = {transfer_state = 823}
+		SOV = {release = YUE}
+		YUE = {load_oob = "YUE_1936"}
+		YUE = {declare_war_on = {
+    	target = HKG
+    	type = annex_everything
+    	}
+}
+	
+}
+}
+
+option = {
+		name = HKG.7.b
+		hidden_effect = {
+		add_political_power = 5
+		sound_effect = "Carrie_Liberate_HK"
+	
+}
+}
+
+option = {
+		name = HKG.7.c
+		hidden_effect = {
+		YUE = {add_state_core = 823}
+		SOV = {transfer_state = 823}
+		SOV = {release = YUE}
+		YUE = {load_oob = "YUE_1936"}
+		YUE = {declare_war_on = {
+    	target = HKG
+    	type = annex_everything
+    	}
+}
+		YUE = { change_tag_from = ROOT }
+	
+}
+}
+
+}	
+
+#######Annex Yuen Long###########
+######country_event = {
+	id = HKG.8
+	title = HKG.8.t
+	desc = HKG.8.d
+	picture = GFX_report_event_ho_dead
+	
+	trigger = {
+	tag = HKG
+	is_in_faction_with = YUE
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = HKG.8.a
+		hidden_effect = {
+		annex_country = {
+    	target = YUE
+    	transfer_troops = yes
+		}
+    	}
+}
+	
+}

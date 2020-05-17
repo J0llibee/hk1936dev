@@ -51,3 +51,29 @@
   HKG.17.t:0 "Battle of Shing Mun Redoubt"
   HKG.17.d:0 "With the Japanese push toward the south quickly, our troops deployed in the Gin Drinkers Line are on standby. However, we cannot discover the movement of enemies. They found that our defences were weak at a High Ground near Shing Mun Redoubt and Shing Mun Reservoir. The high ground dominated all positions of the western portion of the Line. Therefore, the Japanese advanced a sneak attack. \n\nTheir combat engineers successfully breached the barbed wire and destroyed bunkers, and had taken the high ground, openning a breach in the Line. Also, our troops began to withdraw from Golden Hill. This made the situation on the New Territories and Kowloon untenable."
   HKG.17.a:0 "We must continue the fight!"
+  
+  asia_news.1.t:0 "[GetNewsHeadline]Hu Hanmin Dies" 
+  asia_news.1.d:0 "Yesterday, Hu Hanmin, the Chairperson of Kuomintang has a sudden death while he was having a Chinese Chess match with his friends. It was later confirmed he was killed by cerebral hemorrhage. His devotion to Kuomintang would be remembered." 
+  asia_news.1.a:0 "We will always remember Hu." 
+  
+  china_canton.1.t:0 "Liangguang Incident" 
+  china_canton.1.d:0 "After Hu's death, it is our time to weaken Chen Chi-tang by ending Kwangtung's autonomy. But Chen immediately reacted by conspiring with the New Guangxi clique to overthrow Chiang under the pretext of his failure to confront Japanese aggression. What should we do next?" 
+  china_canton.1.a:0 "Seize Kwangtung with our army!"
+  china_canton.1.b:0 "Send an ultimatum to Chen."  
+  china_canton.1.c:0 "Left Chen alone, we will resolve the crisis after the war against the Japanese." 
+  
+  china_canton.2.t:0 "Chiang sends us an ultimatium" 
+  china_canton.2.d:0 "Chiang decided to end Kwantung's autonomy by replacing us. Should we accept the terms?" 
+  china_canton.2.a:0 "Accept"
+  china_canton.2.b:0 "Deny"   
+  
+  china_canton.3.t:0 "Chen backs down" 
+  china_canton.3.d:0 "After receving our ultimatum, Chen resigned and flee to Hong Kong. Kwangtung is backed into our control now. " 
+  china_canton.3.a:0 "Luckily, a civil war is prevented." 
+  
+  china_canton.4.t:0 "Chen chooses not compromise" 
+  china_canton.4.d:0 "After receving our ultimatum, Chen announced a disagreement and said that he would not surrender. What should we do next? " 
+  china_canton.4.a:0 "March on Canton!" 
+  
+  
+  

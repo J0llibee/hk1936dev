@@ -52,52 +52,65 @@ country_event = {
 			}
 			if = {
 				limit = {
-					793 = {
+					832 = {
 						OR = {
 							is_owned_by = RAJ
 							is_owned_by = ENG
 						}
 					}
 				}
-				ENG = { transfer_state = 793 }
-				RAJ = { remove_state_core = 793 }
+				ENG = { transfer_state = 832 }
+				RAJ = { remove_state_core = 832 }
 			}
 			if = {
 				limit = {
-					792 = {
+					831 = {
 						OR = {
 							is_owned_by = RAJ
 							is_owned_by = ENG
 						}
 					}
 				}
-				ENG = { transfer_state = 792 }
-				RAJ = { remove_state_core = 792 }
+				ENG = { transfer_state = 831 }
+				RAJ = { remove_state_core = 831 }
 			}
 			if = {
 				limit = {
-					794 = {
+					842 = {
 						OR = {
 							is_owned_by = RAJ
 							is_owned_by = ENG
 						}
 					}
 				}
-				ENG = { transfer_state = 794 }
-				RAJ = { remove_state_core = 794 }
+				ENG = { transfer_state = 842 }
+				RAJ = { remove_state_core = 842 }
 			}
 			if = {
 				limit = {
-					795 = {
+					833 = {
 						OR = {
 							is_owned_by = RAJ
 							is_owned_by = ENG
 						}
 					}
 				}
-				ENG = { transfer_state = 795 }
-				RAJ = { remove_state_core = 795 }
+				ENG = { transfer_state = 833 }
+				RAJ = { remove_state_core = 833 }
 			}
+			if = {
+				limit = {
+					834 = {
+						OR = {
+							is_owned_by = RAJ
+							is_owned_by = ENG
+						}
+					}
+				}
+				ENG = { transfer_state = 834 }
+				RAJ = { remove_state_core = 834 }
+			}
+			
 
 			release_puppet = BRM
 
@@ -156,6 +169,10 @@ country_event = {
 					ideology = fascism popularity = 1
 					ideology = communism popularity = 1
 					ideology = neutrality popularity = 47
+				}
+				set_party_name = { 
+    			ideology = democratic 
+    			name = "Colonial Government" 
 				}
 			}
 		}

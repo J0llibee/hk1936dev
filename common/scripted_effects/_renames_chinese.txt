@@ -1,0 +1,52 @@
+do_chinese_renames_in_asia = {
+	if = {
+		limit = {
+		state = 745
+			NOT = {
+				has_state_flag = renamed_state_chinese
+			}
+		}
+		set_state_name = STATE_745_chinese
+		clr_state_flag = renamed_state_japanese
+		set_state_flag = renamed_state_chinese
+		set_province_name = {
+			id = 1150
+			name = endo_vp_1150_chinese # Lyushun
+		}
+	}
+	else_if = {
+		limit = {
+		state = 328
+			NOT = {
+				has_state_flag = renamed_state_chinese
+			}
+		}
+		set_state_name = STATE_328
+		clr_state_flag = renamed_state_japanese
+		set_state_flag = renamed_state_chinese
+		set_province_name = {
+			id = 4572
+			name = endo_vp_4572_chinese # Changchun
+		}
+	}
+	else_if = {
+		limit = {
+		state = 524
+			NOT = {
+				has_state_flag = renamed_state_chinese
+			}
+		}
+		set_state_name = STATE_524
+		clr_state_flag = renamed_state_japanese
+		set_state_flag = renamed_state_chinese
+		set_province_name = {
+			id = 7186
+			name = endo_vp_7186_chinese # Taipei
+		}
+		set_province_name = {
+			id = 12068
+			name = endo_vp_12068_chinese # Kao
+		}
+	}
+
+	}
