@@ -6,7 +6,7 @@ JAP_intervene_in_china = {
 		icon = jap_conquer_china
 
 		available = {
-			JAP_has_idea_JAP_intervene_in_china = yes
+			CHI = {has_capitulated = yes}
 		}
 
 		visible = {
@@ -16,25 +16,18 @@ JAP_intervene_in_china = {
 			}
 		}
 
+		activation = {
+			has_country_flag = JAP_conquer_china_activate
+		}
+		
 		fire_only_once = no
 
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war_with = USA
-				factor = 10 #screw it, kill everything
-			}
-		}
-		modifier = {
+		is_good = no
 
-		}
+		days_mission_timeout = 100
+		days_re_enable = 1
 
-		days_remove = 0
-		days_re_enable = 30
-
-		cost = 25
-
-		complete_effect = {
+		timeout_effect = {
 			if = {
 				limit = {
 					USA = {
@@ -44,6 +37,9 @@ JAP_intervene_in_china = {
 				USA = { add_war_support = 0.025 }
 			}
 			JAP_intervene_in_china_level_down = yes
+		}
+		complete_effect = {
+		add_war_support = 0.07
 		}
 	}
 
@@ -62,6 +58,9 @@ JAP_intervene_in_china = {
 			has_completed_focus = JAP_secure_china
 			any_enemy_country = {
 				is_literally_china = yes
+			}
+			event_target:WTT_current_china_leader = {
+				NOT = { is_puppet_of = JAP }
 			}
 		}
 
@@ -88,7 +87,8 @@ JAP_intervene_in_china = {
 				}
 				USA = { add_war_support = 0.1 }
 			}
-			add_ideas = JAP_ichi_go
+			add_timed_idea = { idea = JAP_ichi_go days = 365 }
+
 			activate_mission_tooltip = JAP_conquer_china
 			set_country_flag = JAP_conquer_china_activate
 		}
@@ -133,6 +133,42 @@ JAP_intervene_in_china = {
 		complete_effect = {
 			add_stability = 0.03
 			add_war_support = 0.07
+		}
+	}
+
+	JAP_aftermath_of_ichi_go = {
+
+		icon = jap_conquer_china
+
+		available = {
+			CHI = {has_capitulated = yes}
+		}
+
+		visible = {
+			has_idea = JAP_ichi_go
+			any_enemy_country = {
+				is_literally_china = yes
+			}
+		}
+
+		activation = {
+			has_idea = JAP_ichi_go
+		}
+
+		fire_only_once = yes
+
+		is_good = no
+
+		days_mission_timeout = 365
+		
+		timeout_effect = {
+			add_stability = -0.05
+			add_war_support = -0.15
+			add_timed_idea = { idea = JAP_aftermath_of_ichi_go days = 720 }
+		}
+
+		complete_effect = {
+			
 		}
 	}
 
@@ -847,6 +883,141 @@ foreign_politics = {
 }
 
 #Category allowed for JAP
+#Not visible if puppet
+JAP_southern_expansion = {
+
+	JAP_pressure_france = { 
+
+		available = {
+			16 = { NOT = { is_controlled_by = FRA } } #Paris has fallen
+			286 = { 
+				CONTROLLER = { 
+					NOT = {
+						has_war_with = ROOT
+						is_in_faction_with = ROOT
+					}
+				} 
+			}
+			670 = { 
+				CONTROLLER = { 
+					NOT = {
+						has_war_with = ROOT
+						is_in_faction_with = ROOT
+					}
+				} 
+			}
+			671 = { 
+				CONTROLLER = { 
+					NOT = {
+						has_war_with = ROOT
+						is_in_faction_with = ROOT
+					}
+				} 
+			}
+			custom_trigger_tooltip = {
+				tooltip = demand_indochina_focus_tt
+				OR = {
+					286 = { 
+						CONTROLLER = { 
+							OR = { 
+								tag = FRA 
+								tag = VIC
+								is_subject_of = FRA
+								is_subject_of = VIC 
+							} 
+						}
+					}
+					670 = { 
+						CONTROLLER = { 
+							OR = { 
+								tag = FRA 
+								tag = VIC 
+								is_subject_of = FRA
+								is_subject_of = VIC
+							} 
+						}
+					}
+					671 = { 
+						CONTROLLER = { 
+							OR = { 
+								tag = FRA 
+								tag = VIC 
+								is_subject_of = FRA
+								is_subject_of = VIC
+							} 
+						}
+					}
+				}
+			}
+		}
+
+		visible = {
+			has_completed_focus = JAP_strike_south_doctrine
+		}
+
+		fire_only_once = yes
+
+
+		modifier = {
+
+		}
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				FRA = { has_war = no }
+			}			
+			modifier = {
+				factor = 3
+				FRA = { has_war = yes } 
+				strength_ratio = {
+					tag = FRA
+					ratio > 0.9
+				}
+			}
+			
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					FRA = {
+						OR = {
+							controls_state = 671
+							671 = { CONTROLLER = { is_subject_of = FRA } }
+							controls_state = 670
+							670 = { CONTROLLER = { is_subject_of = FRA } }
+							controls_state = 286
+							286 = { CONTROLLER = { is_subject_of = FRA } }
+						}
+					}
+				}
+				FRA = { country_event = { id = france.1 } }
+			}
+			else_if = {
+				limit = {
+					VIC = {
+						OR = {
+							controls_state = 671
+							controls_state = 670
+							controls_state = 286
+							671 = { CONTROLLER = { is_subject_of = VIC } }
+							670 = { CONTROLLER = { is_subject_of = VIC } }
+							286 = { CONTROLLER = { is_subject_of = VIC } }
+						}
+					}
+				}
+				VIC = { country_event = { id = france.1 } }
+			}
+		}
+
+	}
+}
+
+#Category allowed for JAP
 #Visible when has completed JAP_pacific_guardian focus.
 #Visible if independent
 JAP_pacific_guardian = {
@@ -1332,12 +1503,11 @@ operations = {
 			}
 		}
 
-		highlight_states = {
-			OR = {
-				state = 408
-				state = 527
-			}
+		highlight_state_targets = {
+			state = 408
+			state = 527
 		}
+		
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
@@ -1433,9 +1603,6 @@ operations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_states = {
-		}
-
 		war_with_target_on_timeout = yes
 		ai_will_do = {
 			base = 0
@@ -1483,11 +1650,9 @@ operations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_states = {
-			OR = {
-				state = 527
-				state = 408
-			}
+		highlight_state_targets = {
+			state = 527
+			state = 408
 		}
 
 		ai_will_do = {
@@ -1547,11 +1712,9 @@ operations = {
 			}
 		}
 
-		highlight_states = {
-			OR = {
-				state = 527
-				state = 408			
-			}
+		highlight_state_targets = {
+			state = 527
+			state = 408	
 		}
 
 		ai_will_do = {
@@ -1604,11 +1767,9 @@ operations = {
 			408 = { has_border_war = no }
 		}
 		
-		highlight_states = {
-			OR = {
-				state = 408
-				state = 527
-			}
+		highlight_state_targets = {
+			state = 408
+			state = 527
 		}
 
 		ai_will_do = {
@@ -1650,11 +1811,9 @@ operations = {
 			has_border_war_with = FROM
 		}
 
-		highlight_states = {
-			OR = {
-				state = 527
-				state = 408
-			}
+		highlight_state_targets = {
+			state = 527
+			state = 408
 		}
 
 		cost = 200
@@ -1716,11 +1875,9 @@ operations = {
 			has_border_war_with = FROM
 		}
 
-		highlight_states = {
-			OR = {
-				state = 408
-				state = 527
-			}
+		highlight_state_targets = {
+			state = 408
+			state = 527
 		}
 
 		cost = 150
@@ -1795,11 +1952,9 @@ operations = {
 			has_border_war_with = FROM
 		}
 
-		highlight_states = {
-			OR = {
-				state = 527
-				state = 408
-			}
+		highlight_state_targets = {
+			state = 527
+			state = 408
 		}
 
 		ai_will_do = {
@@ -1885,7 +2040,7 @@ prospect_for_resources = {
 	JAP_develop_north_sakhalin_oil_deposits = { #655
 		icon = oil
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 655
 		}
 
@@ -1941,7 +2096,7 @@ prospect_for_resources = {
 	JAP_develop_luzon_chromium_deposits = { #623
 		icon = chromium
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 623
 		}
 
@@ -1990,7 +2145,7 @@ prospect_for_resources = {
 	JAP_develop_mindanao_steel_deposits = { #627
 		icon = steel
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 627
 		}
 
@@ -2039,7 +2194,7 @@ prospect_for_resources = {
 	JAP_develop_samar_steel_deposits = { #625
 		icon = steel
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 625
 		}
 
@@ -2092,7 +2247,7 @@ prospect_for_resources = {
 			original_tag = JAP
 		}
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 725
 		}
 
@@ -2236,7 +2391,7 @@ prospect_for_resources = {
 		
 		icon = aluminium
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 597
 		}
 
@@ -2286,7 +2441,7 @@ prospect_for_resources = {
 		
 		icon = steel
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 621
 		}
 

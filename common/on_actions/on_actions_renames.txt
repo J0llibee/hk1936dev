@@ -1,0 +1,35 @@
+on_actions = {
+	on_startup = {
+	effect = {
+		every_country = {
+				limit = {
+					is_ai = no
+				}
+	enable_renaming = yes
+			}
+				}
+				}
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = allowrenaming_flag
+				}
+				FROM.FROM = {
+
+						### CHI ###
+						if = {
+							limit = {
+								ROOT = { tag = CHI }
+							}
+							do_chinese_renames_in_asia = yes
+						}
+
+						
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+spriteTypes = {	
+
+	SpriteType = { 
+		name = "GFX_HKG_Northcote"
+		texturefile = "gfx/interface/goals/HKG_Northcote.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_HKG_Young"
+		texturefile = "gfx/interface/goals/HKG_Young.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_Focus_HKU"
+		texturefile = "gfx/interface/goals/Focus_HKU.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_Focus_Mobil"
+		texturefile = "gfx/interface/goals/Mobil.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_Focus_ICAC"
+		texturefile = "gfx/interface/goals/ICAC.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_HKG_independence"
+		texturefile = "gfx/interface/goals/HKG_independence.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_New_Asia"
+		texturefile = "gfx/interface/goals/New_Asia.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_Northcole_College"
+		texturefile = "gfx/interface/goals/Northcole_College.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_RCHK"
+		texturefile = "gfx/interface/goals/RCHK.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_SAIKUNG"
+		texturefile = "gfx/interface/goals/SAIKUNG.dds"
+	}
+}

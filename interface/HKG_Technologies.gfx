@@ -1,0 +1,9 @@
+spriteTypes = {
+	
+	### BMW Unimog 5000 ###
+	
+	SpriteType = {
+		name = "GFX_HKG_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/hkg_armored_car_equipment_1.dds"
+	}
+	}

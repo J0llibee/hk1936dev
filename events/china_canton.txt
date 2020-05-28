@@ -1,0 +1,120 @@
+add_namespace = china_canton
+
+#########Liangguang#######
+country_event = {
+	id = china_canton.1
+	title = china_canton.1.t
+	desc = china_canton.1.d
+	picture = GFX_report_event_chen
+
+	fire_only_once = yes
+
+	is_triggered_only = yes	
+
+	option = {
+		name = china_canton.1.a
+		ai_chance = { 
+			factor = 1
+				}
+		CHI = {
+		declare_war_on = {
+    	target = CTN
+    	type = annex_everything
+		}
+		}
+		}
+
+	option = {
+		name = china_canton.1.b
+		ai_chance = { 
+			factor = 60 
+				}
+		CTN = {
+		country_event = {
+   		id = china_canton.2
+    	}
+		}
+	}
+
+	option = {
+		name = china_canton.1.c
+	}
+
+}
+
+country_event = {
+	id = china_canton.2
+	title = china_canton.2.t
+	desc = china_canton.2.d
+	picture = GFX_report_event_chen
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = china_canton.2.a
+		ai_chance = { 
+			factor = 70
+				}
+		CHI = {
+		country_event = {
+   		id = china_canton.3
+    	}
+		}
+		}
+
+	option = {
+		name = china_canton.2.b
+		ai_chance = { 
+			factor = 20 
+				}
+		CHI = {
+		country_event = {
+   		id = china_canton.4
+    	}
+		}
+	}
+}
+
+country_event = {
+	id = china_canton.3
+	title = china_canton.3.t
+	desc = china_canton.3.d
+	picture = GFX_report_event_chen
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = china_canton.3.a
+		CHI={
+		annex_country = {
+    	target = CTN
+   		transfer_troops = yes
+		}
+		}
+		}
+}
+
+country_event = {
+	id = china_canton.4
+	title = china_canton.4.t
+	desc = china_canton.4.d
+	picture = GFX_report_event_chen
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = china_canton.4.a
+		CHI = {
+		declare_war_on = {
+    	target = CTN
+    	type = annex_everything
+		}
+		}
+		}
+}

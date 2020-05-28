@@ -1,0 +1,32 @@
+add_namespace = asia_news
+
+# Hu Hanmin's death
+news_event = {
+	id = asia_news.1
+	title = asia_news.1.t
+	desc = asia_news.1.d
+	picture = GFX_news_event_hu_hanmin_death
+	
+	major = yes
+
+	trigger = {
+		date > 1936.5.12
+		date < 1936.6.30
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 2 }		
+	
+	option = {
+		name = asia_news.1.a
+		hidden_effect ={
+		CHI = {
+		country_event = {
+    	id = china_canton.1
+    	days = 10
+		}
+		}
+		}
+	}
+}

@@ -11,15 +11,15 @@ HKG_INF_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { HKG_INF_01 }
 
-	fallback_name = "Hong Kong VDF"
+	fallback_name = "Royal Hong Kong Force"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "Hong Kong VDF" }
-		2 = { "Hong Kong VDF" }
-		3 = { "Hong Kong VDF" }
+		1 = { "1st Royal Hong Kong Force" }
+		2 = { "2nd Royal Hong Kong Force" }
+		3 = { "3rd Royal Hong Kong Force" }
 		4 = { "Hong Kong VDF" }
 		5 = { "Hong Kong VDF" }
 		6 = { "Hong Kong VDF" }
@@ -42,7 +42,7 @@ HKG_INF_01 =
 
 HKG_INF_02 = 
 {
-	name = "Canada HK Volunteer Defense Force"
+	name = "Canadan HK Volunteer Defense Force"
 
 	for_countries = { HKG }				
 	can_use = { always = yes }

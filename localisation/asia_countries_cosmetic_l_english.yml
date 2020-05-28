@@ -30,8 +30,9 @@
  BRM_UK_subject:0 "$OVERLORDADJ$ Burma"
  
  MAL_subject:0 "$OVERLORDADJ$ Malaya"
- MAC_subject:0 "$OVERLORDADJ$ Macau"
+ MCU_subject:0 "$OVERLORDADJ$ Macau"
  LBA_subject:0 "$OVERLORDADJ$ North Africa"
+ BOR_subject:0 "$OVERLORDADJ$ North Borneo"
  MAL_ENG_democratic:0 "Federated Malay States"
  MAL_ENG_democratic_DEF:0 "Federated Malay States"
  
@@ -42,6 +43,8 @@
  IND_FRA_subject:0 "$OVERLORDADJ$ Indochina"
  IND_FRA_autonomy_dominion:0 "French Indochina"
  IND_FRA_autonomy_dominion_DEF:0 "the French Indochina"
+ 
+ ITA_ETH_fascism:0 "Italian East Africa"
  
  KOR_subject:0 "$OVERLORDADJ$ Korea"
  

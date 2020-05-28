@@ -352,9 +352,10 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 				828 = {
-				add_building_construction = { type = coastal_bunker province = 13218 level = 4 instant_build = yes }
-				add_building_construction = { type = coastal_bunker province = 13220 level = 4 instant_build = yes }
-				add_building_construction = { type = coastal_bunker province = 13221 level = 4 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 13237 level = 4 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 13234 level = 4 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 13236 level = 4 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 13254 level = 4 instant_build = yes }
 								}
 	}
 	}
@@ -395,11 +396,11 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 				827 = {
-				add_building_construction = { type = bunker province = 13222 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 13223 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 13238 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 13239 level = 3 instant_build = yes }
 								}
 				829 = {
-				add_building_construction = { type = bunker province = 13225 level = 5 instant_build = yes }
+				add_building_construction = { type = bunker province = 13241 level = 5 instant_build = yes }
 								}
 	}
 	}
@@ -417,8 +418,8 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 					827 = {
-				add_building_construction = { type = bunker province = 13222 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 13223 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 13238 level = 3 instant_build = yes }
+				add_building_construction = { type = bunker province = 13239 level = 3 instant_build = yes }
 								}
 				}
 
@@ -925,13 +926,15 @@ focus_tree = {
 		cost = 7
 		prerequisite = { focus = HKG_Governor_Young }
 			completion_reward = {
-							division_template = {
-								name = "Canada HK Volunteer Defense Force"
+								division_template = {
+								name = "Canadian HK Volunteer Defense Force"
 								priority = 2
 								division_names_group = HKG_INF_02
 								regiments = {
 									infantry = { x = 0 y = 0 }
 									infantry = { x = 0 y = 1 }
+									infantry = { x = 1 y = 0 }
+									infantry = { x = 1 y = 1 }
 								}
 								support = {
 									artillery = { x = 0 y = 0 }
@@ -939,18 +942,16 @@ focus_tree = {
 								}
 								}
 					
-				random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 46 }
+				828 = {
 					create_unit = {
-						division = "name = \"Canada HK Volunteer Defense Force\" division_template = \"Canada HK Volunteer Defense Force\" start_experience_factor = 0.4" 
-						owner = HKG
-					}
-					create_unit = {
-						division = "name = \"Canada HK Volunteer Defense Force\" division_template = \"Canada HK Volunteer Defense Force\" start_experience_factor = 0.4" 
+						division = "name = \"C Force\" division_template = \"Canada HK Volunteer Defense Force\" start_experience_factor = 0.2" 
 						owner = HKG
 					}
 				}
+				country_event = {
+    			id = HKG.6
+
+					}
 		
 	}
 	}
@@ -1447,7 +1448,7 @@ focus_tree = {
 		cost = 7
 		prerequisite = { focus = HKG_Coop_with_commies }
 			completion_reward = {
-
+army_experience = 20
 		}
 		}
 
@@ -1459,7 +1460,7 @@ focus_tree = {
 		cost = 7
 		prerequisite = { focus = HKG_Contact_Mao }
 			completion_reward = {
-			
+			army_experience = 20
 		}
 		}
 
@@ -1484,10 +1485,11 @@ focus_tree = {
 
 		available = {
 			always = no
+			}
 			completion_reward = {
 					army_experience = 20
 								}
-						}
+						
 				}
 
 
@@ -1571,7 +1573,7 @@ focus_tree = {
 		x = 36
 		y = 1
 			completion_reward = {
-					
+					army_experience = 20
 				}
 
 			}
@@ -1584,7 +1586,7 @@ focus_tree = {
 		x = 36
 		y = 2
 			completion_reward = {
-
+army_experience = 20
 								}
 			}
 
@@ -1596,7 +1598,7 @@ focus_tree = {
 		x = 38
 		y = 3
 			completion_reward = {
-					
+					army_experience = 20
 				}
 
 			}
@@ -1610,7 +1612,7 @@ focus_tree = {
 		x = 34
 		y = 3
 			completion_reward = {
-					
+					army_experience = 20
 								}
 			}
 			}

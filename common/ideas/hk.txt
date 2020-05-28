@@ -56,7 +56,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_disjointed_gov
+			picture = ICAC
 			
 			modifier = {
 				political_power_gain = 0.2
@@ -102,7 +102,7 @@ ideas = {
 			picture = tfv_can_conscription_crisis
 			
 			modifier = {
-				conscription_factor = -0.7
+				conscription_factor = -0.3
 				war_support_factor = -0.20
 			}
 			}
@@ -122,7 +122,7 @@ ideas = {
 			picture = tfv_can_conscription_crisis
 			
 			modifier = {
-				conscription_factor = -0.5
+				conscription_factor = -0.2
 				war_support_factor = -0.1
 			}
 			}
@@ -143,7 +143,7 @@ ideas = {
 			picture = tfv_can_conscription_crisis
 			
 			modifier = {
-				conscription_factor = -0.2
+				conscription_factor = -0.1
 			}
 			}
 			
@@ -208,7 +208,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_disjointed_gov
+			picture = better_medical_system
 			
 			modifier = {
 				stability_factor = 0.03
@@ -230,7 +230,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_disjointed_gov
+			picture = fight_for_hk
 			
 			modifier = {
 				army_defence_factor = 0.1
@@ -255,7 +255,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_disjointed_gov
+			picture = knife
 			
 			modifier = {
 				army_attack_factor = 0.25

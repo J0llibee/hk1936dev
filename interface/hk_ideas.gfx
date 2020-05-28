@@ -59,4 +59,20 @@ spriteTypes = {
 		name = "GFX_idea_lindsay_ride"
 		texturefile = "gfx/interface/ideas/idea_lindsay_ride.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_better_medical_system"
+		texturefile = "gfx/interface/ideas/idea_better_medical_system.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_knife"
+		texturefile = "gfx/interface/ideas/idea_knife.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fight_for_hk"
+		texturefile = "gfx/interface/ideas/idea_fight_for_hk.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ICAC"
+		texturefile = "gfx/interface/ideas/idea_ICAC.dds"
+	}
 }

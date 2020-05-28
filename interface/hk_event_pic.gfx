@@ -56,4 +56,18 @@ spriteType = {
 	texturefile = "gfx/event_pictures/report_event_Mark_Young.dds"
 }
 
+spriteType = {  
+
+	name = "GFX_report_event_chen"  
+
+	texturefile = "gfx/event_pictures/report_event_chen.dds"
+}
+
+spriteType = {  
+
+	name = "GFX_news_event_hu_hanmin_death"  
+
+	texturefile = "gfx/event_pictures/news_event_hu_hanmin_death.dds"
+}
+
 }

@@ -1,0 +1,42 @@
+state={
+	id=846
+	name="STATE_846"
+	history={
+		owner = CTN
+		add_core_of = CTN
+		add_core_of = CHI
+		add_core_of = PRC
+		
+		buildings = {
+			infrastructure = 3
+			7135 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
+
+		}
+		victory_points = {
+            7135 1
+            }
+            1938.10.25 = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "Waking the Tiger" }
+				}
+				remove_core_of = GXC
+				CHI = { transfer_state = PREV }
+			}
+			JAP = {
+				set_province_controller = 1018
+				set_province_controller = 4023
+				set_province_controller = 10004
+			} 			
+		}
+		}
+	provinces={
+		1018 4023 4160 7135 10004 10105 
+	}
+	manpower= 1579124
+	state_category = town
+	buildings_max_level_factor=1.000
+}
