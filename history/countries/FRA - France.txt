@@ -17,7 +17,7 @@ if = {
 		}
 	set_autonomy = {
 		target = IND
-		autonomous_state = autonomy_colony
+		autonomous_state = autonomy_french_colonial_possessions
 		freedom_level = 0.35
 	}
 	else = {

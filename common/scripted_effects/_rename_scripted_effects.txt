@@ -24,3 +24,47 @@ enable_renaming = {
 		do_chinese_renames_in_asia = yes
 	}
 	}
+	
+	do_all_renames = {
+	### SIAM ###
+	every_state = {
+		limit = {
+			controller = {
+				tag = SIA
+			}
+		}
+		do_thai_renames_in_asia = yes
+	}
+	}
+	
+	do_all_renames = {
+	### JAP ###
+	every_state = {
+		limit = {
+			controller = {
+				OR = {
+				tag = JAP
+				tag = MAN
+				}
+			}
+		}
+		do_japanese_renames_in_asia = yes
+	}
+	}
+	
+	do_all_renames = {
+	### indochina ###
+	every_state = {
+		limit = {
+			controller = {
+				OR = {
+				tag = LAO
+				tag = IND
+				tag = VIE
+				tag = CAM
+				}
+			}
+		}
+		do_indochinese_renames_in_asia = yes
+	}
+	}

@@ -1,0 +1,33 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ideology_TAI_fascism_group"
+		texturefile = "gfx/interface/ideologies/tai_ggt.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_TAI_communism_group"
+		texturefile = "gfx/interface/ideologies/jcp.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_TAI_democratic_group"
+		texturefile = "gfx/interface/ideologies/seiyukai.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_JAP_fascism_group"
+		texturefile = "gfx/interface/ideologies/jap_fascism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_JAP_communism_group"
+		texturefile = "gfx/interface/ideologies/jcp.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_JAP_democratic_group"
+		texturefile = "gfx/interface/ideologies/seiyukai.dds"
+	}
+	
+}

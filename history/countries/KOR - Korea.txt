@@ -1,7 +1,11 @@
-﻿capital = 798 #South Korea - Seoul
+﻿capital = 853 #South Korea - Seoul
 
 oob = "KOREA_1936"
 set_naval_oob = "KOR_1936_naval"
+
+add_ideas = {
+	colonial_conscription
+	}
 
 set_technology = {
 	infantry_weapons = 1

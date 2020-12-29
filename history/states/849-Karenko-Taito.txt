@@ -1,0 +1,32 @@
+state=
+{
+	id=849
+	name="STATE_849"
+	manpower = 234596
+	
+	state_category = rural
+
+	history=
+	{
+		owner = TAI
+		add_core_of = TAI
+		add_core_of = CHI
+		add_core_of = PRC
+		#add_core_of = JAP
+		buildings = {
+			infrastructure = 1
+			
+		}
+		victory_points = {
+			4096 1 
+		}
+		victory_points = {
+			1175 1 
+		}
+		
+
+	}
+	provinces={
+		4096 1175
+		}
+}

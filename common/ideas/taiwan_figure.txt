@@ -1,0 +1,132 @@
+ideas = {
+	country = {
+
+		electorl_democracy = {  
+
+			name = electorl_democracy
+
+            picture = generic_democratic_drift_bonus
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {		
+			stability_factor = 0.01
+			}
+		}
+		
+		taiwan_president_losing_watan = {  
+
+			name = taiwan_president_losing_watan
+
+            picture = president
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {		
+			stability_factor = 0.05
+			political_power_gain = 0.25
+			democratic_drift = 0.02
+			}
+		}
+		taiwan_president_wu_san_lian = {  
+
+			name = taiwan_president_wu_san_lian
+
+            picture = president
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {		
+			political_power_gain = 0.25
+			democratic_drift = 0.04
+			}
+		}
+		taiwan_president_jian_ji = {  
+
+			name = taiwan_president_jian_ji
+
+            picture = president
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+			production_speed_buildings_factor = 0.1
+			industrial_capacity_factory = 0.2
+			political_power_gain = 0.25
+			democratic_drift = 0.02
+			communism_drift = 0.01
+			}
+		}
+		
+		taiwan_president_constitutional_crisis = {  
+
+			name = taiwan_president_constitutional_crisis
+
+            picture = president
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = -0.25
+			democratic_drift = 0.01
+			}
+		}
+		
+		
+	}
+	
+	
+	political_advisor = {	
+	
+	}
+		
+	# MILITARY
+	army_chief = {
+		
+	}
+	navy_chief = {
+		
+		
+		
+	}
+	air_chief = {
+		
+		
+		
+	}	
+	
+	
+	high_command = {
+		
+		
+		
+	}
+		
+	
+	
+	
+	theorist = {
+		
+		
+	}
+}

@@ -349,3 +349,7 @@ POR_empire = {
 	color = rgb { 128  160  15 }
 	color_ui = rgb { 19  83  180 }
 }
+ITA_ETH = {
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 87 165 82 }
+}

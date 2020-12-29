@@ -1,0 +1,66 @@
+﻿
+
+units = {
+	
+	fleet = {
+		name = "Dai 3 Kantai"			
+		naval_base = 12068	# Taiwan
+		task_force = {
+			name = "3 Kantai" #Later assigned for the Chinese theater
+			location = 12068	# Taiwan
+			#Dai 10 Sentai
+			ship = { name = "Izumo" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Kuma" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = TAI} } }
+			#Dai 11 Sentai, Momi-class destroyers
+			#Dai 25 Kuchikutai
+			ship = { name = "Kaya" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Nashi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Take" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			#Dai 26 Kuchikutai
+			ship = { name = "Nire" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Kuri" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Kaki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Tsuga" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			#Dai 27 Kuchikutai
+			ship = { name = "Ashi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Hishi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Sumire" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			#Former Dai 28 Kuchikutai
+			ship = { name = "Hasu" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Yomogi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Tade" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			#Other Momi-Class destroyers
+			ship = { name = "Kiku" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Aoi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Hagi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Fuji" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Susuki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Tsuta" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+		}
+		task_force = {
+			name = "5 Suirai Sentai" #A part of "Dai 3 Kantai"
+			location = 12068	# Taiwan
+			#Flagship
+			ship = { name = "Yubari" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = TAI} } }
+			##Dai 13 Kuchikutai
+			ship = { name = "Kuretake" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Wakatake" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Sanae" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			##Dai 16 Kuchikutai
+			ship = { name = "Fuyo" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Karukaya" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }		
+			ship = { name = "Asagao" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }		
+		}
+		task_force = {
+			name = "Makou Keibi Sentai"
+			location = 12068	# Taiwan
+			#Dai 4 Kuchikutai
+			ship = { name = "Shimakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Nadakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Akikaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+			ship = { name = "Hakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = TAI} } }
+		}
+	}
+
+
+}

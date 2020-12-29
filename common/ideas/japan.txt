@@ -738,25 +738,25 @@ ideas = {
 			targeted_modifier = {
 				tag = CHI
 				attack_bonus_against = -0.15
-				defense_bonus_against = -0.05
+				defense_bonus_against = 0.05
 			}
 
 			targeted_modifier = {
 				tag = PRC
 				attack_bonus_against = -0.15
-				defense_bonus_against = -0.05
+				defense_bonus_against = 0.05
 			}
 
 			targeted_modifier = {
 				tag = SHX
 				attack_bonus_against = -0.15
-				defense_bonus_against = -0.05
+				defense_bonus_against = 0.05
 			}
 
 			targeted_modifier = {
 				tag = XSM
 				attack_bonus_against = -0.15
-				defense_bonus_against = -0.05
+				defense_bonus_against = 0.05
 			}
 
 			targeted_modifier = {
@@ -846,45 +846,49 @@ ideas = {
 
 			picture = jap_intervene_in_china
 			
+			modifier = {
+				army_speed_factor = 0.1
+			}
+		
 			targeted_modifier = {
 				tag = CHI
-				attack_bonus_against = 0.15
+				attack_bonus_against = 0.1
 				defense_bonus_against = 0.05
 			}
 
 			targeted_modifier = {
 				tag = PRC
-				attack_bonus_against = 0.15
+				attack_bonus_against = 0.1
 				defense_bonus_against = 0.05
 			}
 
 			targeted_modifier = {
 				tag = SHX
-				attack_bonus_against = 0.15
+				attack_bonus_against = 0.1
 				defense_bonus_against = 0.05
 			}
 
 			targeted_modifier = {
 				tag = XSM
-				attack_bonus_against = 0.15
+				attack_bonus_against = 0.1
 				defense_bonus_against = 0.05
 			}
 
 			targeted_modifier = {
 				tag = YUN
-				attack_bonus_against = 0.15
+				attack_bonus_against = 0.1
 				defense_bonus_against = 0.05
 			}
 
 			targeted_modifier = {
 				tag = GXC
-				attack_bonus_against = 0.15
+				attack_bonus_against = 0.1
 				defense_bonus_against = 0.05
 			}
 
 			targeted_modifier = {
 				tag = SIK
-				attack_bonus_against = 0.15
+				attack_bonus_against = 0.1
 				defense_bonus_against = 0.05
 			}
 		}
@@ -906,48 +910,48 @@ ideas = {
 			picture = jap_intervene_in_china
 
 			modifier = {
-				army_speed_factor = 0.05
+				army_speed_factor = 0.2
 			}
 
 			targeted_modifier = {
 				tag = CHI
-				attack_bonus_against = 0.45
+				attack_bonus_against = 0.2
 				defense_bonus_against = 0.1
 			}
 
 			targeted_modifier = {
 				tag = PRC
-				attack_bonus_against = 0.45
+				attack_bonus_against = 0.2
 				defense_bonus_against = 0.1
 			}
 
 			targeted_modifier = {
 				tag = SHX
-				attack_bonus_against = 0.45
+				attack_bonus_against = 0.2
 				defense_bonus_against = 0.1
 			}
 
 			targeted_modifier = {
 				tag = XSM
-				attack_bonus_against = 0.45
+				attack_bonus_against = 0.2
 				defense_bonus_against = 0.1
 			}
 
 			targeted_modifier = {
 				tag = YUN
-				attack_bonus_against = 0.45
+				attack_bonus_against = 0.2
 				defense_bonus_against = 0.1
 			}
 
 			targeted_modifier = {
 				tag = GXC
-				attack_bonus_against = 0.45
+				attack_bonus_against = 0.2
 				defense_bonus_against = 0.1
 			}
 
 			targeted_modifier = {
 				tag = SIK
-				attack_bonus_against = 0.45
+				attack_bonus_against = 0.2
 				defense_bonus_against = 0.1
 			}
 		}
@@ -969,49 +973,49 @@ ideas = {
 			picture = jap_intervene_in_china
 			
 			modifier = {
-				army_speed_factor =0.1
+				army_speed_factor =0.35
 			}
 
 			targeted_modifier = {
 				tag = CHI
-				attack_bonus_against = 0.5
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.4
+				defense_bonus_against = 0.2
 			}
 
 			targeted_modifier = {
 				tag = PRC
-				attack_bonus_against = 0.5
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.4
+				defense_bonus_against = 0.2
 			}
 
 			targeted_modifier = {
 				tag = SHX
-				attack_bonus_against = 0.5
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.4
+				defense_bonus_against = 0.2
 			}
 
 			targeted_modifier = {
 				tag = XSM
-				attack_bonus_against = 0.5
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.4
+				defense_bonus_against = 0.2
 			}
 
 			targeted_modifier = {
 				tag = YUN
-				attack_bonus_against = 0.5
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.4
+				defense_bonus_against = 0.2
 			}
 
 			targeted_modifier = {
 				tag = GXC
-				attack_bonus_against = 0.5
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.4
+				defense_bonus_against = 0.2
 			}
 
 			targeted_modifier = {
 				tag = SIK
-				attack_bonus_against = 0.5
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.4
+				defense_bonus_against = 0.2
 			}
 		}
 

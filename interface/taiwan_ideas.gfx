@@ -1,0 +1,59 @@
+spriteTypes = {	
+
+	##如果使用GFX+ideas+[name]的命名方式的話，可輸入[name]即可調用此sprite
+
+	SpriteType = {
+	name = "GFX_idea_toho_zinc"
+	texturefile = "gfx/interface/ideas/toho_zinc.dds"			
+	}	
+	 SpriteType = {
+	name = "GFX_idea_insufficient_goods"
+	texturefile = "gfx/interface/ideas/insufficient_goods.dds"			
+	}	
+	 SpriteType = {
+	name = "GFX_idea_nippon_aluminium_gfx"
+	texturefile = "gfx/interface/ideas/nippon_aluminium.dds"			
+	}	
+	 SpriteType = {
+	name = "GFX_idea_seal_of_taiwan"
+	texturefile = "gfx/interface/ideas/seal_of_taiwan.dds"			
+	}	
+	spriteType = {
+		name = "GFX_idea_seiyukai"
+		texturefile = "gfx/interface/ideas/tai_seiyukai.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_president"
+		texturefile = "gfx/interface/ideas/president.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_council"
+		texturefile = "gfx/interface/ideas/council.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fight_will_jap"
+		texturefile = "gfx/interface/ideas/fight_will_jap.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opium"
+		texturefile = "gfx/interface/ideas/idea_opium.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_taihoku_imperial_university"
+		texturefile = "gfx/interface/ideas/idea_taihoku_imperial_university.dds"
+	}
+	## spec-law 
+	spriteType = {
+		name = "GFX_idea_send_from_japan" 
+		texturefile = "gfx/interface/ideas/sned_from_japan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_taihoku_arsenal" 
+		texturefile = "gfx/interface/ideas/idea_taihoku_arsenal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tai_ship_company" 
+		texturefile = "gfx/interface/ideas/tai_ship_company.dds"
+	}
+}

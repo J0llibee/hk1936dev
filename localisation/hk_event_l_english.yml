@@ -23,19 +23,23 @@
   HKG.7.b:0 "Liberate Hong Kong, the revolution of our times."
   HKG.7.c:0 "May the Mob with us! (Play as Yuen Long) "
   HKG.8.t:0 "Ho Kwan Yiu found dead!"
-  HKG.8.d:0 "Using advanced equipment, our Army won the battle in Yuen Long City. When our army arrived Kei Tei, it seems that Ho Kwan Yiu was killed by his assistant. Our Police then arrested all the mob in Yuen Long and the rebellion was suppressed ultimately."
+  HKG.8.d:0 "Using advanced equipment, our army won the battle in Yuen Long City. When our army arrived Kei Tei, it seems that Ho Kwan Yiu was killed by his assistant. Our Police then arrested all the mob in Yuen Long and the rebellion was suppressed ultimately."
+  HKG.8.a:0 "A good drill for our troops."
   HKG.9.t:0 "First General Election"
   HKG.9.desc:0 "The independence of Hong Kong has been declared. It's time to hold the first election. Who will be the first president of Hong Kong?"
   HKG.9.a:0 "Ma Man Fai"
   HKG.9.b:0 "Mark Young"
   HKG.9.c:0 "Brook Bernacchi"
   HKG.9.d:0 "Cheung Luk Si"
-  HKG.10.t:0 "The Japanese has crossed ShumChun River!"
+  HKG.10.t:0 "The Japanese has crossed Sham Chun River!"
   HKG.10.d:0 "After the Attack on Pearl Harbor, Japanese forces begin the invasion into Hong Kong. They crossed Sham Chun River easily and entered into the north west of New Territory. They are marching towards Kam Tin Plain and Tai Po. Our Army have destroyed"
-  HKG.11.a:0 "Things are getting worse."
+  HKG.10.a:0 "Things are getting worse."
   HKG.11.t:0 "Kai Tak Air Strike"
-  HKG.12.d:0 "The Japanese air forces are bombing Kai Tak Airport and Central. We have no significant air defence. Our ground troops is fighting, and there is two of the three Wildebeest and the two Walrus were destroyed by Japanese bombers. The air supremacy will be dominated by the enemy."
-  HKG.12.a:0 "The war begin."
+  HKG.11.d:0 "The Japanese air forces are bombing Kai Tak Airport and Central. We have no significant air defence. Our ground troops is fighting, and there is two of the three Wildebeest and the two Walrus were destroyed by Japanese bombers. The air supremacy will be dominated by the enemy."
+  HKG.11.a:0 "The war begin."
+  HKG.12.t:0 "Battle of Shing Mun Redoubt"
+  HKG.12.d:0 "With the Japanese push toward the south quickly, our troops deployed in the Gin Drinkers Line are on standby. However, we cannot discover the movement of enemies. They found that our defences were weak at a High Ground near Shing Mun Redoubt and Shing Mun Reservoir. The high ground dominated all positions of the western portion of the Line. Therefore, the Japanese advanced a sneak attack. \n\nTheir combat engineers successfully breached the barbed wire and destroyed bunkers, and had taken the high ground, openning a breach in the Line. Also, our troops began to withdraw from Golden Hill. This made the situation on the New Territories and Kowloon untenable."
+  HKG.12.a:0 "We must continue the fight!"
   HKG.13.t:0 "Retreat to Hong Kong Island"
   HKG.13.d:0 "Our defences at the Shing Mun Redoubt defended the Japanese attack by Royal Scots. The line was breached in five hours and later that day the Royal Scots also withdrew from Golden Hill. This made the situation on the New Territories and Kowloon untenable and the evacuation to Hong Kong Island started not long ago, under aerial bombardment and artillery barrage. The japanese troops entered into Tsim Sha Tsui. It means the fall of Kowloon will come soon."
   HKG.13.a:0 "Retreat!" 
@@ -46,15 +50,20 @@
   HKG.15.d:0 "After the Japanese troops landed on the North Point, they try to push through towards Wan Chai. The North Point Power station is the place which they must get through to achieve the destination. Our troops including the volunteer defence corps, Punjab Regiment and the Hughes Corps defend in a hurry the plant. The Hughes Corps in Braemar Hill resist successfully the enemies push toward the urban area."
   HKG.15.a:0 "Attack!"
   HKG.16.t:0 "Battle of Wong Nai Chung Gap"
-  HKG.16.d:0 "The Japanese had landed on the North Point area, and they moved up towards Wong Nai Chung Gap from Braemar Hill.  The superior Japanese force soon closed in on the West Brigade, before the staff and other units could be evacuated. After fierce fighting, The defenders were surrounded and pinned down. \n\nBrigadier John K. Lawson, the commander of the West Brigade, radioed his commanders that he was going to "fight it out" and left his pillbox with a pistol in each hand, and was died in the ensuing fight."
+  HKG.16.d:0 "The Japanese had landed on the North Point area, and they moved up towards Wong Nai Chung Gap from Braemar Hill.  The superior Japanese force soon closed in on the West Brigade, before the staff and other units could be evacuated. After fierce fighting, The defenders were surrounded and pinned down. \n\nBrigadier John K. Lawson, the commander of the West Brigade, radioed his commanders that he was going to "fight it out" and left his pillbox with a pistol in each hand.
   HKG.16.a:0 "Our friends forever..."
-  HKG.17.t:0 "Battle of Shing Mun Redoubt"
-  HKG.17.d:0 "With the Japanese push toward the south quickly, our troops deployed in the Gin Drinkers Line are on standby. However, we cannot discover the movement of enemies. They found that our defences were weak at a High Ground near Shing Mun Redoubt and Shing Mun Reservoir. The high ground dominated all positions of the western portion of the Line. Therefore, the Japanese advanced a sneak attack. \n\nTheir combat engineers successfully breached the barbed wire and destroyed bunkers, and had taken the high ground, openning a breach in the Line. Also, our troops began to withdraw from Golden Hill. This made the situation on the New Territories and Kowloon untenable."
-  HKG.17.a:0 "We must continue the fight!"
+  
   
   asia_news.1.t:0 "[GetNewsHeadline]Hu Hanmin Dies" 
   asia_news.1.d:0 "Yesterday, Hu Hanmin, the Chairperson of Kuomintang has a sudden death while he was having a Chinese Chess match with his friends. It was later confirmed he was killed by cerebral hemorrhage. His devotion to Kuomintang would be remembered." 
   asia_news.1.a:0 "We will always remember Hu." 
+  asia_news.2.t:0 "[GetNewsHeadline]Franco-thai War - Armistice"
+  asia_news.2.d:0 "After after days of battle between Thailand and Indochinese Union, Japan subsequently stepped in to mediate the conflict. A Japanese-sponsored "Conference for the Cessation of Hostilities" was held at Saigon, and preliminary documents for a ceasefire between the governments of Marshal Philippe Pétain's French State and the Kingdom of Thailand were signed aboard the cruiser Natori. A general armistice had been arranged and a peace treaty will be signed in Tokyo tomorrow. Some territories that originally belongs to Thailand in the 19th century in French Indochina has ceded to Thailand."
+  asia_news.2.a:0 "Peace at last."
+  asia_news.2.a_thai:0 "A great move."
+  asia_news.999.t:0 "[GetNewsHeadline]In Honour Of Our Veteran"
+  asia_news.999.d:0 "Peter Choi, the last Hongkonger who participated in the battle of Hong Kong and survived, has passed away on the 6th Aug 2020 , at the age of 98. He was one of the last surviving veterans who has engaged in the WW2. Choi was 18 when he fought in the conflict, having joined the British Army just three months before the Japanese attack on his hometown began on December 8, 1941. The Commonwealth forces fought hard in the Battle of Hong Kong. Choi was in artillery and managed to shoot down a Japanese fighter at Wah Fu. but within 18 days, Imperial Japanese forces took control of the British crown colony. The occupation of Hong Kong ended 75 years ago, when Japan surrendered on August 15, 1945."
+  asia_news.999.a:0 "Thank you Peter, We will always rememeber you."
   
   china_canton.1.t:0 "Liangguang Incident" 
   china_canton.1.d:0 "After Hu's death, it is our time to weaken Chen Chi-tang by ending Kwangtung's autonomy. But Chen immediately reacted by conspiring with the New Guangxi clique to overthrow Chiang under the pretext of his failure to confront Japanese aggression. What should we do next?" 
@@ -74,6 +83,14 @@
   china_canton.4.t:0 "Chen chooses not compromise" 
   china_canton.4.d:0 "After receving our ultimatum, Chen announced a disagreement and said that he would not surrender. What should we do next? " 
   china_canton.4.a:0 "March on Canton!" 
+  
+  china_canton.5.t:0 "Chen flee to Hong Kong" 
+  china_canton.5.d:0 "After Kwantung clique has joined Chiang, our situation is very dangerous. Chiang is going to unite China before fighting the Japanese. We have two options now." 
+  china_canton.5.a:0 "Our only option is to cooperate with Chiang." 
+  china_canton.5.b:0 "We are Spartan! Assert our position in both Kwansi and Kwantung!" 
+  
+  Siam.2.t:0 "Franco-thai War - Armistice" 
+  
   
   
   

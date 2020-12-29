@@ -1,0 +1,330 @@
+fruit_trade = {
+
+	get_tech = {
+
+		icon = ger_mefo_bills
+
+		allowed = {
+			
+		}
+		
+		cost = 0
+		
+		available = {
+		has_idea = chen_cha_mou_tai
+		}
+		
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		complete_effect = {
+		hidden_effect = {
+		set_country_flag = has_fruit
+			set_technology = {
+			banana_tech = 1
+			pinapple_tech = 1
+			guava_tech = 1
+		}
+		}
+		}
+	}
+	
+	sell_fruit_gun = {
+
+		icon = ger_mefo_bills
+
+		allowed = {
+			
+		}
+		
+		visible = {
+		has_country_flag = has_fruit
+		}
+		
+		available = {
+		has_equipment = {
+			fruit > 100
+		}
+		}
+		
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 30
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		complete_effect = {
+		add_equipment_to_stockpile = {
+			type = fruit
+			amount = -100
+		producer = TAI
+		}
+		
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 50
+		producer = JAP
+		}
+		
+		}
+	}
+	
+	sell_fruit_cannon = {
+
+		icon = ger_mefo_bills
+
+		allowed = {
+			
+		}
+		
+		visible = {
+		has_country_flag = has_fruit
+		}
+		
+		available = {
+		has_equipment = {
+			fruit > 250
+		}
+		}
+		
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 90
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		complete_effect = {
+		add_equipment_to_stockpile = {
+			type = fruit
+			amount = -250
+		producer = TAI
+		}
+		
+		add_equipment_to_stockpile = {
+			type = artillery_equipment 
+			amount = 48
+		producer = JAP
+		}
+		
+		}
+	}
+	
+	sell_fruit_truck = {
+
+		icon = ger_mefo_bills
+
+		allowed = {
+			
+		}
+		
+		visible = {
+		has_country_flag = has_fruit
+		}
+		
+		available = {
+		has_equipment = {
+			fruit > 400
+		}
+		}
+		
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		complete_effect = {
+		add_equipment_to_stockpile = {
+			type = fruit
+			amount = -400
+		producer = TAI
+		}
+		
+		add_equipment_to_stockpile = {
+			type = motorized_equipment  
+			amount = 100
+		producer = JAP
+		}
+		
+		}
+	}
+	
+	sell_fruit_fighter = {
+
+		icon = ger_mefo_bills
+
+		allowed = {
+			
+		}
+		
+		visible = {
+		has_country_flag = has_fruit
+		}
+		
+		available = {
+		has_equipment = {
+			fruit > 500
+		}
+		}
+		
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 360
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		complete_effect = {
+		add_equipment_to_stockpile = {
+			type = fruit
+			amount = -500
+		producer = TAI
+		}
+		
+		add_equipment_to_stockpile = {
+			type = fighter_equipment  
+			amount = 60
+		producer = JAP
+		}
+		
+		}
+	}
+	
+	sell_fruit_bombers = {
+
+		icon = ger_mefo_bills
+
+		allowed = {
+			
+		}
+		
+		visible = {
+		has_country_flag = has_fruit
+		}
+		
+		available = {
+		has_equipment = {
+			fruit > 600
+		}
+		}
+		
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 480
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		complete_effect = {
+		add_equipment_to_stockpile = {
+			type = fruit
+			amount = -600
+		producer = TAI
+		}
+		
+		add_equipment_to_stockpile = {
+			type = tac_bomber_equipment   
+			amount = 30
+		producer = JAP
+		}
+		
+		}
+	}
+	
+	sell_fruit_tank = {
+
+		icon = ger_mefo_bills
+
+		allowed = {
+			
+		}
+		
+		visible = {
+		has_country_flag = has_fruit
+		}
+		
+		available = {
+		has_equipment = {
+			fruit > 600
+		}
+		}
+		
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 240
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		complete_effect = {
+		add_equipment_to_stockpile = {
+			type = fruit
+			amount = -600
+		producer = TAI
+		}
+		
+		add_equipment_to_stockpile = {
+			type = light_tank_equipment   
+			amount = 120
+		producer = JAP
+		}
+		
+		}
+	}
+	
+	sell_fruit_ship = {
+
+		icon = ger_mefo_bills
+
+		allowed = {
+			
+		}
+		
+		visible = {
+		has_country_flag = has_fruit
+		}
+		
+		available = {
+		has_equipment = {
+			fruit > 1800
+		}
+		}
+		
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 1080
+		ai_will_do = {
+			factor = 0
+		}
+
+
+		complete_effect = {
+		add_equipment_to_stockpile = {
+			type = fruit
+			amount = -1800
+		producer = TAI
+		}
+		
+		add_equipment_to_stockpile = {
+			type = convoy    
+			amount = 40
+		producer = JAP
+		}
+		
+		}
+	}
+	
+}
+ 

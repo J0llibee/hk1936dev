@@ -1,0 +1,82 @@
+SIA_Foreign_Policies = {
+
+	regain_old_territories = {
+
+		icon = decision_generic_nationalism
+
+		allowed = {
+			original_tag = SIA
+		}
+
+		available = {
+		16 = { NOT = { is_controlled_by = FRA } }
+		FRA = {has_capitulated = yes}
+		838 = { 
+						CONTROLLER = { 
+								tag = IND
+						}
+					}
+		741 = { 
+						CONTROLLER = { 
+								tag = IND
+						}
+					}
+		839 = { 
+						CONTROLLER = { 
+								tag = IND
+						}
+					}
+		841 = { 
+						CONTROLLER = { 
+								tag = IND
+						}
+					}
+		837 = { 
+						CONTROLLER = { 
+								tag = IND
+						}
+					}
+					}
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				FRA = { has_war = no }
+			}			
+			modifier = {
+				factor = 3
+				FRA = { has_war = yes } 
+				strength_ratio = {
+					tag = FRA
+					ratio > 0.9
+				}
+			}
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+				IND = {is_puppet = no}
+				}
+			}
+			
+
+		visible = {
+			original_tag = SIA
+		}
+		
+		days_remove = 15
+		
+		remove_effect = {
+			declare_war_on = {
+			target = IND
+			type = annex_everything
+			}
+		}
+
+	}
+	
+
+}

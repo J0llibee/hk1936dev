@@ -1,0 +1,53 @@
+
+# MAIN THEME
+music = {
+	name = "The Anthem of Taichushu Instrumental"
+	file = "taichu.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "The Anthem of Taichushu"
+	file = "Taichushu_Song.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Dance Generation"
+	file = "Dance_Generation.ogg"
+	volume = 0.4
+}
+music = {
+	name = "Taihoku Citizen's Song"
+	file = "Taihoku_Citizen's_Song.ogg"
+	volume = 0.5
+}
+music = {
+	name = "Forward Taiwan"
+	file = "Forward_Taiwan.ogg"
+	volume = 1.5
+}
+music = {
+	name = "The Torment of a Flower"
+	file = "The_Torment_of_a_Flower.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Taiwan Army Song"
+	file = "Taiwan_Army_Song.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Peach Blossom Takes the Ferry"
+	file = "Peach_Blossom_Takes_the_Ferry.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Tiu Tiu Tang"
+	file = "tiu_tiu_tang.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Moon Night Worry"
+	file = "moon_night_worry.ogg"
+	volume = 0.65
+}

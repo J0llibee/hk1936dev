@@ -25,6 +25,7 @@ if = {
 
 add_ideas = {
 	MAC_Conscription_Policy
+	colonial_conscription
 	}
 
 if = {

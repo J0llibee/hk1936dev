@@ -1,0 +1,39 @@
+﻿every_country = {
+	#set_variable = {
+	#	var = missile_short
+	#	value = 1000
+	#}
+	#set_variable = {
+	#	var = missile_middle
+	#	value = 2000
+	#}
+	#set_variable = {
+	#	var = missile_long
+	#	value = 3000
+	#}
+	set_variable = {
+		var = missile_current
+		value = 4000
+	}
+	set_variable = {
+		var = missile_num
+		value = 0
+	}
+	set_variable = {
+		var = bomb_num
+		value = 0
+	}
+}
+	TAI = {
+		set_variable = {
+			var = missile_num
+			value = 5
+		}
+		set_variable = {
+			var = bomb_num
+			value = 10
+		}
+		#add_nuclear_bombs = 25
+	}
+	
+	

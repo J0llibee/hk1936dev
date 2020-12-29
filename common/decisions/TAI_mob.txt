@@ -1,0 +1,35 @@
+taiwanese_revolution  = {
+
+	mobilized_army = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		has_completed_focus = shadow_army
+		original_tag = TAI
+		}
+		
+		available = {
+		has_war = yes
+		}
+
+		complete_effect = {
+		custom_effect_tooltip = mobilized_our_army
+		load_oob = taiwan_revolution
+		}
+	}
+	
+	
+	
+}  

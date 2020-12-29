@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_taiwan_radio_art"
+		texturefile = "//gfx//interface//topbar//musicplayer//TAIWAN_SONGS.dds"
+		noOfFrames = 2
+	}
+	
+}

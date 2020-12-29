@@ -1,0 +1,10 @@
+################
+##### TAI ######
+################
+Recruit_taiwanese = {
+        icon = category_military_operation
+	visible = {
+           original_tag = TAI
+	}
+
+}

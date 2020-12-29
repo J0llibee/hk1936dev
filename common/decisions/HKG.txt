@@ -1,3 +1,223 @@
+HK_defence_scheme = {
+
+hkg_basic_fortification = {
+
+		icon = generic_prepare_civil_war
+		
+
+		allowed = {
+			original_tag = HKG
+		}
+
+		available = {
+			is_subject_of = ENG
+			has_completed_focus = HKG_Finish_the_Shing_Mun_Reservoir_Project
+			}
+
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 20
+		ai_will_do = {
+			factor = 200
+		}
+
+		 remove_effect = {
+			add_timed_idea={ idea = hold_gin_drinker_line days= 200}
+			if = {
+				limit = {
+					has_war_support < 0.7
+				}
+				set_war_support = 0.7
+			}
+			}
+			}
+hkg_finish_maginot_in_the_east = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = HKG
+		}
+
+		available = {
+			is_subject_of = ENG
+			has_completed_focus = HKG_Gin_Drinkers_Line
+			}
+
+		cost = 150
+		fire_only_once = yes
+		days_remove = 365
+		ai_will_do = {
+			factor = 200
+		}
+
+		 remove_effect = {
+			829 = {
+			set_building_level = {
+			type = bunker
+			level = 8
+			province = 13249
+				}
+			}
+			827 = {
+			set_building_level = {
+			type = bunker
+			level = 8
+			province = 13238
+				}
+			}
+			827 = {
+			set_building_level = {
+			type = bunker
+			level = 8
+			province = 13239
+				}
+			}
+			}
+			}
+	hkg_train_local_pilot = {
+
+		icon = generic_prepare_civil_war
+		
+		allowed = {
+			original_tag = HKG
+		}
+
+		available = {
+			is_subject_of = ENG
+			has_completed_focus = HKG_HK_Fighter_Squad
+			}
+
+		cost = 50
+		fire_only_once = yes
+		days_remove = 70
+		ai_will_do = {
+			factor = 200
+		}
+
+		 remove_effect = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_1
+				amount = 100
+			}
+			air_experience = 10
+			add_war_support = 0.05
+			}
+			}
+
+			
+    bartholomew_retirement = {                           # This is our mission id
+          allowed = {
+			original_tag = HKG
+		}
+		available = {
+			NOT = {
+			is_subject_of = ENG
+			}
+			}
+          activation = {                          # The mission appears and starts counting down under these circumstances:
+            original_tag = HKG                     # War with Germany
+          }
+          is_good = no                           # This mission is color coded to be a positive thing (not a crisis)
+          selectable_mission = no                # This mission will complete when the player selects the mission rather than completing automatically
+          days_mission_timeout = 500  
+		  
+          timeout_effect = {                      # What happens when we fail the mission?
+               remove_unit_leader = 901
+	create_corps_commander = {
+	name = "Arthur Grasett"
+	portrait_path = "gfx/leaders/HKG/Portrait_HKG_Arthur_Grasett.dds"
+	traits = { War_Hero inflexible_strategist career_officer }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+	id = 902
+}			   
+          }
+     }
+	Seek_help_from_the_commonwealth = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = HKG
+		}
+
+		available = {
+			country_exists = ENG
+			country_exists = RAJ
+			has_completed_focus = HKG_Rely_On_the_British
+			has_completed_focus = HKG_Cooperate_With_the_Raj
+			}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+
+		complete_effect = {
+			random_list = {
+				70 = {
+					add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 6120
+					}
+				}
+				20 = {
+					add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 7210
+					}
+				}
+				10 = {
+					add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 8310
+					}
+				}
+			}
+			}
+			}
+	HKG_coastal_artillery = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = HKG
+		}
+
+		available = {
+			is_subject_of = ENG
+			has_completed_focus = HKG_Rely_On_the_British
+			}
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 70
+		ai_will_do = {
+			factor = 200
+		}
+
+		complete_effect = {
+			828 = {
+			set_building_level = {
+			type = coastal_bunker
+			level = 3
+			province = {
+			all_provinces = yes
+			level < 3
+			}
+			}
+			}
+			}
+			}
+			
+}		
+
 Battle_of_Hong_Kong = {
 
 	HK_defense = {
@@ -59,34 +279,8 @@ Battle_of_Hong_Kong = {
 			}
 			}
 
-	Seek_help_from_the_commonwealth = {
+	
 
-		icon = generic_prepare_civil_war
-
-		allowed = {
-			original_tag = HKG
-		}
-
-		available = {
-			country_exists = ENG
-			country_exists = RAJ
-			has_war_with = JAP
-			}
-		
-		cost = 50
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 200
-		}
-
-		complete_effect = {
-			 add_equipment_to_stockpile = {
-    		type = infantry_equipment
-   			 amount = 6120
-			}
-			}
-			}
-
-	}
+}
 		
 			

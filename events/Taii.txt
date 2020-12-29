@@ -1,0 +1,357 @@
+﻿
+
+add_namespace = tai
+
+
+
+country_event = {
+	id = tai.1
+	title = tai.1.t
+	desc = tai.1.d
+	picture = GFX_report_event_japanese_siam_politicians
+
+	is_triggered_only = yes
+
+	trigger = {
+
+	}
+	
+	option = {
+		name = tai.1.a
+		
+		create_country_leader = {
+			name = "Wendell Wilkie"
+			desc = "POLITICS_WENDELL_WILKIE_DESC"
+			picture = "Portrait_USA_Wendell_Willkie.dds"
+			expire = "1965.1.1"
+			ideology = centrism
+			traits = {
+				
+			}
+		}
+		}
+		
+}
+	country_event = {
+	id = tai.2
+	title = tai.2.t
+	desc = tai.2.d
+	picture = GFX_report_event_immigrant_villages
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = tai.2.a
+		ai_chance = { factor = 50 }
+		set_country_flag = tai_immigration_no
+		add_political_power = 170
+	}
+
+	option = {
+		name = tai.2.b
+		ai_chance = { factor = 30 }
+		set_country_flag = tai_immigration_east
+		add_political_power = 70
+	}
+
+	option = {
+		name = tai.2.c
+		ai_chance = { factor = 10 }
+		set_country_flag = tai_immigration_east_west
+		add_political_power = -50
+	}
+	option = {
+		name = tai.2.d
+		ai_chance = { factor = 10 }
+		set_country_flag = tai_immigration_all
+		add_political_power = -100
+	}
+}
+country_event = {
+	id = tai.3
+	title = tai.3.t
+	#LWT
+	desc = {
+		text = tai.3.d
+		trigger = { threat < 0.5 TAI = { has_war = no } }
+	}
+	#HWT
+	desc = {
+		text = tai.3.d2
+		trigger = { threat > 0.5 TAI = { has_war = no } }
+	}
+	#IW
+	desc = {
+		text = tai.3.d3
+		trigger = { TAI = { has_war = yes } }
+	}
+
+	picture = GFX_report_event_immigrant_villages
+	
+	trigger = {
+		tag = TAI
+		has_completed_focus = migration_problem
+		date > 1936.01.10
+		date < 1937.01.10
+		OR = {
+		has_country_flag = tai_immigration_east 
+		has_country_flag = tai_immigration_east_west
+		has_country_flag = tai_immigration_all
+		}
+	}
+
+	fire_only_once = yes
+
+	# Low World Tension
+	option = {
+		trigger = { tag = TAI has_country_flag = tai_immigration_east threat < 0.5 TAI = { has_war = no } }
+		name = tai.3.a
+		ai_chance = { factor = 100 }
+		764 = {
+			add_manpower = 6374
+		}
+	}
+
+	option = {
+		trigger = { tag = TAI has_country_flag = tai_immigration_east_west threat < 0.5 TAI = { has_war = no } }
+		name = tai.3.a
+		ai_chance = { factor = 100 }
+		764	= {
+			add_manpower = 6374
+		}
+		765 = {
+			add_manpower = 5641
+		}
+
+	}
+
+	option = {
+		trigger = { tag = TAI has_country_flag = tai_immigration_all threat < 0.5 TAI = { has_war = no } }
+		name = tai.3.a
+		ai_chance = { factor = 100 }
+		764 = {
+			add_manpower = 6374
+		}
+		765 = {
+			add_manpower = 5641
+		}
+		763 = {
+			add_manpower = 2559
+		}
+		524 = {
+			add_manpower = 1756
+		}
+	}
+
+  # High World Tension
+
+	option = {
+		trigger = { tag = TAI has_country_flag = tai_immigration_east threat > 0.5 TAI = { has_war = no } }
+		name = tai.3.a
+		ai_chance = { factor = 100 }
+		764 = {
+			add_manpower = 6774
+		}
+
+	}
+
+	option = {
+		trigger = { tag = TAI has_country_flag = tai_immigration_east_west threat > 0.5 TAI = { has_war = no } }
+		name = tai.3.a
+		ai_chance = { factor = 100 }
+		764 = {
+			add_manpower = 6774
+		}
+		765 = {
+			add_manpower = 6241
+		}
+
+	}
+
+	option = {
+		trigger = { tag = TAI has_country_flag = tai_immigration_all threat > 0.5 TAI = { has_war = no } }
+		name = tai.3.a
+		ai_chance = { factor = 100 }
+		764 = {
+			add_manpower = 6774
+		}
+		765 = {
+			add_manpower = 6241
+		}
+		763 = {
+			add_manpower = 2734
+		}
+		524 = {
+			add_manpower = 1867
+		}
+	}
+
+  # At War
+
+	option = {
+		trigger = { tag = TAI has_country_flag = tai_immigration_east TAI = { has_war = yes } }
+		name = tai.3.a
+		ai_chance = { factor = 100 }
+		764 = {
+			add_manpower = 4862
+		}
+	}
+
+	option = {
+		trigger = { tag = TAI has_country_flag = tai_immigration_east_west TAI = { has_war = yes } }
+		name = tai.3.a
+		ai_chance = { factor = 100 }
+		764 = {
+			add_manpower = 4862
+		}
+		765 = {
+			add_manpower = 3652
+		}
+
+	}
+
+	option = {
+		trigger = { tag = TAI has_country_flag = tai_immigration_all TAI = { has_war = yes } }
+		name = tai.3.a
+		ai_chance = { factor = 100 }
+		764 = {
+			add_manpower = 4862
+		}
+		765 = {
+			add_manpower = 3652
+		}
+		763 = {
+			add_manpower = 1007
+		}
+		524 = {
+			add_manpower = 354
+		}
+	}
+}
+country_event = {
+	id = tai.5
+	title = tai.5.t
+	desc = tai.5.d
+	picture = GFX_report_event_japanese_siam_politicians
+
+	is_triggered_only = yes
+
+	trigger = {
+
+	}
+	
+	option = {
+		name = tai.5.a
+		
+		add_stability = -0.05
+		
+	}
+	option = {
+		name = tai.5.b
+		
+		add_stability = 0.05
+		create_country_leader = {
+			name = "Ota Masahiro"
+			desc = "POLITICS_WENDELL_WILKIE_DESC"
+			picture = "ota.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				
+			}
+		}
+	}
+	option = {
+		name = tai.5.c
+		
+		add_stability = -0.3
+		create_country_leader = {
+			name = "Kho Peng"
+			desc = "POLITICS_WENDELL_WILKIE_DESC"
+			picture = "kho_peng.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				
+			}
+		}
+	}
+	
+	option = {
+		name = tai.5.e
+		
+		add_stability = 0.1
+		create_country_leader = {
+			name = "Hiratsuka Hiroyoshi"  #平塚廣義
+			desc = "POLITICS_WENDELL_WILKIE_DESC"
+			picture = "Hiratsuka.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				
+			}
+		}
+	}
+		
+}
+
+country_event = {
+	id = tai.6
+	title = tai.6.t
+	desc = tai.6.d
+	picture = GFX_report_event_tai_2
+
+	is_triggered_only = yes
+
+	trigger = {
+
+	}
+	
+	option = {
+		name = tai.6.a
+		add_political_power = -50
+		set_party_name = { 
+			ideology = democratic 
+			long_name = party_seiyukai_long 
+			name = party_seiyukai 
+		}
+		create_country_leader = {
+			name = "Tetsu Katayama"
+			desc = ""
+			picture = "GFX_Portrait_tetsu_katayama"
+			expire = "1989.1.1"
+			ideology = liberalism
+			traits = {
+			}
+		}
+
+	}
+	option = {
+		name = tai.6.b
+		add_political_power = -10
+		remove_ideas = taiwan_idea_seiyukai
+		set_party_name = { 
+			ideology = democratic 
+			long_name = party_minseito_long 
+			name = party_minseito 
+		}
+		create_country_leader = {
+			name = "Machida Chuji"  ## 町田忠治
+			desc = ""
+			picture = "Machida_Chuji.dds"
+			expire = "1989.1.1"
+			ideology = liberalism
+			traits = {
+			}
+		}
+	}
+	option = {
+		name = tai.6.c
+		add_political_power = 10
+	}
+		
+}
+
+

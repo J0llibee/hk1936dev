@@ -1,0 +1,119 @@
+﻿
+add_namespace = tai_ai
+
+country_event = {
+	id = tai_ai.1
+	title = tai_ai.1.t
+	desc = tai_ai.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TAI
+		is_ai = yes
+		has_government = fascism
+		date > 1936.8.5
+	}
+
+	mean_time_to_happen = {
+		days = 30	# Historical outbreak time after elections
+	}
+	
+	option = { # Support Nationalists
+		name = tai_ai.1.a
+		
+		set_country_flag = has_Kobayashi
+		create_country_leader = {
+			name = "Seizō Kobayashi"
+			desc = "POLITICS_WENDELL_WILKIE_DESC"
+			picture = "Seizo_Kobayashi.dds"
+			expire = "1965.1.1"
+			ideology = rexism 
+			traits = {
+				
+			}
+		}
+		
+		custom_effect_tooltip = nationalists_chosen
+	}
+	
+}
+
+country_event = {
+	id = tai_ai.2
+	title = tai_ai.2.t
+	desc = tai_ai.2.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TAI
+		is_ai = yes
+		has_government = fascism
+		date > 1940.10.9
+	}
+
+	mean_time_to_happen = {
+		days = 30	# Historical outbreak time after elections
+	}
+	
+	option = { # Support Nationalists
+		name = tai_ai.2.a
+		
+		set_country_flag = has_Hasegawa
+		create_country_leader = {
+			name = "Kiyoshi Hasegawa"
+			desc = "POLITICS_WENDELL_WILKIE_DESC"
+			picture = "Hasegawa_Kiyoshi.dds"
+			expire = "1965.1.1"
+			ideology = rexism 
+			traits = {
+				
+			}
+		}
+		
+		custom_effect_tooltip = nationalists_chosen
+	}
+	
+}
+
+country_event = {
+	id = tai_ai.3
+	title = tai_ai.3.t
+	desc = tai_ai.3.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TAI
+		is_ai = yes
+		has_government = fascism
+		date > 1944.11.9
+	}
+
+	mean_time_to_happen = {
+		days = 30	# Historical outbreak time after elections
+	}
+	
+	option = { # Support Nationalists
+		name = tai_ai.3.a
+		
+		set_country_flag = has_Ando
+		create_country_leader = {
+			name = "Rikichi Ando"
+			desc = "POLITICS_WENDELL_WILKIE_DESC"
+			picture = "gfx//leaders//taiwan//Portrait_Japan_Rikichi_Ando.dds"
+			expire = "1965.1.1"
+			ideology = rexism 
+			traits = {
+				
+			}
+		}
+		
+		custom_effect_tooltip = nationalists_chosen
+	}
+	
+}

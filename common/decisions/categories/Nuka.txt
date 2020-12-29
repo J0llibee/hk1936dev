@@ -1,0 +1,10 @@
+"Nuclear Warfare Decisions" = {
+    icon = generic_propaganda
+    available = { 
+	
+    }
+	visible = {
+		TAG = TAI
+		has_completed_focus = taiwan_stragtic_command
+	}
+}

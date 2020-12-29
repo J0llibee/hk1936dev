@@ -1,0 +1,30 @@
+﻿##### OOB #####
+units = {
+
+	fleet = {
+		name = "Taiwan Navy"			
+		naval_base = 12068  #Yokosuka
+		task_force = {
+			name = "Battle Division"
+			location = 12068 
+			ship = { name = "Formosa"  pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_2 = {amount = 1 owner = USA } } }
+			ship = { name = "Ming Chuan"  definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = {amount = 1 owner = ENG } } }
+			ship = { name = "Feng Jia" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = JAP version_name = "Kongo Class"} } }
+		}
+		task_force = {
+			name = "Carrier Division"
+			location = 12068  
+			ship = { name = "Cheng Kung" definition = carrier equipment = { carrier_2 = { amount = 1 owner = USA } } 
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "TAI" amount = 10 } 
+					cv_CAS_equipment_1 =  { owner = "TAI" amount = 20 } 
+					cv_nav_bomber_equipment_1 =  { owner = "TAI" amount = 10 } 
+				}
+			}
+		}
+	}
+
+}
+
+
+

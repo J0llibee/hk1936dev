@@ -1,0 +1,79 @@
+TAI_historical = {
+	name = "Japanese Taiwan historical plan"
+	desc = "Taiwan Historical"
+
+	enable = {
+		original_tag = TAI
+		is_historical_focus_on = yes
+	}
+	abort = {
+	OR = {
+		NOT = { TAI = { is_puppet_of = JAP } }
+		 has_completed_focus =  expand_taiwan_army
+		 }
+	}
+
+	ai_national_focuses = {
+		##1936
+		finish_the_expansion_of_sun_moon_lake_power_plant #35
+		civil_style_creation #7
+		the_end_of_Doka_era #35
+		the_start_of_war_era #35
+		resource_committee #35
+		pioneer_company #35
+		kirun_port #35
+		develop_east #49
+		takao_port #35
+		japanization_movement #70
+		takao_steelmaking #49
+		east_electric # 35
+		economy_control #35
+		suppout_southern_expansion_doctrine#35
+		ship_taiwan#70
+		speak_japanese_movement #70
+		Mobilization #70
+		komin_hokokai #35
+		karenko_port #70
+		northern_power_factory #49 
+		militarism_taiwan #70
+		new_east_railway #35
+		connect_electric #35
+		Kokumin_gakko # 35
+		ship_takao #35
+		public_opinion_control #70
+		expand_taiwan_army #35
+		kishiko_industrial_istrict #49
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 25.0
+		infantry_weapons = 25.0
+		artillery = 8.0
+		air_equipment = 5.0
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

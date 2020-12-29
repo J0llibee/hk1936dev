@@ -1,0 +1,90 @@
+﻿###########################
+# Polish Events
+###########################
+
+add_namespace = Siam
+
+country_event = {
+	id = Siam.1
+	title = Siam.1.t
+	desc = Siam.1.d
+	picture = GFX_report_event_Phibun_appointed
+	
+	trigger = {
+		tag = SIA
+		has_government = neutrality
+		date > 1938.12.16
+		date < 1939.1.1
+		is_historical_focus_on = yes
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 2 }	
+
+	option = {
+	name = Siam.1.a
+	set_country_flag = Phibun_minister
+	set_politics = {
+	ruling_party = fascism
+	}
+	hidden_effect = {
+    add_popularity = {
+    ideology = fascism
+    popularity = 0.4
+	}
+	}	
+	}
+
+}
+####armistice F-thai war####
+country_event = {               
+	id = Siam.2
+	title = Siam.2.t
+	desc = Siam.2.d
+	picture = GFX_report_event_chinese_soldiers
+	
+	is_triggered_only = yes
+		
+	fire_only_once = yes
+
+	option = {
+	name = Siam.2.a
+	ai_chance = { 
+			factor = 100
+			modifier = {
+    factor = 0.5
+    is_historical_focus_on = yes
+			}
+				}
+	hidden_effect = {
+			news_event = { days = 5 id = siam.news.2 }
+		}
+	white_peace = IND
+	SIA = {
+	transfer_state = 741
+	transfer_state = 837
+	transfer_state = 838
+	transfer_state = 839
+	transfer_state = 841
+	}
+			
+	add_named_threat = { threat = 2 name = Siam.2.t }
+	VIC = {puppet = IND}
+	hidden_effect =  {
+	news_event = {
+    id = asia_news.2
+    days = 10
+	}
+	}
+		}
+	option = {
+	name = Siam.2.b
+	ai_chance = { 
+			factor = 10
+				}
+	add_stability = -0.1
+	add_war_support = -0.1
+	}
+
+}

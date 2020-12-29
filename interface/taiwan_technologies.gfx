@@ -1,0 +1,20 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_TAI_banana_tech_medium"
+		texturefile = "gfx/interface/technologies/banana.dds"
+	}		
+	SpriteType = {
+		name = "GFX_TAI_pinapple_tech_medium"
+		texturefile = "gfx/interface/technologies/pineapple.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAI_guava_tech_medium"
+		texturefile = "gfx/interface/technologies/guava.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAI_taiwan_knife_tech_medium"
+		texturefile = "gfx/interface/technologies/knife.dds"
+	}
+	
+}

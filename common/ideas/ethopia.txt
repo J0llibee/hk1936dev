@@ -1,0 +1,24 @@
+ideas = {
+
+	country = {
+		ETH_Conscription_Policy = {
+
+			allowed = {
+				original_tag = ETH
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			
+			}
+		
+		
+	}
+	}	

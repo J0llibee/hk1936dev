@@ -1,0 +1,18 @@
+state={
+	id=855
+	name="STATE_855"
+	history={
+		owner = KOR
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+            }
+	}
+	provinces={
+		1177 4126 10110 11948 12085 
+	}
+	manpower=4150000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

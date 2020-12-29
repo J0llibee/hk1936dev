@@ -1,0 +1,16 @@
+################
+##### SIA #####
+################
+
+SIA_Foreign_Policies = {
+	
+	icon = decision_generic_nationalism
+
+	allowed = {
+		original_tag = SIA
+	}
+
+	visible = {
+		
+	}
+}

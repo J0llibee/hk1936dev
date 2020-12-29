@@ -2,9 +2,7 @@ on_actions = {
 	on_startup = {
 	effect = {
 		every_country = {
-				limit = {
-					is_ai = no
-				}
+				
 	enable_renaming = yes
 			}
 				}
@@ -25,11 +23,48 @@ on_actions = {
 								ROOT = { tag = CHI }
 							}
 							do_chinese_renames_in_asia = yes
+							
+						}
+						
+						if = {
+							limit = {
+								ROOT = { tag = SIA }
+							}
+							do_thai_renames_in_asia = yes
+							
+												
+						}
+						
+						if = {
+							limit = {
+								OR = {
+								ROOT = { tag = JAP }
+								ROOT = { tag = MAN }
+								}
+							}
+							do_japanese_renames_in_asia = yes
+							
+												
+						}
+						
+						if = {
+							limit = {
+								OR = {
+								ROOT = { tag = LAO }
+								ROOT = { tag = VIE }
+								ROOT = { tag = IND }
+								ROOT = { tag = CAM }
+								}
+							}
+							do_indochinese_renames_in_asia = yes
+							
+												
 						}
 
 						
 				}
 			}
 		}
+		
 	}
 }

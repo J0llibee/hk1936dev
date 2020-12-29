@@ -1,0 +1,498 @@
+focus_tree = {
+	id = ming_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = TAI
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1600 }
+
+   	focus = {
+   id = mandate_of_heaven #聲明天命
+   icon = GFX_goal_generic_construct_civilian
+	x = 22
+	y = 0
+	
+	cost = 5
+	
+	available = {
+
+		}
+
+	bypass = {
+
+		}
+	
+	completion_reward = {
+	every_state = {
+		limit = {
+			is_core_of = CHI
+		}
+		add_core_of = ROOT
+	}
+	add_state_core = 322
+    add_state_core = 758
+	add_state_core = 757
+	add_state_core = 324
+	add_state_core = 434
+	add_state_core = 640
+	add_state_core = 671
+	add_state_core = 561
+	add_state_core = 560
+	add_state_core = 657
+	add_state_core = 409
+	add_state_core = 408
+	add_state_core = 655
+	add_state_core = 537
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+   focus = {
+   id = recover_lost_land #收復失土
+   icon = GFX_goal_demand_sudetenland
+	x = 1
+	y = 1
+	
+	relative_position_id = mandate_of_heaven
+	prerequisite = { 
+	focus = mandate_of_heaven
+	}
+	cost = 5
+	
+	completion_reward = {
+	561 = {add_claim_by = TAI}
+	560 = {add_claim_by = TAI}
+	657 = {add_claim_by = TAI}
+	409 = {add_claim_by = TAI} 
+	408 = {add_claim_by = TAI}
+	655 = {add_claim_by = TAI}
+	TAI = {
+	create_wargoal = {
+    type = annex_everything 
+    target = CHI
+    }
+	create_wargoal = {
+    type = annex_everything 
+    target = PRC
+    }
+	create_wargoal = {
+    type = annex_everything 
+    target = SHX
+    }
+	create_wargoal = {
+    type = annex_everything 
+    target = XSM
+    }
+	create_wargoal = {
+    type = annex_everything 
+    target = SIK
+    }
+	create_wargoal = {
+    type = annex_everything 
+    target = YUN
+    }
+	create_wargoal = {
+    type = annex_everything 
+    target = GXC
+    }
+	create_wargoal = {
+    type = annex_everything 
+    target = TIB
+    }
+	create_wargoal = {
+    type = annex_everything 
+    target = BHU
+    }	
+	create_wargoal = {
+    type = take_core_state 
+    target = SOV
+    }
+		create_wargoal = {
+    type = take_core_state 
+    target = ENG
+    }
+		create_wargoal = {
+    type = take_core_state  
+    target = POR
+    }
+		create_wargoal = { 
+    type = take_core_state 
+    target = FRA
+    }
+			create_wargoal = {
+    type = take_core_state 
+    target = RAJ
+    }
+	}
+	    }
+	
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+   focus = {
+   id = buy_land #向日本買土地
+   icon = GFX_goal_generic_intelligence_exchange
+	x = 0
+	y = 1
+	
+	relative_position_id = recover_lost_land
+	prerequisite = { 
+	focus = recover_lost_land
+	}
+	cost = 5
+	
+	completion_reward = {
+    annex_country = { 
+    target = MAN 
+    transfer_troops = no }
+	annex_country = { 
+    target = MEN 
+    transfer_troops = no }
+	transfer_state = 609
+	transfer_state = 745
+	add_political_power = -200
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	
+	focus = {
+   id = jinyiwei_eastern_depot #重建廠衛
+   icon = GFX_goal_continuous_restrict_freedom
+	x = -1
+	y = 1
+	
+	relative_position_id = mandate_of_heaven
+	prerequisite = { 
+	focus = mandate_of_heaven
+	}
+	cost = 5
+	
+	completion_reward = {
+     add_stability = 0.2
+	}
+	ai_will_do = {
+	factor = 1
+	}
+
+	}
+   focus = {
+   id = restoring_the_wei_suo_system #恢復衛所制
+   icon = GFX_goal_generic_axis_build_infantry
+	x = -3
+	y = 1
+	
+	relative_position_id = mandate_of_heaven
+	prerequisite = { 
+	focus = mandate_of_heaven
+	}
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = wei_suo_system
+    #增加國家精神:衛所制
+	#	political_power_gain = -0.3
+	#	conscription = 0.1
+	}
+	ai_will_do = {
+	factor = 1
+	}
+
+	}
+	focus = {
+   id = research_firearm #研究火器
+   icon = GFX_goal_generic_small_arms
+	x = 0
+	y = 1
+	
+	relative_position_id = restoring_the_wei_suo_system
+	prerequisite = { 
+	focus = restoring_the_wei_suo_system
+	}
+	cost = 5
+	
+	completion_reward = {
+     add_tech_bonus = {
+    bonus = 0.5
+    uses = 2
+    category = infantry_weapons
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+
+	}
+	focus = {
+   id = new_chariot  #新戰車
+   icon = GFX_focus_generic_army_tanks2
+	x = 0
+	y = 1
+	
+	relative_position_id = research_firearm
+	prerequisite = { 
+	focus = research_firearm
+	}
+	cost = 5
+	
+	completion_reward = {
+     add_tech_bonus = {
+    bonus = 0.5
+    uses = 2
+    category = armor
+}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+
+	}	
+	focus = {
+   id = ming_dynasty_law #大明律
+   icon = GFX_focus_generic_treaty
+	x = 0
+	y = 1
+	
+	relative_position_id = jinyiwei_eastern_depot
+	prerequisite = { 
+	focus = jinyiwei_eastern_depot
+	}
+	cost = 5
+	
+	completion_reward = {
+     add_stability = 0.05
+	 add_ideas = ming_law
+	 #增加國家精神:大明律
+	#	foreign_subversive_activites = -0.40
+	#	enemy_partisan_effect = -0.2
+	}
+	ai_will_do = {
+	factor = 1
+	}
+
+	}
+	focus = {
+   id = rebuilding_ming_palace #重建南京故宮
+   icon = GFX_goal_generic_construct_infrastructure
+	x = 3
+	y = 1
+	
+	relative_position_id = mandate_of_heaven
+	prerequisite = { 
+	focus = mandate_of_heaven
+	}
+	cost = 5
+	
+	completion_reward = {
+	613 ={
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+
+	}
+
+	focus = {
+   id = expansion_airport #擴建故宮南機場
+   icon = GFX_goal_generic_construct_infrastructure
+	x = 0
+	y = 1
+	
+	relative_position_id = rebuilding_ming_palace
+	prerequisite = { 
+	focus = rebuilding_ming_palace
+	}
+	cost = 5
+	
+	completion_reward = {
+	613 ={
+	add_building_construction = {
+    type = air_base
+    level = 2
+    instant_build = yes
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+
+	}
+	focus = {
+   id = infrastructure_plan #加強基建
+   icon = GFX_goal_generic_construct_infrastructure
+	x = 0
+	y = 1
+	
+	relative_position_id = expansion_airport
+	prerequisite = { 
+	focus = expansion_airport
+	}
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = infrastructure_plan_idea
+     #增加國家精神:加強基礎建設
+	#		production_speed_infrastructure_factor = 0.35
+	}
+	ai_will_do = {
+	factor = 1
+	}
+
+	}	
+	focus = {
+   id = rebuilding_wanggongchang  #重建王恭廠
+   icon = GFX_goal_generic_construct_mil_factory
+	x = 0
+	y = 1
+	
+	relative_position_id = infrastructure_plan
+	prerequisite = { 
+	focus = infrastructure_plan
+	}
+	cost = 5
+	
+	completion_reward = {
+		613 ={
+	 add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+     type = arms_factory
+     level = 2
+     instant_build = yes
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+
+	}
+	focus = {
+   id = revive_the_three_grand_divisions  #重建三大營
+   icon = GFX_goal_generic_axis_build_infantry
+	x = 0
+	y = 1
+	
+	relative_position_id = new_chariot
+	prerequisite = { 
+	focus = new_chariot
+	}
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = three_grand_divisions
+     #增加國家精神:三大營
+	#		defence = 0.15
+	#	    offence = 0.15
+	#		training_time_army_factor = -0.05
+	}
+	ai_will_do = {
+	factor = 1
+	}
+
+	}
+   focus = {
+   id = integrating_mongolia #整合蒙古
+   icon = GFX_goal_generic_attack_allies
+	x = 0
+	y = 1
+	
+	relative_position_id = buy_land
+	prerequisite = { 
+	focus = buy_land
+	}
+	cost = 5
+	
+	completion_reward = {
+	add_state_core = 329
+	add_state_core = 330
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	
+	focus = {
+   id = military_households #提升軍戶地位
+   icon = GFX_goal_generic_demand_territory
+	x = 0
+	y = 1
+	
+	relative_position_id = integrating_mongolia
+	prerequisite = { 
+	focus = integrating_mongolia
+	}
+	cost = 5
+	
+	completion_reward = {
+	add_war_support = 0.2
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = belvedere_of_literary_profundity #文淵閣
+   icon = GFX_focus_research
+	x = 0
+	y = 1
+	
+	relative_position_id = ming_dynasty_law
+	prerequisite = { 
+	focus = ming_dynasty_law
+	}
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = belvedere_literary_profundity
+	 #增加國家精神:文淵閣
+	#	research_speed_factor = 0.1
+	}
+	ai_will_do = {
+	factor = 1
+	}
+
+	}
+		focus = {
+   id = expansion_of_guozijian #國子監
+   icon = GFX_focus_research2
+	x = 0
+	y = 1
+	
+	relative_position_id = belvedere_of_literary_profundity
+	prerequisite = { 
+	focus = belvedere_of_literary_profundity
+	}
+	cost = 5
+	
+	completion_reward = {
+    add_research_slot = 1
+	}
+	ai_will_do = {
+	factor = 1
+	}
+
+	}
+	
+	shared_focus = CHI_invite_foreign_investors
+}

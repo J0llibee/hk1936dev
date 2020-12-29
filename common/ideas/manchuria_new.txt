@@ -1,0 +1,22 @@
+ideas = {
+
+	country = {
+		MAN_kangte = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = emperor_kangte
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+	}	
+	}

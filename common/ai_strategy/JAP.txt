@@ -346,7 +346,7 @@ chinese_war = {
 	ai_strategy = {
 		type = antagonize
 		id = "CHI"			
-		value = 200
+		value = 2000
 	}		
 }
 
@@ -761,15 +761,37 @@ jap_china_is_weak = {
 	ai_strategy = {
 		type = consider_weak
 		id = "CHI"
-		value = 500
+		value = 1500
 	}
 	ai_strategy = {
 		type = consider_weak
 		id = "SHX"
-		value = 200
+		value = 1200
 	}
 }
 
+jap_kill_china_in_3_month = {
+
+	enable = {
+		tag = JAP
+		date < 1938.1.1
+	}
+
+	abort = {
+			date > 1939.1.1	
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "CHI"
+		value = 100
+	}
+	ai_strategy = {
+		type = invade
+		id = "CHI"			
+		value = 100
+	}
+}
 
 jap_building_boats_is_great = {
 	
@@ -1069,12 +1091,12 @@ jap_aftermath_of_ichi_go = {
 	ai_strategy = {
 		type = invade
 		id = "CHI"			
-		value = -200
+		value = 10
 	}
 	ai_strategy = {
 		type = invade
 		id = "GXC"			
-		value = -200
+		value = 10
 	}
 }
 
@@ -1177,5 +1199,20 @@ JAP_we_will_mostly_fight_on_subjects = {
 	ai_strategy = {
 		type = produce_unit_for_subject_supply_chunks
 		value = 50
+	}
+}
+
+JAP_push_chinese_ASAP = {
+	enable = {
+		original_tag = JAP
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = Nchina
+		value = 30 # this is extra on top of 50 base
 	}
 }

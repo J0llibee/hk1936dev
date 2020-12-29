@@ -75,4 +75,127 @@ spriteTypes = {
 		name = "GFX_idea_ICAC"
 		texturefile = "gfx/interface/ideas/idea_ICAC.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_HKG_Frederic_Charles_Dreyer"
+		texturefile = "gfx/interface/ideas/idea_HKG_Frederic_Charles_Dreyer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Arthur_Grasett"
+		texturefile = "gfx/interface/ideas/idea_HKG_Arthur_Grasett.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Chan_Chak"
+		texturefile = "gfx/interface/ideas/idea_HKG_Chan_Chak.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Chan_Limpak"
+		texturefile = "gfx/interface/ideas/idea_HKG_Chan_Limpak.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Christopher_Maltby"
+		texturefile = "gfx/interface/ideas/idea_HKG_Christopher_Maltby.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_David_MacDougall"
+		texturefile = "gfx/interface/ideas/idea_HKG_David_MacDougall.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_John_Keswick"
+		texturefile = "gfx/interface/ideas/idea_HKG_John_Keswick.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Franklin_Gimson"
+		texturefile = "gfx/interface/ideas/idea_HKG_Franklin_Gimson.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Huang_Shaohong"
+		texturefile = "gfx/interface/ideas/idea_HKG_Huang_Shaohong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Frederic_Charles_Dreyer"
+		texturefile = "gfx/interface/ideas/idea_HKG_Frederic_Charles_Dreyer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Geoffrey_Layton"
+		texturefile = "gfx/interface/ideas/idea_HKG_Geoffrey_Layton.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Henry_Pollock"
+		texturefile = "gfx/interface/ideas/idea_HKG_Henry_Pollock.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_John_Lawson"
+		texturefile = "gfx/interface/ideas/idea_HKG_John_Lawson.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Lin_Weicheng"
+		texturefile = "gfx/interface/ideas/idea_HKG_Lin_Weicheng.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Linsay_Ride"
+		texturefile = "gfx/interface/ideas/idea_HKG_Linsay_Ride.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Ma_Manfai"
+		texturefile = "gfx/interface/ideas/idea_HKG_Ma_Manfai.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Percy_Noble"
+		texturefile = "gfx/interface/ideas/idea_HKG_Percy_Noble.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Robert_Brooke_Popham"
+		texturefile = "gfx/interface/ideas/idea_HKG_Robert_Brooke_Popham.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Tsai"
+		texturefile = "gfx/interface/ideas/idea_HKG_Tsai.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Tsang_Sun"
+		texturefile = "gfx/interface/ideas/idea_HKG_Tsang_Sun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Tony_Keswick"
+		texturefile = "gfx/interface/ideas/idea_HKG_Tony_Keswick.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Charles_Little"
+		texturefile = "gfx/interface/ideas/idea_HKG_Charles_Little.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_emperor_kangte"
+		texturefile = "gfx/interface/ideas/idea_emperor_kangte.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_emperor_kangte"
+		texturefile = "gfx/interface/ideas/idea_emperor_kangte.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SIA_king_rama_8"
+		texturefile = "gfx/interface/ideas/idea_SIA_king_rama_8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SIA_phibun"
+		texturefile = "gfx/interface/ideas/idea_SIA_phibun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Garden"
+		texturefile = "gfx/interface/ideas/idea_HKG_Garden.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_colonial_conscription"
+		texturefile = "gfx/interface/ideas/idea_colonial_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HKG_Peter_Choi"
+		texturefile = "gfx/interface/ideas/idea_HKG_Peter_Choi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HK_defence_scheme"
+		texturefile = "gfx/interface/ideas/idea_HK_defence_scheme.dds"
+	}
 }

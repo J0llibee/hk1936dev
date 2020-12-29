@@ -4,6 +4,8 @@
 Battle_of_Hong_Kong = {
 	
 	icon = generic_prepare_civil_war
+	
+	picture = GFX_decision_cat_generic_battle_of_HK
 
 	allowed = {
 		original_tag = HKG
@@ -14,4 +16,17 @@ Battle_of_Hong_Kong = {
 	}
 }
 
+HK_defence_scheme = {
+	
+	icon = generic_prepare_civil_war
+	
+	picture = GFX_decision_cat_generic_hk_defence_scheme
 
+	allowed = {
+		original_tag = HKG
+	}
+
+	visible = {
+		is_subject_of = ENG
+	}
+}

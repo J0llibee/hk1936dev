@@ -1,0 +1,16 @@
+opinion_modifiers = {
+
+	communist_friendship = {
+		value = 25
+	}
+	
+	raj_cooperation = {
+		value = 25
+	}
+	
+	british_friendship = {
+		value = 25
+	}
+	
+
+}

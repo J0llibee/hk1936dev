@@ -1,0 +1,41 @@
+spriteTypes = {	
+
+    SpriteType = { 
+		name = "GFX_focus_eastern_taiwan"
+		texturefile = "gfx/interface/goals/eastern_taiwan_development.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_tai_kingdom"
+		texturefile = "gfx/interface/goals/tai_kingdom.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_formosa"
+		texturefile = "gfx/interface/goals/formosa.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_fight_will"
+		texturefile = "gfx/interface/goals/fight_will.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_ba_wan"
+		texturefile = "gfx/interface/goals/ba_wan.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_army_volunteer"
+		texturefile = "gfx/interface/goals/focus_tai_1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_speak_japanese_movement"
+		texturefile = "gfx/interface/goals/focus_tai_2.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_public_opinion_control"
+		texturefile = "gfx/interface/goals/focus_tai_3.dds"
+	}
+
+}

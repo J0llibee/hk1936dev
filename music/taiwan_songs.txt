@@ -1,0 +1,107 @@
+
+music_station = "taiwan_radio"
+
+music = {
+	song = "The Anthem of Taichushu Instrumental"
+	chance = {
+		modifier = {
+			factor = 0.15
+			
+			original_tag = TAI
+		}		
+	}
+}
+
+music = {
+	song = "The Anthem of Taichushu"
+	chance = {
+		modifier = {
+			factor = 0.15
+			
+			original_tag = TAI
+		}		
+	}
+}
+music = {
+	song = "Taihoku Citizen's Song"
+	chance = {
+		modifier = {
+			factor = 0.15
+			
+			original_tag = TAI
+		}		
+	}
+}
+music = {
+	song = "Tiu Tiu Tang"
+	chance = {
+		modifier = {
+			factor = 0.15
+			
+			original_tag = TAI
+		}		
+	}
+}
+music = {
+	song = "Peach Blossom Takes the Ferry"
+	chance = {
+		modifier = {
+			factor = 0.15
+			
+			original_tag = TAI
+		}		
+	}
+}
+
+music = {
+	song = "Forward Taiwan"
+	chance = {
+		modifier = {
+			factor = 0.15
+			
+			original_tag = TAI
+		}		
+	}
+}
+music = {
+	song = "Dance Generation"
+	chance = {
+		modifier = {
+			factor = 0.2
+			has_war = no
+			original_tag = TAI
+		}		
+	}
+}
+music = {
+	song = "Moon Night Worry"
+	chance = {
+		modifier = {
+			factor = 0.15
+			
+			original_tag = TAI
+		}		
+	}
+}
+music = {
+	song = "The Torment of a Flower"
+	chance = {
+		modifier = {
+			factor = 0.2
+			has_war = no
+			original_tag = TAI
+		}		
+	}
+}
+music = {
+	song = "Taiwan Army Song"
+	chance = {
+		modifier = {
+			factor = 0.2
+			has_war = yes
+			original_tag = TAI
+		}		
+	}
+}
+
+

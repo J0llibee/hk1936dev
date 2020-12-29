@@ -18,6 +18,41 @@ add_ideas = {
 	JAP_militarism
 }
 
+609 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+745 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+647 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
+
+684 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
+
+633 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
+
 if = {
 	limit = { has_dlc = "Waking the Tiger" }
 	add_ideas = {
@@ -107,6 +142,15 @@ if = {
 		transport = 1
 	}
 	set_naval_oob = "JAP_1936_naval_legacy"
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
 }
 
 create_import = {
@@ -308,6 +352,38 @@ if = {
 		autonomous_state = autonomy_wtt_imperial_protectorate
 	}
 	
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+		not = { has_dlc = "Waking the Tiger" }
+	}
+	set_autonomy = {
+		target = TAI
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+if = {
+	limit = { 
+		not = {
+			has_dlc = "Waking the Tiger"
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = TAI
+		autonomous_state = autonomy_puppet
+	}
+}
+if = {
+	limit = { 
+		has_dlc = "Waking the Tiger"
+	}
+	set_autonomy = {
+		target = TAI
+		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
 }
 
 set_politics = {

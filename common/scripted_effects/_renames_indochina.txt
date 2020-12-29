@@ -1,0 +1,101 @@
+do_indochinese_renames_in_asia = {
+	if = {
+		limit = {
+		state = 838
+			NOT = {
+				has_state_flag = renamed_state_indochinese
+			}
+		}
+		set_state_name = STATE_838
+		clr_state_flag = renamed_state_thai
+		set_state_flag = renamed_state_indochinese
+		reset_province_name = 10177
+	}
+	else_if = {
+		limit = {
+		state = 837
+			NOT = {
+				has_state_flag = renamed_state_indochinese
+			}
+		}
+		set_state_name = STATE_837
+		clr_state_flag = renamed_state_thai
+		set_state_flag = renamed_state_indochinese
+		reset_province_name = 10330
+	}
+	else_if = {
+		limit = {
+		state = 839
+			NOT = {
+				has_state_flag = renamed_state_indochinese
+			}
+		}
+		set_state_name = STATE_839
+		clr_state_flag = renamed_state_thai
+		set_state_flag = renamed_state_indochinese
+		reset_province_name = 12460
+	}
+	else_if = {
+		limit = {
+		state = 841
+			NOT = {
+				has_state_flag = renamed_state_indochinese
+			}
+		}
+		set_state_name = STATE_841
+		clr_state_flag = renamed_state_thai
+		set_state_flag = renamed_state_indochinese
+		reset_province_name = 1592
+	}
+	else_if = {
+		limit = {
+		state = 741
+			NOT = {
+				has_state_flag = renamed_state_indochinese
+			}
+		}
+		set_state_name = STATE_741
+		clr_state_flag = renamed_state_thai
+		set_state_flag = renamed_state_indochinese
+		reset_province_name = 4302
+		
+	}
+	else_if = {
+		limit = {
+		state = 842
+			NOT = {
+				has_state_flag = renamed_state_indochinese
+			}
+		}
+		set_state_name = STATE_842
+		clr_state_flag = renamed_state_thai
+		set_state_flag = renamed_state_indochinese
+		reset_province_name = 7909
+		
+	}
+	else_if = {
+		limit = {
+		state = 805
+			NOT = {
+				has_state_flag = renamed_state_indochinese
+			}
+		}
+		set_state_name = STATE_805
+		clr_state_flag = renamed_state_thai
+		set_state_flag = renamed_state_indochinese
+		
+	}
+	else_if = {
+		limit = {
+		state = 806
+			NOT = {
+				has_state_flag = renamed_state_indochinese
+			}
+		}
+		set_state_name = STATE_806
+		clr_state_flag = renamed_state_thai
+		set_state_flag = renamed_state_indochinese
+		
+	}
+
+	}

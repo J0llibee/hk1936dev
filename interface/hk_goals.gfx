@@ -49,4 +49,54 @@ spriteTypes = {
 		name = "GFX_SAIKUNG"
 		texturefile = "gfx/interface/goals/SAIKUNG.dds"
 	}
+	
+	SpriteType = { 
+		name = "GFX_Old_Lim"
+		texturefile = "gfx/interface/goals/focus_Old_Lim.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_Main_Island"
+		texturefile = "gfx/interface/goals/focus_Main_Island.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_Liberate_HK"
+		texturefile = "gfx/interface/goals/focus_Liberate_HK.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_Formation_of_HK_FALK"
+		texturefile = "gfx/interface/goals/focus_Formation_of_HK_FALK.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_Force_British_to_leave_HK"
+		texturefile = "gfx/interface/goals/focus_Force_British_to_leave_HK.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_ENG_BHK"
+		texturefile = "gfx/interface/goals/focus_ENG_BHK.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_Coop_Falkland_BHK"
+		texturefile = "gfx/interface/goals/focus_Coop_Falkland_BHK.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_Comprehensive"
+		texturefile = "gfx/interface/goals/focus_Comprehensive.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_Chungking_Conference"
+		texturefile = "gfx/interface/goals/focus_Chungking_Conference.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_MCU_Praia_Grande_Reclamation_Work"
+		texturefile = "gfx/interface/goals/focus_MCU_Praia_Grande_Reclamation_Work.dds"
+	}
 }

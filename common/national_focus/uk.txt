@@ -5129,7 +5129,7 @@ focus_tree = {
 			factor = 1
 		}	
 		available = {
-			805 = {
+			860 = {
 				CONTROLLER = {
 					OR = {
 						tag = ENG
@@ -5158,7 +5158,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			805 = {
+			860 = {
 				add_building_construction = {
 					type = bunker
 					level = 4

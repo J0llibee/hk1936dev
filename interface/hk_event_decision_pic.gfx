@@ -1,0 +1,399 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_Yuen_Long_Attack"
+		texturefile = "gfx/event_pictures/report_event_Yuen_Long_Attack.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ROC_refugee"
+		texturefile = "gfx/event_pictures/report_event_ROC_refugee.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Chongking_conference"
+		texturefile = "gfx/event_pictures/report_event_Chongking_conference.dds"
+	}
+	spriteType = {
+		name = "report_event_gandar"
+		texturefile = "gfx/event_pictures/report_event_gandar.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ho_dead"
+		texturefile = "gfx/event_pictures/report_event_ho_dead.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Maltby_arrived"
+		texturefile = "gfx/event_pictures/report_event_Maltby_arrived.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_northcote"
+		texturefile = "gfx/event_pictures/report_event_northcote.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Mark_Young"
+		texturefile = "gfx/event_pictures/report_event_Mark_Young.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_chen"
+		texturefile = "gfx/event_pictures/report_event_chen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_hu_hanmin_death"
+		texturefile = "gfx/event_pictures/news_event_hu_hanmin_death.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_franco_thai_war"
+		texturefile = "gfx/event_pictures/news_event_franco_thai_war.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_thai_new_cabinet"
+		texturefile = "gfx/event_pictures/news_event_thai_new_cabinet.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Phibun_appointed"
+		texturefile = "gfx/event_pictures/report_event_Phibun_appointed.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hkcross_river"
+		texturefile = "gfx/event_pictures/report_event_hkcross_river.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_kaitak_airstrike"
+		texturefile = "gfx/event_pictures/report_event_kaitak_airstrike.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_retreat_hk"
+		texturefile = "gfx/event_pictures/report_event_retreat_hk.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_northcote_appeal"
+		texturefile = "gfx/event_pictures/report_event_northcote_appeal.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_conference_result"
+		texturefile = "gfx/event_pictures/report_event_conference_result.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_hk_guaranteed"
+		texturefile = "gfx/event_pictures/news_event_hk_guaranteed.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_new_governor1"
+		texturefile = "gfx/event_pictures/report_event_new_governor1.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_new_governor2"
+		texturefile = "gfx/event_pictures/report_event_new_governor2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_merchants_completed"
+		texturefile = "gfx/event_pictures/report_event_merchants_completed.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_merchants_uprising"
+		texturefile = "gfx/event_pictures/report_event_merchants_uprising.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_chimerchants_uprising"
+		texturefile = "gfx/event_pictures/report_event_chimerchants_uprising.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_gxc_suppresses"
+		texturefile = "gfx/event_pictures/report_event_gxc_suppresses.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_canton_merchants"
+		texturefile = "gfx/event_pictures/report_event_canton_merchants.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_merchants_success"
+		texturefile = "gfx/event_pictures/report_event_merchants_success.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_citystates_union"
+		texturefile = "gfx/event_pictures/news_event_citystates_union.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_saikwan_incident"
+		texturefile = "gfx/event_pictures/news_event_saikwan_incident.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_chinese_representive"
+		texturefile = "gfx/event_pictures/report_event_chinese_representive.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_british_retreat"
+		texturefile = "gfx/event_pictures/report_event_british_retreat.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_japan_reject"
+		texturefile = "gfx/event_pictures/report_event_japan_reject.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_british_withdrawal"
+		texturefile = "gfx/event_pictures/news_event_british_withdrawal.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_japan_hongkong"
+		texturefile = "gfx/event_pictures/news_event_japan_hongkong.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_uprising_continue"
+		texturefile = "gfx/event_pictures/report_event_uprising_continue.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_uprising_continue2"
+		texturefile = "gfx/event_pictures/report_event_uprising_continue2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_battle_canton"
+		texturefile = "gfx/event_pictures/report_event_battle_canton.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_battle_guilin"
+		texturefile = "gfx/event_pictures/report_event_battle_guilin.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hk_troops"
+		texturefile = "gfx/event_pictures/report_event_hk_troops.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_japan_hk_soldier_handshake"
+		texturefile = "gfx/event_pictures/report_event_japan_hk_soldier_handshake.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_hk1"
+		texturefile = "gfx/event_pictures/news_event_hk1.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_join_daitoa"
+		texturefile = "gfx/event_pictures/news_event_join_daitoa.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_northpoint_landings"
+		texturefile = "gfx/event_pictures/report_event_northpoint_landings.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_battle_northpointpowerstation"
+		texturefile = "gfx/event_pictures/report_event_battle_northpointpowerstation.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_battle_wongnaichunggap"
+		texturefile = "gfx/event_pictures/report_event_battle_wongnaichunggap.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_battle_shingmunredoubt"
+		texturefile = "gfx/event_pictures/report_event_battle_shingmunredoubt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_chinese_refugees"
+		texturefile = "gfx/event_pictures/report_event_chinese_refugees.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_conscription_introduction"
+		texturefile = "gfx/event_pictures/report_event_conscription_introduction.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_urgent_act"
+		texturefile = "gfx/event_pictures/report_event_urgent_act.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_break_bridge"
+		texturefile = "gfx/event_pictures/report_event_break_bridge.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_candian_force"
+		texturefile = "gfx/event_pictures/report_event_candian_force.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_cforce_training"
+		texturefile = "gfx/event_pictures/report_event_cforce_training.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_queenmary"
+		texturefile = "gfx/event_pictures/news_event_queenmary.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_royalnavy_march"
+		texturefile = "gfx/event_pictures/news_event_royalnavy_march.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_first_airline"
+		texturefile = "gfx/event_pictures/news_event_first_airline.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_young_plan"
+		texturefile = "gfx/event_pictures/news_event_young_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_decolonization_movement"
+		texturefile = "gfx/event_pictures/news_event_decolonization_movement.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_declare_open_city"
+		texturefile = "gfx/event_pictures/news_event_declare_open_city.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_population_boom"
+		texturefile = "gfx/event_pictures/report_event_population_boom.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_constitutional_reform_plan"
+		texturefile = "gfx/event_pictures/news_event_constitutional_reform_plan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hongkong_german_cooperation"
+		texturefile = "gfx/event_pictures/report_event_hongkong_german_cooperation.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hongkong_army_modernization"
+		texturefile = "gfx/event_pictures/report_event_hongkong_army_modernization.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hongkong_airforce_modernization"
+		texturefile = "gfx/event_pictures/report_event_hongkong_airforce_modernization.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hongkong_japan_cooperation"
+		texturefile = "gfx/event_pictures/report_event_hongkong_japan_cooperation.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hongkong_navy_improvement"
+		texturefile = "gfx/event_pictures/report_event_hongkong_navy_improvement.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hongkong_airforce_improvement"
+		texturefile = "gfx/event_pictures/report_event_hongkong_airforce_improvement.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hongkong_army_improvement"
+		texturefile = "gfx/event_pictures/report_event_hongkong_army_improvement.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hongkong_successful_army_modernization"
+		texturefile = "gfx/event_pictures/report_event_hongkong_successful_army_modernization.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hongkong_successful_airforce_modernization"
+		texturefile = "gfx/event_pictures/report_event_hongkong_successful_airforce_modernization.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hongkong_successful_navy_improvement"
+		texturefile = "gfx/event_pictures/report_event_hongkong_successful_navy_improvement.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hongkong_successful_aircraft_improvement"
+		texturefile = "gfx/event_pictures/report_event_hongkong_successful_aircraft_improvement.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hongkong_successful_army_improvement"
+		texturefile = "gfx/event_pictures/report_event_hongkong_successful_army_improvement.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_anti_communism_in_hongkong"
+		texturefile = "gfx/event_pictures/news_event_anti_communism_in_hongkong.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_hongkong_demands_malaya"
+		texturefile = "gfx/event_pictures/news_event_hongkong_demands_malaya.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_tsim_sha_tsui_riot"
+		texturefile = "gfx/event_pictures/report_event_tsim_sha_tsui_riot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_guangdongconcession"
+		texturefile = "gfx/event_pictures/report_event_guangdongconcession.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_changreply"
+		texturefile = "gfx/event_pictures/report_event_changreply.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_rescue_hong_kong"
+		texturefile = "gfx/event_pictures/report_event_rescue_hong_kong.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_remember_peter_choi"
+		texturefile = "gfx/event_pictures/news_event_remember_peter_choi.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_communists_cheer"
+		texturefile = "gfx/event_pictures/report_event_communists_cheer.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_immigrant_villages"
+		texturefile = "gfx/event_pictures/immigrant_villages.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_tai_1"
+		texturefile = "gfx/event_pictures/report_event_tai_1.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_tai_2"
+		texturefile = "gfx/event_pictures/report_event_tai_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_tai_3"
+		texturefile = "gfx/event_pictures/report_event_tai_3.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_tai_4"
+		texturefile = "gfx/event_pictures/report_event_tai_4.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_wong_nai_chung_gap"
+		texturefile = "gfx/event_pictures/report_event_wong_nai_chung_gap.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Stanley_Attack"
+		texturefile = "gfx/event_pictures/report_event_Stanley_Attack.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ROC_SOV_ceasefire"
+		texturefile = "gfx/event_pictures/report_event_ROC_SOV_ceasefire.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hk_guerrilla_2"
+		texturefile = "gfx/event_pictures/report_event_hk_guerrilla_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hk_guerrilla"
+		texturefile = "gfx/event_pictures/report_event_hk_guerrilla.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Canadian_Force"
+		texturefile = "gfx/event_pictures/report_event_Canadian_Force.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_across_Lo_Wu"
+		texturefile = "gfx/event_pictures/report_event_across_Lo_Wu.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_fuckpanda"
+		texturefile = "gfx/event_pictures/news_event_fuckpanda.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_battle_of_HK"
+		texturefile = "gfx/event_pictures/decision_cat_generic_battle_of_HK.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_bhk_JAP"
+		texturefile = "gfx/event_pictures/decision_cat_generic_bhk_JAP.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_cantonia"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_cantonia.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_hk_defence_scheme"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_hk_defence_scheme.dds"
+	}
+	
+}

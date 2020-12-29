@@ -1,0 +1,26 @@
+ideas = {
+
+	country = {
+		IND_Conscription_Policy = {
+
+			allowed = {
+				original_tag = IND
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				political_power_cost = 0.5
+			}
+			}
+		
+		
+	}
+	}	

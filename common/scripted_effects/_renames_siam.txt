@@ -1,0 +1,112 @@
+do_thai_renames_in_asia = {
+	if = {
+		limit = {
+		state = 838
+			NOT = {
+				has_state_flag = renamed_state_thai
+			}
+		}
+		set_state_name = STATE_838_thai
+		clr_state_flag = renamed_state_japanese
+		set_state_flag = renamed_state_thai
+		set_province_name = {
+			id = 10177
+			name = endo_vp_10177_thai # Phra Tabong
+		}
+	}
+	else_if = {
+		limit = {
+		state = 837
+			NOT = {
+				has_state_flag = renamed_state_thai
+			}
+		}
+		set_state_name = STATE_837_thai
+		clr_state_flag = renamed_state_japanese
+		set_state_flag = renamed_state_thai
+		set_province_name = {
+			id = 10330
+			name = endo_vp_10330_thai # Sama Buri
+		}
+	}
+	else_if = {
+		limit = {
+		state = 839
+			NOT = {
+				has_state_flag = renamed_state_thai
+			}
+		}
+		set_state_name = STATE_839_thai
+		clr_state_flag = renamed_state_japanese
+		set_state_flag = renamed_state_thai
+		
+	}
+	else_if = {
+		limit = {
+		state = 841
+			NOT = {
+				has_state_flag = renamed_state_thai
+			}
+		}
+		set_state_name = STATE_841_thai
+		clr_state_flag = renamed_state_japanese
+		set_state_flag = renamed_state_thai
+		set_province_name = {
+			id = 1592
+			name = endo_vp_1592_thai  # Champasak 
+		}
+	}
+	else_if = {
+		limit = {
+		state = 741
+			NOT = {
+				has_state_flag = renamed_state_thai
+			}
+		}
+		set_state_name = STATE_741_thai
+		clr_state_flag = renamed_state_japanese
+		set_state_flag = renamed_state_thai
+		set_province_name = {
+			id = 4302
+			name = VICTORY_POINTS_4302  # Champasak 
+		}
+		
+	}
+	else_if = {
+		limit = {
+		state = 842
+			NOT = {
+				has_state_flag = renamed_state_thai
+			}
+		}
+		set_state_name = STATE_842_thai
+		clr_state_flag = renamed_state_japanese
+		set_state_flag = renamed_state_thai
+		
+	}
+	else_if = {
+		limit = {
+		state = 805
+			NOT = {
+				has_state_flag = renamed_state_thai
+			}
+		}
+		set_state_name = STATE_805_thai
+		clr_state_flag = renamed_state_japanese
+		set_state_flag = renamed_state_thai
+		
+	}
+	else_if = {
+		limit = {
+		state = 806
+			NOT = {
+				has_state_flag = renamed_state_thai
+			}
+		}
+		set_state_name = STATE_806_thai
+		clr_state_flag = renamed_state_japanese
+		set_state_flag = renamed_state_thai
+		
+	}
+
+	}

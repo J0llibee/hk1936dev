@@ -1,0 +1,72 @@
+japanese_government_supply = {
+
+	japanese_manpower_supply = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = no
+		cost = 50
+		days_re_enable = 180 
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		original_tag = TAI
+		}
+		
+		available = {
+		has_government = fascism
+		TAI = {is_puppet_of = JAP}
+		}
+
+		complete_effect = {
+		add_manpower = 3500
+		}
+	}
+	
+	japanese_weapon_supply = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = no
+		cost = 50
+		days_re_enable = 180
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		original_tag = TAI
+		}
+		
+		available = {
+		has_government = fascism
+		TAI = {is_puppet_of = JAP}
+		}
+
+		complete_effect = {
+		TAI = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 300
+			producer = JAP
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 40
+			producer = JAP
+		}
+		}
+		}
+	}
+	
+}

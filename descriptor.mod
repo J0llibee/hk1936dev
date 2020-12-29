@@ -5,4 +5,4 @@ tags={
 	"Balance"
 }
 name="Pacific Outpost Dev Build"
-supported_version="1.9.*"
+supported_version="1.10.*"

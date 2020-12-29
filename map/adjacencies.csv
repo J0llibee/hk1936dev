@@ -1,5 +1,7 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12251;10321;sea;8313;-1;-1;-1;-1;;Andaman
+13256;1091;sea;5322;-1;-1;-1;-1;;Penghu
+13238;13254;sea;5269;-1;-1;-1;-1;;Victoria-Harbour
 13249;13250;sea;5269;-1;-1;-1;-1;;Ilhas
 13250;4189;sea;5269;-1;-1;-1;-1;;Macau-Ilhas
 7413;1419;sea;5294;-1;-1;-1;-1;;Moluccas

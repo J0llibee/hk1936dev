@@ -1,20 +1,24 @@
+
 state={
 	id=814
 	name="STATE_814"
-	history=
-	{
+
+	history={
 		owner = IND
 		add_core_of = VIN
 		add_core_of = IND
 		victory_points = {
 			4397 3 
 		}
-	buildings = {
+		buildings = {
 			infrastructure = 2
-            }
-            }
+
+		}
+
+	}
+
 	provinces={
-		1302 4397 7280 9988 10016 11909 11936 12297 
+		1302 7280 12297 
 	}
 	manpower=3000000
 	buildings_max_level_factor=1.000

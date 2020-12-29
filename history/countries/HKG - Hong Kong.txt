@@ -4,6 +4,8 @@ set_oob = "HKG_1936"
 
 set_cosmetic_tag = HKG_UK
 
+country_event = { id = asia_news.999 }
+
 if = {
 	limit= { has_dlc = "Man the Guns" }
 		set_naval_oob = "HKG_1936_Naval"
@@ -85,6 +87,8 @@ if = {
 add_ideas = {
 	HKG_corruption
 	HK_Conscription_Policy
+	colonial_conscription
+	HK_defence_scheme
 	}
 1939.1.1 = {
 	
@@ -135,7 +139,12 @@ add_ideas = {
 
 add_to_tech_sharing_group = commonwealth_research
 
-set_convoys = 500
+set_convoys = 50
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_intelligence_agency = yes
+	}
 
 set_politics = {
 	ruling_party = neutrality
@@ -194,6 +203,18 @@ create_country_leader = {
 	}
 }
 
+create_corps_commander = {
+	name = "Arthur Bartholomew"
+	portrait_path = "gfx/leaders/HKG/Portrait_HKG_Arthur_Wollaston_Bartholomew.dds"
+	traits = { War_Hero career_officer engineer}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+	id = 901
+}
+
 create_navy_leader = {
 	name = "Charles Little" 
 	picture = "Charles_Little.dds"
@@ -205,17 +226,19 @@ create_navy_leader = {
 	coordination_skill = 4
 }
 
-create_corps_commander = {
-	name = "Arthur Grasett"
-	portrait_path = "gfx/leaders/HKG/Sir Arthur Grasett.dds"
-	traits = { War_Hero inflexible_strategist career_officer }
-	skill = 4
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 3
-	id = 902
-}
+
+
+#create_corps_commander = {
+#	name = "Arthur Grasett"
+#	portrait_path = "gfx/leaders/HKG/Portrait_HKG_Arthur_Grasett.dds"
+#	traits = { War_Hero inflexible_strategist career_officer }
+#	skill = 4
+#	attack_skill = 2
+#	defense_skill = 4
+#	planning_skill = 3
+#	logistics_skill = 3
+#	id = 902
+#}
 
 ### Ship Variants ###
 

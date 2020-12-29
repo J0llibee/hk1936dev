@@ -1,0 +1,44 @@
+state=
+{
+	id=848
+	name="STATE_848"
+	manpower = 1923946
+	
+	state_category = city
+     ##
+	## set_slot = 20
+     ##
+	resources={
+		oil=4 
+	}
+	history=
+	{
+		owner = TAI
+		add_core_of = TAI
+		add_core_of = CHI
+		add_core_of = PRC
+		#add_core_of = JAP
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 3
+			7186 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			7186 5 
+		}
+		victory_points = {
+			7214 1 
+		}
+		victory_points = {
+			9955 1 
+		}
+
+	}
+	provinces={
+		7186 9955 7214
+		}
+}

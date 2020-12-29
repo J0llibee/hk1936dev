@@ -1,0 +1,443 @@
+"debug" = {
+
+	"add political power" = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			
+		}
+		
+		available = {
+		
+		}
+		
+
+		fire_only_once = no
+		cost = 0
+		days_re_enable = 1
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			always = no
+		}
+
+		complete_effect = {
+		add_political_power = 150
+		}
+	}
+}
+
+	horihito_says_dont_touch = {
+	touch_1 = {
+
+		icon = revolt
+
+		allowed = {
+			
+		}
+		
+		available = {
+			has_country_leader = {
+			name = "Hirohito"
+			ruling_only = yes
+			}
+		}
+
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_completed_focus = future_of_empire
+			tag = TAI
+			has_government = fascism
+			NOT = { has_country_flag = fun_1 }
+		}
+
+		complete_effect = {
+			create_country_leader = {
+			name = "Hirohito"
+			desc = ""
+			picture = "gfx/leaders/taiwan/fun_1.dds"
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {}
+			}
+			set_country_flag = fun_1
+		}
+	}
+	
+	touch_2 = {
+
+		icon = revolt
+
+		allowed = {
+			
+		}
+		
+		available = {
+			has_country_leader = {
+			name = "Hirohito"
+			ruling_only = yes
+			}
+		}
+
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			tag = TAI
+			has_government = fascism
+			 has_country_flag = fun_1 
+			NOT = { has_country_flag = fun_2 }
+		}
+
+		complete_effect = {
+			create_country_leader = {
+			name = "Hirohito"
+			desc = ""
+			picture = "gfx/leaders/taiwan/fun_2.dds"
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {}
+			}
+			set_country_flag = fun_2
+		}
+	}
+	
+	touch_3 = {
+
+		icon = revolt
+
+		allowed = {
+			
+		}
+		
+		available = {
+			has_country_leader = {
+			name = "Hirohito"
+			ruling_only = yes
+			}
+		}
+
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			tag = TAI
+			has_government = fascism
+			has_country_flag = fun_2
+			NOT = { has_country_flag = fun_3 }
+		}
+
+		complete_effect = {
+		create_country_leader = {
+			name = "Hirohito"
+			desc = ""
+			picture = "gfx/leaders/taiwan/fun_3.dds"
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {}
+			}
+			set_country_flag = fun_3
+		}
+	}
+	
+	touch_4 = {
+
+		icon = revolt
+
+		allowed = {
+			
+		}
+		
+		available = {
+			has_country_leader = {
+			name = "Hirohito"
+			ruling_only = yes
+			}
+		}
+
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			tag = TAI
+			has_government = fascism
+			has_country_flag = fun_3
+			NOT = { has_country_flag = fun_4 }
+		}
+
+		complete_effect = {
+		create_country_leader = {
+			name = "Hirohito"
+			desc = ""
+			picture = "gfx/leaders/taiwan/fun_4.dds"
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {}
+			}
+			set_country_flag = fun_4
+		}
+	}
+	
+	touch_5 = {
+
+		icon = revolt
+
+		allowed = {
+			
+		}
+		
+		available = {
+			has_country_leader = {
+			name = "Hirohito"
+			ruling_only = yes
+			}
+		}
+
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			tag = TAI
+			has_government = fascism
+			has_country_flag = fun_4
+			NOT = { has_country_flag = fun_5 }
+		}
+
+		complete_effect = {
+		create_country_leader = {
+			name = "Hirohito"
+			desc = ""
+			picture = "gfx/leaders/taiwan/fun_5.dds"
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {}
+			}
+			set_country_flag = fun_5
+		}
+	}
+	
+	touch_6 = {
+
+		icon = revolt
+
+		allowed = {
+			
+		}
+		
+		available = {
+			has_country_leader = {
+			name = "Hirohito"
+			ruling_only = yes
+			}
+		}
+
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			tag = TAI
+			has_government = fascism
+			has_country_flag = fun_5
+			NOT = { has_country_flag = fun_6 }
+		}
+
+		complete_effect = {
+		create_country_leader = {
+			name = "Hirohito"
+			desc = ""
+			picture = "gfx/leaders/taiwan/fun_6.dds"
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {}
+			}
+			set_country_flag = fun_6
+		}
+	}
+	
+	touch_7 = {
+
+		icon = revolt
+
+		allowed = {
+			
+		}
+		
+		available = {
+			has_country_leader = {
+			name = "Hirohito"
+			ruling_only = yes
+			}
+		}
+
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			tag = TAI
+			has_government = fascism
+			has_country_flag = fun_6
+			NOT = { has_country_flag = fun_7 }
+		}
+
+		complete_effect = {
+		create_country_leader = {
+			name = "Hirohito"
+			desc = ""
+			picture = "gfx/leaders/taiwan/fun_7.dds"
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {}
+			}
+			set_country_flag = fun_7
+		}
+	}
+	touch_8 = {
+
+		icon = revolt
+
+		allowed = {
+			
+		}
+		
+		available = {
+			has_country_leader = {
+			name = "Hirohito"
+			ruling_only = yes
+			}
+		}
+
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			tag = TAI
+			has_government = fascism
+			has_country_flag = fun_7
+			NOT = { has_country_flag = fun_8 }
+		}
+
+		complete_effect = {
+		create_country_leader = {
+			name = "Hirohito"
+			desc = ""
+			picture = "gfx/leaders/taiwan/fun_8.dds"
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {}
+			}
+			set_country_flag = fun_8
+		}
+	}
+	
+	touch_9 = {
+
+		icon = revolt
+
+		allowed = {
+			
+		}
+		
+		available = {
+			has_country_leader = {
+			name = "Hirohito"
+			ruling_only = yes
+			}
+		}
+
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			tag = TAI
+			has_government = fascism
+			has_country_flag = fun_8
+			NOT = { has_country_flag = fun_9 }
+		}
+
+		complete_effect = {
+		create_country_leader = {
+			name = "Hirohito"
+			desc = ""
+			picture = "gfx/leaders/taiwan/fun_9.dds"
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {}
+			}
+			set_country_flag = fun_9
+		}
+	}
+	
+	touch_end = {
+
+		icon = revolt
+
+		allowed = {
+			
+		}
+		
+		available = {
+			has_country_leader = {
+			name = "Hirohito"
+			ruling_only = yes
+			}
+		}
+
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			tag = TAI
+			has_government = fascism
+			has_country_flag = fun_9
+			NOT = { has_country_flag = fun_end }
+		}
+
+		complete_effect = {
+		create_country_leader = {
+			name = "Don't Touch"
+			desc = ""
+			picture = "gfx/leaders/taiwan/fun_end.dds"
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {}
+			}
+			set_country_flag = fun_end
+		}
+	}
+}
+ 

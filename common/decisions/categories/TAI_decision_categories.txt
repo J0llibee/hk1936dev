@@ -1,0 +1,68 @@
+################
+##### TAI ######
+################
+Japanese_Government_Leader_Change = {
+        icon = military_operation
+	visible = {
+           original_tag = TAI
+	}
+
+}
+
+east_railway = {
+     icon = category_generic
+	 visible = {
+           has_completed_focus = new_east_railway
+		   original_tag = TAI
+	}
+}
+
+taiwanese_revolution = {
+        icon = military_operation
+	visible = {
+           original_tag = TAI
+	}
+
+}
+
+japanese_government_supply = {
+        icon = army_reform
+	visible = {
+           original_tag = TAI
+		   OR = {
+				has_completed_focus = the_start_of_war_era
+				has_completed_focus = choose_govener
+		   }
+	}
+
+}
+
+fruit_trade = {
+     icon = category_generic
+	 visible = {
+	 has_idea = chen_cha_mou_tai
+		   original_tag = TAI
+	}
+}
+
+civilwar_end = {
+        icon = military_operation
+		visible = {
+           original_tag = TAI
+		   has_completed_focus = future_of_empire
+		}
+}
+
+Taiwanese_Political_Decisions = {
+		icon = generic_political_actions
+		visible = {
+           original_tag = TAI
+		}
+}
+
+"Taiwanese Name Change" = {
+	icon = category_generic
+	 visible = {
+		   original_tag = TAI
+	}
+}

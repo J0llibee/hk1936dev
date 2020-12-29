@@ -131,7 +131,23 @@ ideas = {
 			}
 			
 			traits = { infantry_equipment_manufacturer }		
-		}  
+		}
+
+		HKG_Garden = {
+			
+			allowed = {
+				original_TAG = HKG
+			}
+			
+			modifier = {
+				out_of_supply_factor = -0.5
+				no_supply_grace = 120
+				army_org_factor = 0.1
+				
+			}
+			
+			traits = { support_equipment_manufacturer }		
+		}
 
 		HKG_nissan = {
 			picture = nissan_hk

@@ -1,0 +1,152 @@
+add_namespace = indochina
+
+#########Jules Brevie#######
+country_event = {
+	id = indochina.1
+	title = indochina.1.t
+	desc = indochina.1.d
+	picture = GFX_report_event_Mark_Young
+	
+	trigger = {
+		tag = IND
+		has_government = democratic
+		is_puppet_of = FRA
+		date > 1937.1.14
+		date < 1937.2.1
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 2 }	
+
+	option = {
+		name = indochina.1.a
+		set_country_flag = governor_Joseph_Jules_Brevie		
+		create_country_leader = {
+	name = "Joseph-Jules Brévié"
+	desc = "POLITICS_Jules_DESC"
+	picture = "gfx//leaders//IND//Portrait_IND_Jules_Brevie.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+			traits = {
+				
+			}
+		}		
+	}
+
+}
+
+#########Georges Catroux#######
+country_event = {
+	id = indochina.2
+	title = indochina.2.t
+	desc = indochina.2.d
+	picture = GFX_report_event_Mark_Young
+	
+	trigger = {
+		tag = IND
+		has_government = democratic
+		is_puppet_of = FRA
+		date > 1939.6.14
+		date < 1939.7.1
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 2 }	
+
+	option = {
+		name = indochina.2.a
+		set_country_flag = governor_Georges_Catroux		
+		create_country_leader = {
+	name = "Georges Catroux"
+	desc = "POLITICS_Georges_Catroux_DESC"
+	picture = "gfx//leaders//IND//portrait_IND_georges_catroux.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+			traits = {
+				
+			}
+		}		
+	}
+
+}
+
+#########Jean Decoux#######
+country_event = {
+	id = indochina.3
+	title = indochina.3.t
+	desc = indochina.3.d
+	picture = GFX_report_event_Mark_Young
+	
+	trigger = {
+		tag = IND
+		16 = { NOT = { is_controlled_by = FRA } }
+		country_exists = VIC
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 2 }	
+
+	option = {
+		name = indochina.3.a
+		set_country_flag = governor_Jean_Decoux	
+		create_country_leader = {
+	name = "Jean Decoux"
+	desc = "POLITICS_Georges_Catroux_DESC"
+	picture = "gfx//leaders//IND//Portrait_IND_Jean_Decoux.dds"
+	expire = "1965.1.1"
+	ideology = falangism
+			traits = {
+				allegiance_to_vichy_france
+			}
+		}
+		set_party_name = { 
+		ideology = fascism
+		name = IND_vichy_party
+		}
+		set_politics = {
+		ruling_party = fascism
+						}
+			hidden_effect = {
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.3
+			}
+							}
+		IND = {country_event = {
+		id = indochina.4
+		}
+	}
+	}
+	}
+#####side with vichy#####
+country_event = {
+	id = indochina.4
+	title = indochina.4.t
+	desc = indochina.4.d
+	picture = GFX_report_event_Mark_Young
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = indochina.4.a
+		set_country_flag = side_with_vichy
+		OVERLORD = {
+				set_autonomy = {
+					target = IND
+					autonomy_state = autonomy_free
+				}
+			}
+		ENG = { remove_from_faction = ROOT }
+		every_country = { limit = {  has_war_with = IND  }  white_peace = IND}
+		IND = {
+		set_rule = {
+				can_join_factions = no
+			}
+	}
+	}
+	}

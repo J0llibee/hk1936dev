@@ -1,0 +1,112 @@
+ideas = {
+	country = {
+		
+		
+	     wei_suo_system = {
+
+			name = wei_suo_system
+
+            picture = generic_manpower_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_completed_focus = restoring_the_wei_suo_system
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3
+	            conscription = 0.1
+			}
+		}
+		
+		ming_law = {
+
+			name = ming_law
+
+            picture = air_support_focus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_completed_focus = ming_dynasty_law
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+	            foreign_subversive_activites = -0.40
+			}
+		}
+		infrastructure_plan_idea = {
+
+			name = infrastructure_plan_idea
+
+            picture = generic_build_infrastructure
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_completed_focus = infrastructure_plan
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.35
+			}
+		}	
+		three_grand_divisions = {
+
+			name = three_grand_divisions
+
+            picture = chi_army_corruption3
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_completed_focus = revive_the_three_grand_divisions
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				defence = 0.15
+                offence = 0.15
+	     		training_time_army_factor = -0.05
+			}
+		}	
+		belvedere_literary_profundity = {
+
+			name = belvedere_literary_profundity
+
+            picture = jap_supremacy_of_technology
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_completed_focus = belvedere_of_literary_profundity
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}		
+		
+		
+	}
+}

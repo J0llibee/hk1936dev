@@ -1,0 +1,19 @@
+################
+##### TAI ######
+################
+"debug" = {
+        icon = generic_prospect_for_resources
+	visible = {
+           
+	}
+
+}
+horihito_says_dont_touch = {
+    icon = category_jap_pacific_guardian
+	visible = {
+           
+	}
+
+}
+
+ 

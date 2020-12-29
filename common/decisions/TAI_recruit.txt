@@ -1,0 +1,703 @@
+Recruit_taiwanese = {
+
+	general_1 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		
+		available = {
+		OR = {
+		has_completed_focus  = recruit_indigenous_commander
+		has_government = neutrality 
+		}
+		}
+
+		visible = {
+		OR = {
+		has_government = neutrality 
+		has_government = communism
+		has_government = democratic
+		} 
+			original_tag = TAI
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "Uyongu Yata'uyungana"  #高一生
+	picture = "Uyongu_Yata'uyungana.dds"
+	traits = { trait_mountaineer }
+	id = 10111
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	}
+	
+	}
+	}
+	
+	general_2 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		OR = {
+		has_government = neutrality 
+		has_government = communism
+		has_government = democratic
+		}
+			original_tag = TAI
+		}
+		
+		available = {
+		OR = {
+		has_completed_focus  = recruit_indigenous_commander
+		has_government = neutrality 
+		}
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+			name = "Yapasuyong Yulunana"  #湯守仁
+			picture = "Yapasuyong_Yulunana.dds"
+			traits = { infantry_officer trait_mountaineer hill_fighter }
+			id = 10112
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	
+	}
+	}
+	
+	general_3 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		OR = {
+		has_government = neutrality 
+		has_government = communism
+		has_government = democratic
+		}
+			original_tag = TAI
+		}
+		
+		available = {
+		OR = {
+		has_completed_focus  = recruit_indigenous_commander
+		has_government = neutrality 
+		}
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "Tibusungu' Muknana"  #武義德
+	picture = "Tibusungu'_Muknana.dds"
+	traits = { trait_mountaineer }
+	id = 10113
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	}
+	
+	}
+	}
+	
+	general_4 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		OR = {
+		has_government = neutrality 
+		has_government = communism
+		has_government = democratic
+		}
+			original_tag = TAI
+		}
+		
+		available = {
+		OR = {
+		has_completed_focus  = recruit_indigenous_commander
+		has_government = neutrality 
+		}
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "mo`e peyongsi"  #汪清山
+	picture = "mo`e_peyongsi.dds"
+	traits = { trait_mountaineer }
+	id = 10114
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	}
+	
+	}
+	}
+	
+	general_5 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		OR = {
+		has_government = neutrality 
+		has_government = communism
+		has_government = democratic
+		}
+			original_tag = TAI
+		}
+		
+		available = {
+		OR = {
+		has_completed_focus  = recruit_indigenous_commander
+		has_government = neutrality 
+		}
+		}
+		
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "Losing Watan"  #
+	picture = "Losing_Watan.dds"
+	traits = { trait_mountaineer }
+	id = 10115
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	}
+	
+	}
+	}
+	
+	general_6 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		OR = {
+		has_government = neutrality 
+		has_government = communism
+		has_government = democratic
+		}
+			original_tag = TAI
+		}
+		
+		available = {
+		OR = {
+		has_completed_focus  = recruit_indigenous_commander
+		has_government = neutrality 
+		}
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "Lahu Ali"  #
+	picture = "Lahu_Ali.dds"
+	traits = { trait_mountaineer }
+	id = 10116
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+	
+	}
+	}
+	
+	com_general_1 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		has_government = communism
+			original_tag = TAI
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "Li You Bang"  #李友邦
+	picture = "Li_You_Bang.dds"
+	traits = { politically_connected }
+	id = 10121
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+	
+	}
+	}
+	
+	com_general_2 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		has_government = communism
+			original_tag = TAI
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "Lin Mu Shun"  #林木順
+	picture = "Lin_Mu_Shun.dds"
+	traits = { politically_connected }
+	id = 10122
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	}
+	
+	}
+	}
+	
+	com_general_3 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		has_government = communism
+			original_tag = TAI
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "Yang Ke Huang"  #楊克煌
+	picture = "Yang_Ke_Huang.dds"
+	traits = { politically_connected }
+	id = 10123
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	}
+	
+	}
+	}
+	
+	com_general_4 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		has_government = communism
+			original_tag = TAI
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "Chang Keng"  #
+	picture = "Chang_Keng.dds"
+	traits = { politically_connected }
+	id = 10124
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+	
+	}
+	}
+	com_general_5 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		has_government = communism
+			original_tag = TAI
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "Chen Cuan Di"  #
+	picture = "Chen_Cuan_Di.dds"
+	traits = {  }
+	id = 10125
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+	
+	}
+	}
+	com_general_6 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		has_government = communism
+			original_tag = TAI
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "Jian Ji"  #
+	picture = "Jian_Ji.dds"
+	traits = {  }
+	id = 10126
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	}
+	
+	}
+	}
+	
+	gen_admiral_1 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			original_tag = TAI
+		}
+
+		complete_effect = {
+		
+		create_navy_leader = {
+	name = "Wu Chen Wu" #吳振武
+	id = 10201
+    picture = "Wu_Chen_Wu.dds"
+	traits = {  }
+	skill = 2
+}
+	
+	}
+	}
+	
+	dem_general_1 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		 has_government = democratic 
+			original_tag = TAI
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "Huang Wang Cheng"  #
+	picture = "Huang_Wang_Cheng.dds"
+	traits = {  }
+	id = 10131
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	}
+	
+	}
+	}
+	
+	dem_general_2 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		date > 1940.1.1
+		NOT = { has_government = fascism }
+			original_tag = TAI
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "Chen Wu Yin"  #
+	picture = "Chen_Wu_Yin.dds"
+	traits = {  }
+	id = 10132
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	}
+	
+	}
+	}
+	
+	dem_general_3 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		NOT = { has_government = fascism }
+			original_tag = TAI
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "Chiu Nien Tai"  #
+	picture = "Chiu_Nien_Tai.dds"
+	traits = {  }
+	id = 10133
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	}
+	
+	}
+	}
+	
+	dem_general_4 = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		NOT = { has_government = fascism }
+			original_tag = TAI
+		}
+
+		complete_effect = {
+		
+		create_corps_commander = {
+	name = "Fang Yu Hsiang"  #
+	picture = "Fang_Yu_Hsiang.dds"
+	traits = {  }
+	id = 10134
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	}
+	
+	}
+	}
+	
+	communism_xie = {
+
+		icon = decision_generic_political_discourse
+
+		allowed = {
+			original_tag = TAI
+		}
+
+		fire_only_once = yes
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		has_government = communism 
+			original_tag = TAI
+		}
+		complete_effect = {
+		
+		set_province_name = {
+		id = 11959
+		name = "Xie Xuehong City"
+	}
+	}
+	
+}
+}

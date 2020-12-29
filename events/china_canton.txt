@@ -27,7 +27,7 @@ country_event = {
 	option = {
 		name = china_canton.1.b
 		ai_chance = { 
-			factor = 60 
+			factor = 100
 				}
 		CTN = {
 		country_event = {
@@ -55,7 +55,7 @@ country_event = {
 	option = {
 		name = china_canton.2.a
 		ai_chance = { 
-			factor = 70
+			factor = 100
 				}
 		CHI = {
 		country_event = {
@@ -86,13 +86,33 @@ country_event = {
 	fire_only_once = yes
 
 	is_triggered_only = yes
-
+	
+	immediate = { # Optional : all the following will occur once the event occurs
+		if = {
+			limit = {
+				tag = CHI
+				has_war_with = CTN
+				controls_state = 592
+			}
+			GXC = {
+		country_event = {
+		id = china_canton.5
+		}
+		}
+			}
+			}
+	
 	option = {
 		name = china_canton.3.a
 		CHI={
 		annex_country = {
     	target = CTN
    		transfer_troops = yes
+		}
+		}
+		GXC = {
+		country_event = {
+		id = china_canton.5
 		}
 		}
 		}
@@ -115,6 +135,34 @@ country_event = {
     	target = CTN
     	type = annex_everything
 		}
+		}
+		}
+}
+
+country_event = {
+	id = china_canton.5
+	title = china_canton.5.t
+	desc = china_canton.5.d
+	picture = GFX_report_event_chen
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = china_canton.5.a
+		CHI={
+		set_autonomy = {
+		target = GXC
+		autonomy_state = autonomy_puppet
+		}
+		}
+		}
+	option = {
+		name = china_canton.5.b
+		declare_war_on = {
+		target = CHI
+		type = annex_everything
 		}
 		}
 }

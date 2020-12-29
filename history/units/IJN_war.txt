@@ -1,0 +1,156 @@
+﻿division_template = {
+    name = "IJN Marine Brigade"
+	division_names_group = IJN_MAR_01 
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+    } 
+}
+
+division_template = {
+    name = "IJN Elite Marine"
+	division_names_group = IJN_MAR_01 
+    regiments = {
+        marine = { x = 0 y = 0 }
+        marine = { x = 0 y = 1 }
+        marine = { x = 0 y = 2 }
+        marine = { x = 1 y = 0 }
+        marine = { x = 1 y = 1 }
+        marine = { x = 1 y = 2 }
+    }
+		support = { 
+			engineer = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		} 
+}
+units = {
+
+	division = {
+		name = "IJN Marine Brigade"
+		location = 1092 #Kure
+		division_template = "IJN Elite Marine"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 1092 #Kure
+		division_template = "IJN Elite Marine"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 7197 #Kochi
+		division_template = "IJN Elite Marine"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 9950 #Sasebo
+		division_template = "IJN Elite Marine"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 10020
+		division_template = "IJN Marine Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 7072
+		division_template = "IJN Marine Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 7072
+		division_template = "IJN Marine Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 1136
+		division_template = "IJN Marine Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 9965
+		division_template = "IJN Marine Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 9950 #Sasebo
+		division_template = "IJN Elite Marine"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 9950 #Sasebo
+		division_template = "IJN Marine Brigade"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 9950 #Sasebo
+		division_template = "IJN Marine Brigade"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 9950 #Sasebo
+		division_template = "IJN Marine Brigade"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 1092 #Sasebo
+		division_template = "IJN Marine Brigade"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 1092 #Sasebo
+		division_template = "IJN Marine Brigade"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "IJN Marine Brigade"
+		location = 1092 #Sasebo
+		division_template = "IJN Marine Brigade"
+		start_experience_factor = 0.75
+	}
+}
+	
+air_wings = {
+	
+	530 = {
+		cv_CAS_equipment_1 = {
+			owner = "JAP" 
+			amount = 60
+		}
+		cv_CAS_equipment_1 = {
+			owner = "JAP" 
+			amount = 48
+		}
+	}
+
+	530 = {
+		cv_fighter_equipment_0 = {
+			owner = "JAP" 
+			amount = 72
+		}
+		cv_nav_bomber_equipment_1 = {
+			owner = "JAP" 
+			amount = 48
+		}
+	}
+	
+}
+	
+

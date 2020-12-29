@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_autonomy_french_colonial_possessions_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_french_colonial_possessions_icon.dds"
+	}	
+}

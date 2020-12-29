@@ -1,0 +1,22 @@
+################
+##### TAI ######
+################
+ming = {
+    icon = jap_intervene_in_china
+	visible = {
+		has_country_flag = revive_the_kingdom_flag
+        tag = TAI
+	}
+
+}
+
+ming_support = {
+    icon = jap_intervene_in_china
+	visible = {
+		has_country_flag = revive_the_kingdom_flag
+        tag = TAI
+	}
+}
+
+
+ 

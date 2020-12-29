@@ -1,0 +1,809 @@
+ideas = {
+	country = {
+	}
+	
+	
+	political_advisor = {	
+		
+		fascism_tai = {
+
+			picture = generic_army_asia_6
+
+			allowed = {
+				original_tag = TAI
+			}
+
+			traits = {
+				fascist_demagogue
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		communism_tai = {
+
+			picture = generic_army_asia_7
+
+			allowed = {
+				original_tag = TAI
+			}
+
+			traits = {
+				communist_revolutionary
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		democratic_reformer_tai = {
+
+			picture = generic_air_asia_1
+
+			allowed = {
+				original_tag = TAI
+			}
+
+			traits = {
+				democratic_reformer
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		neutality_tai = {
+
+			picture = generic_army_asia_4
+
+			allowed = {
+				original_tag = TAI
+			}
+
+			traits = {
+				monarchist_media_mogul
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		iso_eikichi_tai = {#磯永吉
+
+			picture = italo_balbo
+
+			allowed = {
+				original_tag = TAI
+			}
+
+			modifier = {		
+			conscription_factor = -0.02
+			MONTHLY_POPULATION = 0.07
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = {
+				
+			}
+		}
+		
+		
+		tang_rong_tai = { #唐榮
+
+			picture = ivanoe_bonomi
+
+			allowed = {
+				original_tag = TAI
+			}
+
+			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		li_jian_xing_tai = { #李建興
+
+			picture = matome_ugaki
+
+			allowed = {
+				original_tag = TAI
+			}
+
+			modifier = {
+			local_resources_factor = 0.20
+			}
+			
+			traits = {
+				captain_of_industry
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		loa_ho_tai = { #賴和
+
+			picture = george_marshall
+
+			allowed = {
+				original_tag = TAI
+			}
+
+			modifier = {
+			production_speed_buildings_factor = 0.1
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = {
+			compassionate_gentleman
+			}
+		}
+		yoichi_hatta_tai = { #八田與一
+
+			picture = takuo_godo
+
+			allowed = {
+				original_tag = TAI
+			}
+
+			modifier = {
+			production_speed_buildings_factor = 0.1
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = {
+			fortification_engineer
+			}
+		}
+		
+		chen_cha_mou_tai = { #陳查某
+
+			picture = sanzo_nosaka
+
+			allowed = {
+				original_tag = TAI
+			}
+			modifier = {
+				
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		xie_jie_shi_tai = { #謝介石
+
+			picture = MEX_gilberto_r_limon
+
+			allowed = {
+				original_tag = TAI
+			}
+			available = {
+				NOT = { is_puppet_of = JAP }
+			}
+			modifier = {
+				
+			}
+			
+			traits = {  ##外交
+				smooth_talking_charmer
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		tu_tsung_ming_tai = { #杜聰明
+
+			picture = MEX_luis_montes_de_oca##luis_montes_de_oca
+
+			allowed = {
+				original_tag = TAI
+			}
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+			
+			traits = {  ##醫學
+				compassionate_gentleman
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		lin_cheng_lu_tai = { #林呈祿
+
+			picture = erich_bey
+
+			allowed = {
+				original_tag = TAI
+			}
+			visible = {
+				NOT = { is_puppet_of = JAP }
+			}
+			available = {
+				NOT = { is_puppet_of = JAP }
+			}
+			
+			traits = {  ##記者
+				editor
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		wu_san_lian_tai = { #吳三連
+
+			name = wu_san_lian_tai
+			
+			picture = john_beckett
+
+			allowed = {
+				original_tag = TAI
+			}
+			visible = {
+				NOT = { is_puppet_of = JAP }
+			}
+			available = {
+				NOT = { is_puppet_of = JAP }
+			}
+			modifier = {
+				
+			}
+			
+			traits = {  ##記者
+				liberal_journalist
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		Izumi_Furo_tai = { #泉風浪
+
+			picture = john_beckett
+
+			allowed = {
+				original_tag = TAI
+			}
+			visible = {
+				is_puppet_of = JAP
+			}
+			available = {
+				is_puppet_of = JAP
+			}
+			modifier = {
+				
+			}
+			
+			traits = {  ##記者
+				liberal_journalist
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		huang_ma_dian_tai = { #黃媽典
+
+			picture = kingoro_hashimoto
+
+			allowed = {
+				original_tag = TAI
+			}
+			
+			available = {
+				
+			}
+			modifier = {
+				
+			}
+			
+			traits = {  ##政治家
+				economic_organizer
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		#kingoro_hashimoto
+	}
+		
+	# MILITARY
+	army_chief = {
+		
+		tai_gg = {
+			picture = seal_of_taiwan
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			cost = 50
+			
+			traits = { 
+			army_chief_defensive_2 
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		
+	}
+	navy_chief = {
+		
+		tai_gg_navy = {
+			picture = seal_of_taiwan
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			cost = 50
+			
+			traits = { 
+			navy_chief_decisive_battle_2
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	air_chief = {
+		tai_gg_air = {
+			picture = seal_of_taiwan
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			cost = 50
+			
+			traits = { 
+			air_chief_old_guard
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}	
+	
+	
+	high_command = {
+		
+		TAI_LAND_1 = {
+
+			picture = generic_army_asia_2
+			
+			ledger = army
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			traits = { army_commando_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		TAI_LAND_2 = {
+
+			picture = generic_army_asia_3
+			
+			ledger = army
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		TAI_LAND_3 = {
+
+			picture = generic_army_asia_3
+			
+			ledger = army
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			traits = { army_artillery_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		TAI_LAND_4 = {
+
+			picture = generic_army_asia_4
+			
+			ledger = army
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			traits = { army_infantry_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		TAI_AIR_HC3 = {
+
+			picture = generic_air_asia_1
+			
+			ledger = air
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			traits = { air_chief_night_operations_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		TAI_AIR_HC2 = {
+
+			picture = generic_air_asia_1
+			
+			ledger = air
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			traits = { air_bomber_interception_3 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		TAI_AIR_HC1 = {
+
+			picture = generic_air_asia_3
+			
+			ledger = air
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			traits = { air_air_combat_training_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		TAI_NAV_1 = {
+
+			picture = generic_air_asia_2
+			
+			ledger = navy
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			traits = { air_naval_strike_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		TAI_NAV_2 = {
+
+			picture = generic_navy_asia_1
+			
+			ledger = navy
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			traits = { navy_screen_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+		
+	# TECHNOLOGY
+	naval_manufacturer = {
+		
+		designer = yes
+		taiwan_ship_company = {
+			
+			picture = tai_ship_company
+			cost = 75
+			
+			allowed = {
+				original_tag = TAI
+				
+			}
+			visible = {
+				NOT = { is_puppet_of = JAP }
+			}
+			available = {
+				has_completed_focus = ship_taiwan
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { coastal_defence_naval_manufacturer } #used for many repairs and conversions
+			
+			equipment_bonus = {
+				
+			}
+		}
+		
+		taiwan_ship_corporation = {
+			
+			picture = mitsubishi
+			cost = 75
+			
+			allowed = {
+				original_tag = TAI
+			}
+			visible = {
+				is_puppet_of = JAP
+			}
+			available = {
+				has_completed_focus = ship_taiwan
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { coastal_defence_naval_manufacturer } #used for many repairs and conversions
+			
+			equipment_bonus = {
+				
+			}
+		}	
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		
+		mitsubishi_tai_com = {
+		
+		picture = mitsubishi
+						
+			allowed = {
+				original_tag = TAI				
+			}
+			
+			available = {
+			has_completed_focus = mitsubishi_tai
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer_2 }
+
+			modifier = {
+
+			}
+		}
+	}
+	
+	
+	industrial_concern = {
+	
+	    designer = yes
+	
+		toho = {
+			
+			picture = toho_zinc
+			cost = 75
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			available = {
+				has_completed_focus = toho
+			}
+			
+			research_bonus = {
+				industry = 0.07
+				synth_resources = 0.1
+			}
+			
+			traits = { refinery_concern }
+		}
+	  
+	  
+	
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		
+		nissan_tai = {
+						
+			allowed = {
+				original_tag = TAI
+			}
+			
+			picture = nissan
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	
+	
+	tank_manufacturer = {
+	
+		designer = yes
+		
+		taihoku_arsenal_tai = {
+			
+			picture = taihoku_arsenal
+			
+			allowed = {
+				original_tag = TAI
+			}
+				
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { tank_manufacturer }
+		}	
+	}
+	
+	theorist = {
+		tai_land_the = {
+
+			picture = generic_army_asia_2
+			
+			ledger = army
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		tai_sea_the = { 
+
+			picture = generic_navy_asia_2
+			
+			ledger = navy
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		tai_air_the = {
+
+			picture = generic_air_asia_3
+			
+			ledger = air
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		tai_bunsaku_arakatsu = {
+
+			picture = alexander_kerensky
+			
+			ledger = air
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			available = {
+			has_completed_focus = invite_japanese_expert
+			}
+			
+			research_bonus = {
+				nuclear = 0.15
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+		tai_syu_yun_ji = {
+
+			picture = generic_army_south_america_4
+			
+			allowed = {
+				original_tag = TAI
+			}
+			
+			ledger = air
+			
+			available = {
+			TAI = { NOT = { is_puppet_of = JAP } }
+			}
+			
+			research_bonus = {
+				nuclear = 0.10
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+	}
+}

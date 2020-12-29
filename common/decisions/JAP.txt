@@ -4,9 +4,12 @@ JAP_intervene_in_china = {
 	JAP_china_step_up_war_effort = {
 
 		icon = jap_conquer_china
-
+		
+		activation = { 
+				JAP_has_idea_JAP_intervene_in_china = yes
+				}
 		available = {
-			CHI = {has_capitulated = yes}
+			CHI = { surrender_progress > 0.9 }
 		}
 
 		visible = {
@@ -16,18 +19,30 @@ JAP_intervene_in_china = {
 			}
 		}
 
-		activation = {
-			has_country_flag = JAP_conquer_china_activate
-		}
-		
 		fire_only_once = no
 
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war_with = USA
+				factor = 10 #screw it, kill everything
+			}
+		}
+		modifier = {
+
+		}
+
+		days_mission_timeout = 70
+		days_re_enable = 0
+		selectable_mission = no
 		is_good = no
 
-		days_mission_timeout = 100
-		days_re_enable = 1
-
-		timeout_effect = {
+		complete_effect = {
+			add_political_power = 500 
+			add_stability = 0.05
+			add_war_support = 0.1
+		}
+		timeout_effect = {  
 			if = {
 				limit = {
 					USA = {
@@ -37,10 +52,7 @@ JAP_intervene_in_china = {
 				USA = { add_war_support = 0.025 }
 			}
 			JAP_intervene_in_china_level_down = yes
-		}
-		complete_effect = {
-		add_war_support = 0.07
-		}
+          }
 	}
 
 	JAP_ichi_go = {
@@ -87,8 +99,8 @@ JAP_intervene_in_china = {
 				}
 				USA = { add_war_support = 0.1 }
 			}
-			add_timed_idea = { idea = JAP_ichi_go days = 365 }
-
+			remove_ideas = JAP_quagmire
+			add_timed_idea = { idea= JAP_ichi_go days = 360 }
 			activate_mission_tooltip = JAP_conquer_china
 			set_country_flag = JAP_conquer_china_activate
 		}
@@ -128,47 +140,12 @@ JAP_intervene_in_china = {
 		timeout_effect = {
 			add_stability = -0.05
 			add_war_support = -0.15
+			add_timed_idea = { idea= JAP_aftermath_of_ichi_go days = 730 }
 		}
 
 		complete_effect = {
 			add_stability = 0.03
 			add_war_support = 0.07
-		}
-	}
-
-	JAP_aftermath_of_ichi_go = {
-
-		icon = jap_conquer_china
-
-		available = {
-			CHI = {has_capitulated = yes}
-		}
-
-		visible = {
-			has_idea = JAP_ichi_go
-			any_enemy_country = {
-				is_literally_china = yes
-			}
-		}
-
-		activation = {
-			has_idea = JAP_ichi_go
-		}
-
-		fire_only_once = yes
-
-		is_good = no
-
-		days_mission_timeout = 365
-		
-		timeout_effect = {
-			add_stability = -0.05
-			add_war_support = -0.15
-			add_timed_idea = { idea = JAP_aftermath_of_ichi_go days = 720 }
-		}
-
-		complete_effect = {
-			
 		}
 	}
 
@@ -890,7 +867,7 @@ JAP_southern_expansion = {
 
 		available = {
 			16 = { NOT = { is_controlled_by = FRA } } #Paris has fallen
-			286 = { 
+			671 = { 
 				CONTROLLER = { 
 					NOT = {
 						has_war_with = ROOT
@@ -906,24 +883,17 @@ JAP_southern_expansion = {
 					}
 				} 
 			}
-			671 = { 
-				CONTROLLER = { 
-					NOT = {
-						has_war_with = ROOT
-						is_in_faction_with = ROOT
-					}
-				} 
-			}
 			custom_trigger_tooltip = {
 				tooltip = demand_indochina_focus_tt
-				OR = {
-					286 = { 
+				
+					671 = { 
 						CONTROLLER = { 
 							OR = { 
 								tag = FRA 
-								tag = VIC
+								tag = VIC 
+								tag = IND
 								is_subject_of = FRA
-								is_subject_of = VIC 
+								is_subject_of = VIC
 							} 
 						}
 					}
@@ -932,23 +902,13 @@ JAP_southern_expansion = {
 							OR = { 
 								tag = FRA 
 								tag = VIC 
-								is_subject_of = FRA
-								is_subject_of = VIC
-							} 
-						}
-					}
-					671 = { 
-						CONTROLLER = { 
-							OR = { 
-								tag = FRA 
-								tag = VIC 
+								tag = IND
 								is_subject_of = FRA
 								is_subject_of = VIC
 							} 
 						}
 					}
 				}
-			}
 		}
 
 		visible = {
@@ -959,7 +919,7 @@ JAP_southern_expansion = {
 
 
 		modifier = {
-
+				
 		}
 
 		cost = 75
@@ -990,8 +950,6 @@ JAP_southern_expansion = {
 							671 = { CONTROLLER = { is_subject_of = FRA } }
 							controls_state = 670
 							670 = { CONTROLLER = { is_subject_of = FRA } }
-							controls_state = 286
-							286 = { CONTROLLER = { is_subject_of = FRA } }
 						}
 					}
 				}
@@ -1003,19 +961,62 @@ JAP_southern_expansion = {
 						OR = {
 							controls_state = 671
 							controls_state = 670
-							controls_state = 286
 							671 = { CONTROLLER = { is_subject_of = VIC } }
 							670 = { CONTROLLER = { is_subject_of = VIC } }
-							286 = { CONTROLLER = { is_subject_of = VIC } }
 						}
 					}
 				}
 				VIC = { country_event = { id = france.1 } }
 			}
 		}
+		}
+		
+	JAP_demand_an_armistance_between_IND_and_SIA = { 
+
+		available = {
+			SIA = {
+			controls_state = 741
+			controls_state = 837
+			controls_state = 838
+			controls_state = 839
+			controls_state = 841
+			}
+		}
+
+		visible = {
+			SIA = {has_war_with = IND}
+		}
+
+		fire_only_once = yes
+
+
+		modifier = {
+				
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 4000
+				is_historical_focus_on = yes
+			}
+		}
+			
+		
+
+		complete_effect = {
+			SIA = {
+			country_event = {
+			id = Siam.2
+			}
+			}
+		}	
+		
 
 	}
-}
+	}
 
 #Category allowed for JAP
 #Visible when has completed JAP_pacific_guardian focus.

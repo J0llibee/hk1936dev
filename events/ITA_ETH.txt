@@ -17,7 +17,11 @@ country_event = {
 
 	option = {
 		name = ITA_ETH.1.a
-		set_country_flag = governor_barbosa		
+		set_country_flag = governor_barbosa
+		add_ideas = {
+		ETH_Conscription_Policy
+		colonial_conscription
+		}
 		create_country_leader = {
 		name = "Radolfo Graziani"
 		desc = "POLITICS_Radolfo_DESC"
@@ -33,7 +37,7 @@ country_event = {
 		every_state = { 
     	limit = { is_owned_by = ITA  is_core_of = ETH }
     	ETH = { transfer_state = PREV }
-	}			
+	}
 	}
 
 }

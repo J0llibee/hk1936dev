@@ -4,7 +4,7 @@ ideas = {
 		MAC_Conscription_Policy = {
 
 			allowed = {
-				original_tag = MAC
+				original_tag = MCU
 				always = no
 			}
 
@@ -16,9 +16,7 @@ ideas = {
 
 			picture = tfv_can_conscription_crisis
 			
-			modifier = {
-				conscription_factor = -0.5
-			}
+
 			}
 		
 		

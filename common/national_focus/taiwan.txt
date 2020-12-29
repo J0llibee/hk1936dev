@@ -1,0 +1,4883 @@
+focus_tree = { 
+	id = taiwan_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = TAI
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1600 }
+
+#	focus = {
+#		id = CHI_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+      focus = {
+   id = finish_the_expansion_of_sun_moon_lake_power_plant #完成日月潭水力發電
+   icon = GFX_goal_generic_construct_civilian
+	x = 5
+	y = 0
+	
+	cost = 5
+	
+	available = {
+		is_puppet_of = JAP
+	}
+	
+	completion_reward = {
+	remove_ideas = Taiwan_elect_ng
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+
+ focus = {
+   id = kirun_port   #基隆港四期
+   icon = GFX_goal_generic_construct_naval_dockyard
+	x = 2
+	y = 1
+	
+	cost = 5
+	
+	prerequisite = {
+	focus = finish_the_expansion_of_sun_moon_lake_power_plant
+	}
+	
+	completion_reward = {
+	848 ={
+	add_building_construction = {
+    type = naval_base
+    level = 2
+    instant_build = yes
+    province = 7186
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id = pioneer_company   #拓殖株式會社
+   icon = GFX_goal_generic_construct_civilian
+	x = 5
+	y = 1
+	
+	cost = 5
+	
+	available = {
+		is_puppet_of = JAP
+	}
+	
+	prerequisite = {
+	focus = finish_the_expansion_of_sun_moon_lake_power_plant
+	}
+	
+	completion_reward = {
+	849 ={
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+	}
+	}
+	850 ={
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+    type = infrastructure
+    level = 1
+    instant_build = yes
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = resource_committee   #重要資源調整委員會
+   icon = GFX_goal_generic_construction
+	x = 8
+	y = 1
+	
+	cost = 5
+	
+	available = {
+		is_puppet_of = JAP
+	}
+	
+	prerequisite = {
+	focus = finish_the_expansion_of_sun_moon_lake_power_plant
+	}
+	
+	completion_reward = {
+	add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = synth_resources
+			}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = { 
+   id = ship_taiwan       #船渠株式會社
+   icon = GFX_goal_generic_construct_naval_dockyard
+   dynamic = yes
+	x = 3
+	y = 2
+	
+	cost = 10
+	
+	prerequisite = {
+	focus = kirun_port
+	}
+	
+	completion_reward = {
+	custom_effect_tooltip = available_designer
+	if = {
+	limit = { is_puppet_of = JAP }
+	show_ideas_tooltip = taiwan_ship_corporation
+	}
+	if = {
+	limit = { NOT = { is_puppet_of = JAP } }
+	show_ideas_tooltip = taiwan_ship_company
+	}
+	848 ={
+	 add_extra_state_shared_building_slots = 3
+	 add_building_construction = {
+     type = dockyard
+     level = 3
+     instant_build = yes
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+   focus = {
+   id = ship_takao   #旗後造船
+   icon = GFX_goal_generic_construct_naval_dockyard
+	x = 0
+	y = 3
+	
+	cost = 5
+	
+	prerequisite = {
+	focus = takao_port
+	}
+	
+	completion_reward = {
+	 524 ={
+	 add_extra_state_shared_building_slots = 1
+	 add_building_construction = {
+     type = dockyard
+     level = 1
+     instant_build = yes
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+   focus = {
+   id = toho     #東邦亞鉛
+   icon = GFX_focus_generic_industry_2
+	x = 7
+	y = 2
+	
+	cost = 7
+	
+	available = {
+		is_puppet_of = JAP
+	}
+	
+	prerequisite = {
+	focus = pioneer_company 
+	}
+	prerequisite = {
+	focus = resource_committee
+	}
+	completion_reward = {
+	custom_effect_tooltip = available_designer
+	show_ideas_tooltip = toho
+	 add_resource = {
+    type = tungsten
+    amount = 4   
+     state = 849
+	 }
+	add_resource = {
+    type = aluminium
+    amount = 4   
+	state = 849
+     }
+	add_resource = {
+    type = chromium
+    amount = 4   
+	state = 849
+     }
+	}
+	
+	
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = develop_east    #開發東台灣
+   icon = GFX_focus_eastern_taiwan
+	x = 5
+	y = 2
+	
+	cost = 7
+	available = {
+		is_puppet_of = JAP
+	}
+	prerequisite = {
+	focus = pioneer_company 
+	}
+	
+	completion_reward = {
+     add_ideas = Eastern_Taiwan_elect_ng
+	 849 ={
+	 add_extra_state_shared_building_slots = 2
+	 add_building_construction = {
+     type = industrial_complex
+     level = 2
+     instant_build = yes
+	}
+	}
+	}
+	
+	
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = east_electric     #東台灣電力
+   icon = GFX_goal_generic_construct_civ_factory
+	x = 5
+	y = 4
+	
+	cost = 5
+	
+	prerequisite = {focus = develop_east}
+	
+	completion_reward = {
+     swap_ideas = {
+     remove_idea = Eastern_Taiwan_elect_ng
+     add_idea = eastern_taiwan_elect_ng_little}	 
+	}
+	
+	
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+   focus = {
+   id = nippon_aluminium_factory    #日本鋁
+   icon = GFX_focus_generic_aluminum
+	x = 9
+	y = 2
+	
+	cost = 10
+	
+	available = {
+		is_puppet_of = JAP
+	}
+	
+	prerequisite = {focus = resource_committee}
+	
+	completion_reward = {
+    add_resource = {
+    type = aluminium
+    amount = 20   
+	state = 524} 
+	524 ={
+	 add_extra_state_shared_building_slots = 2
+	 add_building_construction = {
+     type = industrial_complex
+     level = 2
+     instant_build = yes
+	}
+	}
+	add_ideas = Nippon_aluminium
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	
+   focus = {
+   id = takao_steelmaking     #製鐵
+   icon = GFX_focus_generic_steel
+	x = 8
+	y = 3
+	
+	cost = 7
+	
+	available = {
+		is_puppet_of = JAP
+	}
+	
+	prerequisite = {focus = resource_committee}
+	
+	completion_reward = {
+    add_resource = {
+    type = steel
+    amount = 6   
+	state = 524} 
+	524 ={
+	 add_extra_state_shared_building_slots = 1
+	 add_building_construction = {
+     type = industrial_complex
+     level = 1
+     instant_build = yes
+	}
+	}
+	add_ideas = Imported_material
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+   focus = {
+   id = karenko_port    #花蓮港二期
+   icon = GFX_goal_generic_construct_naval_dockyard
+	x = 4
+	y = 3
+	
+	cost = 10
+	
+	prerequisite = {focus = develop_east}
+	prerequisite = {focus = ship_taiwan}
+	
+	completion_reward = {
+	849 ={
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+    type = naval_base
+    level = 4
+    instant_build = yes
+    province = 4096
+	}
+	add_building_construction = {
+     type = dockyard
+     level = 1
+     instant_build = yes
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+   focus = {
+   id = takao_port     #高雄港三期
+   icon = GFX_goal_generic_construct_naval_dockyard
+	x = 0
+	y = 2
+	
+	cost = 5
+	
+	prerequisite = {focus = kirun_port}
+	
+	completion_reward = {
+	524 ={
+	add_building_construction = {
+    type = naval_base
+    level = 3
+    instant_build = yes
+    province = 12068
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	   
+	focus = {
+   id = kishiko_industrial_istrict      #戲獅甲工業區
+   icon = GFX_goal_generic_construct_mil_factory
+	x = 2
+	y = 3
+	
+	cost = 7
+	
+	prerequisite = {focus = takao_port}
+	
+	completion_reward = {
+	524 ={
+	 add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+     type = arms_factory
+     level = 2
+     instant_build = yes
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	
+	focus = {
+   id = northern_power_factory    #北火工業
+   icon = GFX_goal_generic_construct_mil_factory
+	x = 3
+	y = 4
+	
+	cost = 7
+	
+	
+	
+	prerequisite = {focus = ship_taiwan}
+	
+	completion_reward = {
+	848 ={
+	 add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+     type = arms_factory
+     level = 1
+     instant_build = yes
+	}
+	add_building_construction = {
+     type = industrial_complex
+     level = 1
+     instant_build = yes
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	
+   focus = {
+   id = migration_problem    #移民問題
+   icon = GFX_focus_generic_self_management
+	x = 6
+	y = 3
+	
+	cost = 10
+	
+	available = {
+		is_puppet_of = JAP
+	}
+	
+	prerequisite = {focus = develop_east}
+	available = {has_country_flag = not_finish}
+	
+	completion_reward = {
+    country_event = {
+    id = tai.2
+    }
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	
+   focus = {
+   id = nitaka_plan    #新高計畫
+   icon = GFX_goal_generic_construct_infrastructure
+	x = 2
+	y = 5
+	
+	cost = 5
+	
+	available = {
+		is_puppet_of = JAP
+	}
+	
+	prerequisite = {focus = ship_takao}
+	prerequisite = {focus = karenko_port}
+	
+	completion_reward = {
+    add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	
+   focus = { 
+   id = nitaka_railway   #新高築港鐵路
+   icon = GFX_goal_generic_construct_infrastructure
+	x = 0
+	y = 6
+	
+	cost = 5
+	
+	prerequisite = {focus = nitaka_plan}
+
+	
+	completion_reward = {
+	850 ={
+	add_building_construction = {
+    type = infrastructure
+    level = 3
+    instant_build = yes
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	
+	focus = {
+   id = daitamuro_industrial_istrict   #大屯工業區
+   icon = GFX_goal_generic_construct_civ_factory
+	x = 2
+	y = 6
+	
+	cost = 10
+	
+	prerequisite = {focus = nitaka_plan}
+
+	
+	completion_reward = {
+	850 ={
+	 add_extra_state_shared_building_slots = 4
+	 add_building_construction = {
+     type = industrial_complex
+     level = 2
+     instant_build = yes
+	}
+	add_building_construction = {
+     type = arms_factory
+     level = 2
+     instant_build = yes
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	
+   focus = {
+   id = nitaka_synthetic_refinery    #合成資源
+   icon = GFX_goal_generic_construction
+	x = 4
+	y = 6
+	
+	cost = 5
+	
+	prerequisite = {focus = nitaka_plan}
+
+	
+	completion_reward = {
+     850 ={
+	 add_extra_state_shared_building_slots = 1
+	 add_building_construction = {
+     type = synthetic_refinery
+     level = 1
+     instant_build = yes
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+   focus = {
+   id = nitaka_port   #新高港
+   icon = GFX_goal_generic_build_navy
+	x = 2
+	y = 7
+	
+	cost = 10
+	
+	prerequisite = {focus = nitaka_railway}
+    prerequisite = {focus = daitamuro_industrial_istrict}
+    prerequisite = {focus = nitaka_synthetic_refinery}
+	
+	completion_reward = {
+	850 ={
+     add_extra_state_shared_building_slots = 2
+	 add_building_construction = {
+     type = dockyard
+     level = 2
+     instant_build = yes
+	}
+    add_building_construction = {
+    type = naval_base
+    level = 5
+    instant_build = yes
+    province = 11959
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+   focus = {
+   id = takao_steelmaking_two    #高雄製鐵株式會社
+   icon = GFX_focus_generic_steel
+	x = 8
+	y = 4
+	
+	cost = 5
+	
+	available = {
+		is_puppet_of = JAP
+	}
+	
+	prerequisite = {focus = takao_steelmaking}
+	
+	completion_reward = {
+    add_resource = {
+    type = steel
+    amount = 6   
+	state = 524} 
+     swap_ideas = {
+     remove_idea = Imported_material
+     add_idea = Imported_material_two}	 
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	
+   focus = {
+   id = connect_electric    #東西電力連結
+   icon = GFX_goal_generic_intelligence_exchange
+	x = 4
+	y = 5
+	
+	cost = 5
+	
+	prerequisite = {focus = east_electric}
+	prerequisite = {focus = karenko_port}
+	
+	completion_reward = { 
+
+     remove_ideas = eastern_taiwan_elect_ng_little
+       }
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}		
+   focus = {
+   id = new_east_railway    #東部鐵路
+   icon = GFX_goal_generic_construct_infrastructure
+	x = 6
+	y = 5
+	
+	cost = 5
+	
+	prerequisite = {focus = east_electric}
+	
+	completion_reward = { 
+	unlock_decision_category_tooltip = east_railway
+       }
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	
+   focus = {
+   id = pan_taiwan_railway    #全臺鐵路
+   icon = GFX_goal_generic_construct_infrastructure
+	x = 6
+	y = 6
+	
+	cost = 7
+	
+	prerequisite = {focus = new_east_railway}
+	available = {has_country_flag = "Resolve eastern railway problem"}
+	
+	completion_reward = { 
+         524 ={
+	     add_building_construction = {
+         type = infrastructure
+         level = 1
+         instant_build = yes
+	         }
+	     }
+         848 ={
+	     add_building_construction = {
+         type = infrastructure
+         level = 1
+         instant_build = yes
+	         }
+	     }	 
+         849 ={
+	     add_building_construction = {
+         type = infrastructure
+         level = 1
+         instant_build = yes
+	         }
+	     }
+         850 ={
+	     add_building_construction = {
+         type = infrastructure
+         level = 1
+         instant_build = yes
+	         }
+	     }		 
+       }
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+   focus = {
+   id = taichu_imperial_university    #中興大學
+   icon = GFX_goal_generic_scientific_exchange
+	x = 4
+	y = 7
+	
+	cost = 5
+	
+	prerequisite = {focus = pan_taiwan_railway}
+    prerequisite = {focus = nitaka_railway}
+    prerequisite = {focus = daitamuro_industrial_istrict}
+    prerequisite = {focus = nitaka_synthetic_refinery}
+	
+	completion_reward = { 
+		add_research_slot = 1 
+       }
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	
+   focus = {
+   id = develop_noko    #開發埔里
+   icon = GFX_goal_generic_construction2
+	x = 0
+	y = 7
+	
+	cost = 5
+	
+    prerequisite = {focus = nitaka_railway}
+
+	completion_reward = { 
+	850 ={
+     add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+
+	}
+	}
+       }
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}		
+	
+	###政治線###
+	focus = {
+   id = civil_style_creation #民風作興協議會
+   icon = GFX_focus_generic_military_academy
+	x = 18
+	y = 0
+	
+	available = {  }
+	#available = { date>1936.7.25 }
+	cost = 1
+	
+	mutually_exclusive = { 
+	focus = against_japan 
+	focus = sonno_joi
+	}
+	
+	completion_reward = {
+     swap_ideas = {
+     remove_idea = JAP_colony
+     add_idea = JAP_colony_1}	 
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id = the_end_of_Doka_era #結束文官統治
+   icon = GFX_goal_generic_demand_territory
+	x = -4
+	y = 1
+	relative_position_id = civil_style_creation
+	prerequisite = { focus = civil_style_creation }
+	mutually_exclusive = { focus =  keep_Doka_era  }
+	
+	cost = 5
+	
+	completion_reward = {
+	add_political_power = 120
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id = the_start_of_war_era #選武官總督
+   icon = GFX_focus_generic_military_mission
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = the_end_of_Doka_era }
+	relative_position_id = the_end_of_Doka_era
+	
+	cost = 5
+	
+	completion_reward = {
+	unlock_decision_category_tooltip = Japanese_Government_Leader_Change
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	
+	focus = {
+   id = japanization_movement #皇民化運動
+   icon = GFX_focus_jap_spiritual_mobilization
+	x = 0
+	y = 2 
+	relative_position_id=civil_style_creation
+	prerequisite = {
+	focus = the_end_of_Doka_era 
+	focus = keep_Doka_era 
+	}
+	available = {  }
+	
+	cost = 10
+	
+	completion_reward = {
+	add_ideas = taiwan_japanization_movement
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = speak_japanese_movement #國語運動 1937/4
+   icon = GFX_focus_speak_japanese_movement
+	x = 0
+	y = 1
+	relative_position_id=japanization_movement
+	prerequisite = {
+	focus = japanization_movement 
+	}
+	available = {  }
+	
+	cost = 10
+	
+	completion_reward = {
+	add_ideas = taiwan_japanese_language
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = komin_hokokai #皇民奉公會
+   icon = GFX_goal_generic_consumer_goods
+	x = 1
+	y = 1
+	relative_position_id=speak_japanese_movement
+	prerequisite = {
+	focus = speak_japanese_movement 
+	}
+	available = {  }
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = taiwan_social_mobilization
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = Kokumin_gakko #國民學校1941
+   icon = GFX_focus_generic_military_academy
+	x = -1
+	y = 1
+	relative_position_id=speak_japanese_movement
+	prerequisite = {
+	focus = speak_japanese_movement 
+	}
+	available = {  }
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = taiwan_kokumin_gakko
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = compulsory_education #義務教育1943
+   icon = GFX_focus_generic_military_academy
+	x = -1
+	y = 1
+	relative_position_id=Kokumin_gakko
+	prerequisite = {
+	focus = Kokumin_gakko 
+	}
+	available = {  }
+	
+	cost = 10
+	
+	completion_reward = {
+	swap_ideas = {
+    remove_idea = taiwan_kokumin_gakko
+    add_idea = taiwan_compulsory_education
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = public_opinion_control #輿論控制 
+   icon = GFX_focus_public_opinion_control
+	x = 0
+	y = 2
+	relative_position_id=speak_japanese_movement
+	prerequisite = {
+	focus = Kokumin_gakko 
+	}
+	prerequisite = {
+	focus = komin_hokokai 
+	}
+	available = {  }
+	
+	cost = 10
+	
+	completion_reward = {
+	add_ideas = taiwan_public_opinion_control
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	###武官總督線###
+	focus = {
+   id = suppout_southern_expansion_doctrine #支持南進
+   icon = GFX_goal_generic_propaganda
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = the_start_of_war_era }
+	relative_position_id = the_start_of_war_era
+	
+	cost = 5
+	
+	completion_reward = {
+	add_war_support = 0.1
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = economy_control #經濟管制
+   icon = GFX_goal_generic_trade
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = the_start_of_war_era }
+	relative_position_id = the_start_of_war_era
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = taiwan_economy_control
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = Mobilization # mobilization
+   icon = GFX_goal_generic_demand_territory
+	x = 1
+	y = 1
+	
+	prerequisite = { focus = suppout_southern_expansion_doctrine }
+	prerequisite = { focus = economy_control }
+	relative_position_id = economy_control
+	
+	bypass = { OR = {
+	has_idea = war_economy 
+	has_idea = tot_economic_mobilisation  
+	}
+	}
+	cost = 10
+	
+	completion_reward = {
+	if {
+	limit ={ NOT = {has_idea = war_economy } }
+	add_ideas = war_economy 
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = militarism_taiwan  # 軍國
+   icon = GFX_focus_generic_combined_arms
+	x = 0
+	y = 1
+	
+	prerequisite = { focus = Mobilization }
+	relative_position_id = Mobilization
+	
+	cost = 10
+	
+	completion_reward = {
+	add_ideas = taiwan_militarism
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id = expand_taiwan_army  # 擴軍 (改fight will)
+   icon = GFX_focus_fight_will
+	x = 2
+	y = 1 
+	
+	prerequisite = { focus = militarism_taiwan }
+	prerequisite = { focus = public_opinion_control }
+	relative_position_id = militarism_taiwan
+	
+	cost = 5
+	
+	completion_reward = {
+	add_war_support = 0.05
+	add_ideas = taiwan_fight_will_japan
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	############# 文官總督線 #################
+	
+	focus = {
+   id = keep_Doka_era #文官統治繼續 
+   icon = GFX_goal_generic_improve_relations
+	x = 4
+	y = 1
+	relative_position_id=civil_style_creation
+	prerequisite = { focus = civil_style_creation }
+	available = {  }
+	##has_country_flag = not_finish
+	mutually_exclusive = { focus =  the_end_of_Doka_era  }
+	
+	cost = 10
+	
+	completion_reward = {
+	add_political_power = -40
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = choose_govener #選文官總督
+   icon = GFX_focus_generic_the_giant_wakes
+	x = 0
+	y = 1
+	relative_position_id=keep_Doka_era
+	prerequisite = { focus = keep_Doka_era }
+	
+	cost = 5
+	
+	completion_reward = { 
+	country_event = tai.5
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = help_company #企業補助
+   icon = GFX_focus_generic_industry_3
+	x = -1
+	y = 1
+	relative_position_id=choose_govener
+	prerequisite = { focus = choose_govener }
+	
+	cost = 5
+	
+	completion_reward = { 
+	add_political_power = -50
+	add_ideas = Taiwan_help_company
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = mitsubishi_tai #邀請三菱
+   icon = GFX_focus_jap_zaibatsu
+	x = 1
+	y = 1
+	relative_position_id=choose_govener
+	prerequisite = { focus = choose_govener }
+	
+	cost = 5
+	
+	completion_reward = { 
+	add_political_power = 50
+	custom_effect_tooltip = available_designer
+	show_ideas_tooltip = mitsubishi_tai_com
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = support_greater_east_asia_war #支持戰爭
+   icon = GFX_focus_generic_combined_arms
+	x = -1
+	y = 1
+	relative_position_id=mitsubishi_tai
+	prerequisite = { focus = mitsubishi_tai }
+	prerequisite = { focus = help_company }
+	
+	cost = 5
+	
+	completion_reward = { 
+	add_political_power = 100
+	add_timed_idea = {
+    idea = Taiwan_support_gea_war
+    days = 360
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id = invite_japanese_expert #邀請[荒勝文策]
+   icon = GFX_focus_eng_concessions_to_the_trade_unions
+	x = 0
+	y = 1
+	relative_position_id=support_greater_east_asia_war
+	prerequisite = { focus = support_greater_east_asia_war }
+
+	cost = 10
+	
+	completion_reward = { 
+	add_political_power = 150
+	custom_effect_tooltip = available_political_advisor
+	show_ideas_tooltip = tai_bunsaku_arakatsu
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id = research_slot_diet #科研槽
+   icon = GFX_focus_research
+	x = -2
+	y = 1
+	relative_position_id=invite_japanese_expert
+	prerequisite = { focus = invite_japanese_expert }
+	prerequisite = { focus = public_opinion_control }
+	
+	cost = 10
+	
+	completion_reward = { 
+	add_research_slot = 1
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	
+	
+	
+	
+	#反日-非史實
+	focus = {
+   id = against_japan #反日
+   icon = GFX_goal_generic_political_pressure
+	x = 32
+	y = 0
+	
+	available = {  }
+	#available = { date>1936.7.25 }
+	cost = 10
+	mutually_exclusive = {
+	focus = civil_style_creation
+	focus = sonno_joi
+	}
+	
+	
+	completion_reward = {
+	add_political_power = -10
+	hidden_effect = {
+	
+	set_rule = {
+		can_not_declare_war = no
+		can_declare_war_on_same_ideology = yes
+	}
+	}
+	
+    }
+	
+	bypass = {
+		NOT = { TAI = { is_puppet_of = JAP } }
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id = taiwan_democratic_front #成立"台灣民主團結陣線"
+   icon = GFX_goal_generic_national_unity
+	x = 0
+	y = 1
+	relative_position_id=against_japan
+	prerequisite = { focus = against_japan }
+	
+	cost = 15
+	
+	completion_reward = {  
+	add_political_power = 120
+	set_party_name = {
+	ideology = democratic
+	long_name = tdf_longname
+	name = tdf_name
+	}
+	add_popularity = {
+	ideology = democratic
+	popularity = 0.05
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id = accept_communist #聯合陣線
+   icon = GFX_focus_chi_mission_to_the_soviet_union
+	x = -4
+	y = 1
+	relative_position_id=taiwan_democratic_front
+	prerequisite = { focus = taiwan_democratic_front }
+	mutually_exclusive = { focus = fight_communist }
+	cost = 10
+	
+	completion_reward = {  
+	add_political_power = 50
+	add_popularity = {
+	ideology = democratic
+	popularity = 0.05
+	}
+	add_popularity = {
+	ideology = communism
+	popularity = 0.05
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = fight_communist #反共
+   icon = GFX_focus_ger_bulwark_against_bolshevism
+	x = 5
+	y = 1
+	relative_position_id=taiwan_democratic_front
+	prerequisite = { focus = taiwan_democratic_front }
+	mutually_exclusive = { focus = accept_communist }
+	cost = 5
+	
+	completion_reward = {  
+	add_political_power = -50
+	add_popularity = {
+	ideology = democratic
+	popularity = 0.07
+	}
+	add_popularity = {
+	ideology = communism
+	popularity = -0.02
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id = communist_control #共黨主導運動
+   icon = GFX_focus_prc_agrarian_socialism
+	x = -2
+	y = 1
+	relative_position_id=accept_communist
+	prerequisite = { focus = accept_communist }
+	mutually_exclusive = { focus = communist_democracy }
+	cost = 10
+	
+	completion_reward = {  
+	add_popularity = {
+	ideology = communism
+	popularity = 0.1
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id = communist_democracy #左派民主運動
+   icon = GFX_focus_generic_the_giant_wakes
+	x = 2
+	y = 1
+	relative_position_id=accept_communist
+	prerequisite = { focus = accept_communist }
+	mutually_exclusive = { focus = communist_control }
+	cost = 10
+	
+	completion_reward = {  
+	add_popularity = {
+	ideology = communism
+	popularity = 0.1
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id = neutrality_path #中立(原住民)
+   icon = GFX_goal_anschluss
+	x = -3
+	y = 1
+	relative_position_id=fight_communist
+	prerequisite = { focus = fight_communist }
+	mutually_exclusive = { focus = taiwan_democracy }
+	cost = 10
+	
+	completion_reward = {  
+	add_stability = 0.02
+	add_popularity = {
+	ideology = fascism
+	popularity = -0.15
+	}
+	add_popularity = {
+	ideology = neutrality
+	popularity = 0.1
+	}
+	add_popularity = {
+	ideology = communism
+	popularity = -0.02
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id = taiwan_democracy #右派民主
+   icon = GFX_goal_support_democracy
+	x = 5
+	y = 1
+	relative_position_id=fight_communist
+	prerequisite = { focus = fight_communist }
+	mutually_exclusive = { focus = neutrality_path }
+	cost = 5
+	
+	completion_reward = {  
+	add_stability = 0.05
+	add_popularity = {
+	ideology = fascism
+	popularity = -0.2
+	}
+	add_popularity = {
+	ideology = democratic
+	popularity = 0.05
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	###########  共產線
+	
+	focus = {
+   id = pro_ccp_coup #政變
+   icon = GFX_goal_generic_war_with_comintern
+	x = -1
+	y = 1
+	relative_position_id=communist_control
+	prerequisite = { focus = communist_control }
+	cost = 5
+	
+	completion_reward = {
+	create_country_leader = {
+	name = "Weng Ze Sheng"
+	desc = ""
+	picture = "Weng_Ze_Sheng.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+	}
+	add_political_power = -50	
+	add_popularity = {
+	ideology = communism
+	popularity = -0.02
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	
+	
+	focus = {
+   id = adjust_platform_of_party #修正黨綱(偏中共化)
+   icon = GFX_focus_prc_proclaim_the_peoples_republic
+	x = 0
+	y = 1
+	relative_position_id=pro_ccp_coup
+	prerequisite = { focus = pro_ccp_coup }
+	cost = 10
+	
+	completion_reward = {
+	add_popularity = {
+	ideology = communism
+	popularity = 0.05
+	}
+	add_opinion_modifier = {
+		target = PRC
+		modifier = expand_cooperation_with_ccp 
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	
+	focus = {
+   id = prepare_for_independence #準備獨立運動
+   icon = GFX_focus_prc_infiltration
+	x = 2
+	y = 1
+	relative_position_id=communist_control
+	prerequisite = { 
+	focus = communist_control
+	focus = communist_democracy
+	}
+	cost = 5
+	
+	completion_reward = {  
+	add_war_support = 0.05
+	add_stability = -0.02
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id = shadow_armory #暗影軍火庫
+   icon = GFX_focus_generic_combined_arms
+	x = -1
+	y = 1
+	relative_position_id=prepare_for_independence
+	prerequisite = { 
+	focus = prepare_for_independence
+	}
+	cost = 5
+	
+	completion_reward = {  
+	add_offsite_building = { type = arms_factory level = 1 }
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = soviet_support #蘇聯支持
+   icon = GFX_focus_chi_mission_to_the_soviet_union
+	x = 1
+	y = 1
+	relative_position_id=prepare_for_independence
+	prerequisite = { 
+	focus = prepare_for_independence
+	}
+	cost = 5
+	
+	completion_reward = {  
+	add_offsite_building = { type = industrial_complex level = 1 }
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = shadow_army #暗影大軍
+   icon = GFX_focus_generic_little_entente
+	x = 1
+	y = 1
+	relative_position_id=shadow_armory
+	prerequisite = { 
+	focus = shadow_armory
+	}
+	prerequisite = { 
+	focus = soviet_support
+	}
+	cost = 5
+	
+	completion_reward = {
+	custom_effect_tooltip = form_taiwan_army 
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = armed_revolution #宣布獨立
+   icon = GFX_focus_hol_the_foundations_of_defense
+	x = 0
+	y = 1
+	relative_position_id=shadow_army
+	prerequisite = { 
+	focus = shadow_army
+	}
+	cost = 5
+	
+	completion_reward = {
+		every_unit_leader = {
+			limit = {
+			OR = {
+				has_id  = 8704
+				has_id  = 8705
+				has_id  = 8706
+				has_id  = 8707
+				has_id  = 8708
+			}
+			}
+			set_nationality = JAP
+		}
+		hidden_effect = {
+			delete_unit_template_and_units = {
+			division_template = "Command"
+		}
+		delete_unit_template_and_units = {
+			division_template = "Artillery Battalion" 
+		}
+		delete_unit_template_and_units = {
+			division_template = "Taiwan Infantry Regiment"
+		}
+		}
+		
+		add_ideas = taiwan_fight_will
+		add_political_power = 150
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		end_puppet = JAP
+		leave_faction = yes
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.4
+		}
+		JAP = {
+			declare_war_on = {
+				target = TAI
+				type = annex_everything
+			}
+		}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = peace_talk #和談
+   icon = GFX_goal_generic_forceful_treaty
+	x = 0
+	y = 1
+	relative_position_id=armed_revolution
+	prerequisite = { 
+	focus = armed_revolution
+	}
+	cost = 51.5
+	
+	completion_reward = {
+	add_political_power = -150
+	white_peace = {
+		tag = JAP
+		message = "Cease fire with Japanese, we finally get our indpendency!"
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = cooperate_with_ccp #和中共合作
+   icon = GFX_focus_chi_cooperation_with_the_communists
+	x = -3
+	y = 1
+	relative_position_id=armed_revolution
+	prerequisite = { 
+	focus = armed_revolution
+	}
+	prerequisite = { 
+	focus = adjust_platform_of_party
+	}
+	cost = 5
+	
+	completion_reward = {
+	add_opinion_modifier = {
+		target = PRC
+		modifier = communist_friendship  
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = chinese_communist_assistance #中共支援
+   icon = GFX_goal_generic_soviet_construction
+	x = 0
+	y = 1
+	relative_position_id=cooperate_with_ccp
+	prerequisite = { 
+	focus = cooperate_with_ccp
+	}
+	cost = 10
+	
+	completion_reward = {
+	add_manpower = 13242
+	add_war_support = 0.05
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = join_ccp #和中共聯合
+   icon = GFX_focus_chi_one_china_policy
+	x = 0
+	y = 1
+	relative_position_id=chinese_communist_assistance
+	prerequisite = { 
+	focus = chinese_communist_assistance
+	}
+	cost = 10
+	
+	completion_reward = {
+	add_stability = -0.05
+	add_war_support = 0.1
+	give_military_access = PRC
+	give_guarantee = PRC
+	PRC = {
+	give_military_access = TAI
+	give_guarantee = TAI
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = re_elect #恢復選舉
+   icon = GFX_goal_support_democracy
+	x = 2
+	y = 1
+	relative_position_id=armed_revolution
+	prerequisite = { 
+	focus = armed_revolution
+	}
+	prerequisite = { 
+	focus = communist_democracy
+	}
+	cost = 5
+	
+	completion_reward = {
+	add_political_power = 50
+	set_politics = {
+		ruling_party = communism
+		elections_allowed  = yes
+	}
+	add_popularity = {
+	ideology = democratic
+	popularity = 0.1
+	}
+	add_popularity = {
+	ideology = communism
+	popularity = 0.05
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	
+	focus = {
+   id = improve_walfare #福利政策 
+   icon = GFX_goal_generic_consumer_goods
+	x = -1
+	y = 1
+	relative_position_id=re_elect
+	prerequisite = { 
+	focus = re_elect
+	}
+	cost = 10
+	
+	completion_reward = {
+	add_ideas = walfare_tai
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = land_reform #土地改革
+   icon = GFX_focus_generic_soviet_politics
+	x = 0
+	y = 1
+	relative_position_id=improve_walfare 
+	prerequisite = { 
+	focus = improve_walfare
+	}
+	cost = 10
+	
+	completion_reward = {
+	add_ideas = land_reform
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = invest_industry #工業發展 
+   icon = GFX_focus_generic_industry_3
+	x = 0
+	y = 1
+	relative_position_id=land_reform
+	prerequisite = { 
+	focus = land_reform
+	}
+	cost = 10
+	
+	completion_reward = {
+	add_ideas = invest_industry
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = ensure_freedom_of_speech #保障言論自由
+   icon = GFX_goal_generic_radar
+	x = 1
+	y = 1
+	relative_position_id=re_elect
+	prerequisite = { 
+	focus = re_elect
+	}
+	cost = 5
+	
+	completion_reward = {
+	add_stability = 0.05
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = volunteers_army_of_liberal #民主志願軍
+   icon = GFX_focus_generic_commonwealth_build_infantry
+	x = 0
+	y = 1
+	relative_position_id=ensure_freedom_of_speech
+	prerequisite = { 
+	focus = ensure_freedom_of_speech
+	}
+	cost = 5
+	
+	completion_reward = {
+	set_rule = {
+		can_send_volunteers = yes
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = left_compulsory_education #義務教育
+   icon = GFX_focus_generic_military_academy
+	x = 0
+	y = 1
+	relative_position_id=volunteers_army_of_liberal
+	prerequisite = { 
+	focus = volunteers_army_of_liberal
+	}
+	cost = 10
+	
+	completion_reward = {
+	add_ideas = left_compulsory_education
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = expand_research_site #擴建科研
+   icon = GFX_focus_generic_socialist_science
+	x = -1 
+	y = 1
+	relative_position_id=left_compulsory_education
+	prerequisite = { 
+	focus = left_compulsory_education
+	}
+	prerequisite = { 
+	focus = invest_industry
+	}
+	cost = 10
+	
+	completion_reward = {
+	add_research_slot = 1
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = alliance_with_indigenous #和高砂族結盟
+   icon = GFX_focus_generic_diplomatic_treaty
+	x = 1
+	y = 1
+	relative_position_id=communist_democracy
+	prerequisite = { focus = communist_democracy }
+	cost = 5
+	
+	completion_reward = {  
+	add_popularity = {
+	ideology = neutrality
+	popularity = 0.1
+	}
+	add_stability = 0.5
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = recruit_indigenous_commander #招募高砂族將領
+   icon = GFX_focus_generic_military_mission
+	x = 0
+	y = 1
+	relative_position_id=alliance_with_indigenous
+	prerequisite = { focus = alliance_with_indigenous }
+	cost = 10
+	
+	completion_reward = {  
+	custom_effect_tooltip = alliance_gaoshan
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	############  民主線
+	
+	focus = {
+   id = toward_peaceful_indepence ##和平獨立 
+   icon = GFX_focus_renounce_the_treaty_of_trianon
+	x = 4
+	y = 1
+	relative_position_id=neutrality_path
+	prerequisite = { 
+	focus = neutrality_path 
+	focus = taiwan_democracy
+	}
+	cost = 5
+	
+	completion_reward = {  
+	add_political_power = -50
+	if = {
+	limit = { has_completed_focus = taiwan_democracy }
+	add_popularity = {
+	ideology = democratic
+	popularity = 0.07
+	}
+	}
+	if = {
+	limit = { has_completed_focus = neutrality_path }
+	add_popularity = {
+	ideology = neutrality
+	popularity = 0.07
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+
+	focus = {
+   id = visit_of_katayama ##片山哲的訪問
+   icon = GFX_focus_eng_concessions_to_the_trade_unions
+	x = -1
+	y = 1
+	relative_position_id=toward_peaceful_indepence
+	prerequisite = { 
+	focus = toward_peaceful_indepence 
+	}
+	available = {
+	JAP = {
+	has_government = democratic
+	}
+	}
+	mutually_exclusive = { focus = army_oppose_independence }
+	cost = 10
+	
+	completion_reward = {  
+	add_political_power = -100
+	add_popularity = {
+	ideology = fascism
+	popularity = -0.2
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	focus = {
+   id = call_to_strike_and_protest ##罷工抗議
+   icon = GFX_goal_generic_demand_territory
+	x = -1
+	y = 1
+	relative_position_id=visit_of_katayama
+	prerequisite = { 
+	focus = visit_of_katayama 
+	}
+	cost = 5
+	
+	completion_reward = {  
+	if = {
+	limit = { has_completed_focus = taiwan_democracy }
+	add_popularity = {
+	ideology = democratic
+	popularity = 0.1
+	}
+	}
+	if = {
+	limit = { has_completed_focus = neutrality_path }
+	add_popularity = {
+	ideology = neutrality
+	popularity = 0.1
+	}
+	}
+	add_political_power = 120
+	
+	
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  negotiate_with_japan ##獨立協商
+   icon = GFX_goal_generic_intelligence_exchange
+	x = 1
+	y = 1
+	relative_position_id=call_to_strike_and_protest
+	prerequisite = { 
+	focus = call_to_strike_and_protest 
+	}
+	cost = 15
+	
+	completion_reward = {  
+	end_puppet = JAP
+	if = {
+	limit = { JAP = { is_in_faction = yes } }
+	JAP = { add_to_faction = TAI }
+	}
+	if = {
+	limit = { has_completed_focus = taiwan_democracy }
+	set_politics = {
+	ruling_party = democratic
+	elections_allowed = no
+	}
+	}
+	if = {
+	limit = { has_completed_focus = neutrality_path }
+	set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+	}
+	}
+	
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = army_oppose_independence ##日軍反擊
+   icon = GFX_focus_generic_strike_at_democracy3
+	x = 1
+	y = 1
+	relative_position_id=toward_peaceful_indepence
+	prerequisite = { 
+	focus = toward_peaceful_indepence 
+	}
+	mutually_exclusive = { focus = visit_of_katayama }
+	cost = 1
+	
+	completion_reward = {  
+	add_political_power = -50 
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = obey_the_order ##停止行動
+   icon = GFX_focus_CZE_german_puppet
+	x = -1
+	y = 1
+	relative_position_id=army_oppose_independence
+	prerequisite = { 
+	focus = army_oppose_independence 
+	}
+	mutually_exclusive = { focus = disband_the_army }
+	cost = 5
+	
+	completion_reward = {  
+	add_political_power = 150
+	complete_national_focus = the_end_of_Doka_era
+	hidden_effect = {
+	add_popularity = {
+	ideology = fascism
+	popularity = 100
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = disband_the_army ##解散台灣軍
+   icon = GFX_goal_generic_forceful_treaty
+	x = 1
+	y = 1
+	relative_position_id=army_oppose_independence
+	prerequisite = { 
+	focus = army_oppose_independence 
+	}
+	mutually_exclusive = { focus = obey_the_order }
+	cost = 1
+	
+	completion_reward = {  
+	add_political_power = -150
+	add_popularity = {
+	ideology = fascism
+	popularity = -0.3
+	}
+	hidden_effect = {
+		transfer_navy = {
+			target = JAP
+		}
+		every_unit_leader = {
+			limit = {
+			OR = {
+				has_id  = 8704
+				has_id  = 8705
+				has_id  = 8706
+				has_id  = 8707
+				has_id  = 8708
+			}
+			}
+			set_nationality = JAP
+		}
+		delete_unit_template_and_units = {
+			division_template = "Command"
+		}
+		delete_unit_template_and_units = {
+			division_template = "Artillery Battalion" 
+		}
+		delete_unit_template_and_units = {
+			division_template = "Taiwan Infantry Regiment"
+		}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	focus = {
+   id = mobilize_the_revolutionary_army ##起義軍動員
+   icon = GFX_focus_attack_japan
+	x = -1
+	y = 1
+	relative_position_id=disband_the_army
+	prerequisite = { 
+	focus = disband_the_army 
+	}
+	cost = 3
+	
+	completion_reward = {  
+	add_political_power = 50
+	end_puppet = JAP
+	if = {
+	limit = { has_completed_focus = taiwan_democracy }
+	set_politics = {
+	ruling_party = democratic
+	elections_allowed = no
+	}
+	}
+	if = {
+	limit = { has_completed_focus = neutrality_path }
+	set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+	}
+	}
+	load_oob = taiwan_revolution_democratic
+	JAP = {
+		create_wargoal = {
+			type = annex_everything
+			target = ROOT
+		}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  peace_with_japan ##和日本和談
+   icon = GFX_goal_generic_alliance
+	x = 1
+	y = 1
+	relative_position_id=disband_the_army
+	prerequisite = { 
+	focus = disband_the_army 
+	}
+	cost = 38.6
+	
+	available = {
+	has_war_with = JAP
+	}
+	
+	completion_reward = {
+	add_political_power = 10
+	white_peace = JAP
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  indigenous_autonomy ##原住民自治政府
+   icon = GFX_goal_generic_fortify_city
+	x = -3
+	y = 1
+	relative_position_id=negotiate_with_japan
+	prerequisite = { 
+	focus = negotiate_with_japan 
+	focus = mobilize_the_revolutionary_army
+	}
+	cost = 5
+	
+	available = { 
+		NOT = { has_war_with = JAP }
+	}
+	
+	completion_reward = {  
+	add_stability = 0.05
+	849 = {
+	set_demilitarized_zone = yes
+	}
+	add_popularity = {
+	ideology = neutrality
+	popularity = 0.05
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  indigenous_right_act ##原住民權利保障法案
+   icon = GFX_focus_generic_treaty
+	x = 0
+	y = 1
+	relative_position_id=indigenous_autonomy
+	prerequisite = { 
+	focus = indigenous_autonomy  
+	}
+	cost = 10
+	
+	completion_reward = {
+	add_political_power	=50
+	add_ideas = indigenous_act
+	add_stability = 0.1
+	add_popularity = {
+	ideology = neutrality
+	popularity = 0.1
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  indigenous_president ##原住民總統
+   icon = GFX_goal_support_democracy
+	x = 0
+	y = 1
+	relative_position_id=indigenous_right_act
+	prerequisite = { 
+	focus = indigenous_right_act  
+	}
+	prerequisite = { 
+	focus = neutrality_path  
+	}
+	mutually_exclusive = {
+	focus = universal_suffrage
+	focus = join_democratic_china
+	focus = revive_the_kingdom
+	focus = revive_the_republic
+	}
+	cost = 10
+	
+	completion_reward = {  
+	add_political_power = -50
+	add_stability = -0.05
+	set_politics = {
+		ruling_party = neutrality
+		elections_allowed = yes 
+	}
+	add_popularity = {
+	ideology = neutrality
+	popularity = 0.2
+	}
+	country_event = tai_elect.1
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  taiwanese_nationalism ##民族主義
+   icon = GFX_goal_generic_military_sphere
+	x = -1
+	y = 1
+	relative_position_id=negotiate_with_japan
+	prerequisite = { 
+	focus = negotiate_with_japan 
+	focus = mobilize_the_revolutionary_army
+	}
+	cost = 10
+	
+	completion_reward = {
+	add_political_power = 50
+	add_war_support = 0.05
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+    id =  pride_of_taiwanese_civilization ##台灣的驕傲
+    icon = GFX_goal_generic_propaganda
+	x = 0
+	y = 1
+	relative_position_id=taiwanese_nationalism
+	prerequisite = { 
+	focus = taiwanese_nationalism 
+	}
+	cost = 10
+	
+	completion_reward = {
+	add_political_power = 100
+	add_stability = 0.05
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  revive_the_republic ##台灣民主國
+   icon = GFX_focus_formosa
+	x = 0
+	y = 1
+	relative_position_id=pride_of_taiwanese_civilization
+	prerequisite = { 
+	focus = pride_of_taiwanese_civilization 
+	}
+	cost = 5
+	mutually_exclusive = {
+	focus = universal_suffrage
+	focus = join_democratic_china
+	focus = revive_the_kingdom
+	focus = indigenous_president
+	}
+	available = {
+		has_completed_focus = neutrality_path
+	}
+	completion_reward = {
+	set_politics = {
+	ruling_party = neutrality
+	elections_allowed = yes
+	}
+	add_popularity = {
+		ideology = neutrality
+		popularity = 0.30
+	}
+	create_country_leader = {
+		name = "Chiu Nien Tai"
+		picture = "Chiu_Nien_Tai.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+		
+		}
+	}
+	set_party_name = { 
+		ideology = neutrality 
+		long_name = TDEM_party_long 
+		name = TDEM_party 
+	}
+	set_cosmetic_tag = TDEM
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  establish_diplomatic_relations_with_japan ##和日本建交
+   icon = GFX_goal_generic_intelligence_exchange
+	x = 1
+	y = 1
+	relative_position_id=negotiate_with_japan
+	prerequisite = { 
+	focus = negotiate_with_japan 
+	focus = mobilize_the_revolutionary_army
+	}
+	cost = 5
+	available = {
+	NOT = { has_war_with = JAP }
+	}
+	
+	completion_reward = {
+	add_opinion_modifier = {
+		target = JAP
+		modifier = expand_cooperation_with_ccp
+	}	
+	
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  taiwan_japan_friendship ##日台友好
+   icon = GFX_focus_chi_collaboration_with_the_japanese
+	x = 0
+	y = 1
+	relative_position_id=establish_diplomatic_relations_with_japan
+	prerequisite = { 
+	focus = establish_diplomatic_relations_with_japan 
+	}
+	cost = 10
+	
+	available = {
+	OR = {
+	AND = {
+		JAP = { has_government = democratic }
+		TAI = { has_government = democratic }
+	}
+	AND = {
+		JAP = { has_government = neutrality }
+		TAI = { has_government = neutrality }
+	}
+	}
+	}
+	
+	completion_reward = { 
+	add_political_power = 100	
+	add_opinion_modifier = {
+		target = JAP
+		modifier = japanese_taiwan_friendship
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  revive_the_kingdom ##東寧王國
+   icon = GFX_focus_tai_kingdom
+	x = 0
+	y = 1
+	relative_position_id=taiwan_japan_friendship
+	prerequisite = { 
+	focus = taiwan_japan_friendship 
+	}
+	mutually_exclusive = {
+	focus = universal_suffrage
+	focus = join_democratic_china
+	focus = revive_the_republic
+	focus = indigenous_president
+	}
+	cost = 10
+	
+	available = {
+	has_completed_focus = neutrality_path
+	}
+	
+	completion_reward = { 
+	add_political_power = -150	
+	set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+	}
+	add_popularity = {
+		ideology = neutrality
+		popularity = 0.40
+	}
+	set_party_name = { 
+		ideology = neutrality 
+		long_name = ZHENG_party_long 
+		name = ZHENG_party 
+	}
+	create_country_leader = {
+		name = "Zheng Shourang"
+		picture = "Zheng_mingneng.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+		
+		}
+	}
+	set_cosmetic_tag = ZHENG
+	set_country_flag = revive_the_kingdom_flag
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  accept_three_principles_of_the_people ##三民主義
+   icon = GFX_focus_chi_examination_yuan
+	x = 3
+	y = 1
+	relative_position_id=negotiate_with_japan
+	prerequisite = { 
+	focus = negotiate_with_japan 
+	focus = mobilize_the_revolutionary_army
+	}
+	cost = 5
+	
+	completion_reward = {
+	add_political_power = 10
+	add_opinion_modifier = {
+		target = CHI
+		modifier = chinese_taiwan_friendship
+	}	
+	
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =   taiwan_chinese_treaty_of_friendship_and_alliance ##中台友好同盟條約
+   icon = GFX_focus_chi_cooperation_with_the_nationalists
+	x = 0
+	y = 1
+	relative_position_id=accept_three_principles_of_the_people
+	prerequisite = { 
+	focus = accept_three_principles_of_the_people 
+	}
+	cost = 5
+	
+	completion_reward = {
+	add_political_power = 10
+		diplomatic_relation = { 
+			country = CHI 
+			relation = non_aggression_pact 
+		}	
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =   join_democratic_china ##民主中國
+   icon = GFX_focus_generic_china1
+	x = 0
+	y = 1
+	relative_position_id=taiwan_chinese_treaty_of_friendship_and_alliance
+	prerequisite = { 
+	focus = taiwan_chinese_treaty_of_friendship_and_alliance 
+	}
+	mutually_exclusive = {
+	focus = universal_suffrage
+	focus = revive_the_kingdom
+	focus = revive_the_republic
+	focus = indigenous_president
+	}
+	available = {
+		has_completed_focus = taiwan_democracy
+		CHI = { has_war = no }
+		CHI = { has_government = democratic }
+	}
+	
+	cost = 10
+	
+	completion_reward = {
+		CHI = { puppet = TAI }	
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  taiwanese_parliament ##台灣議會
+   icon = GFX_goal_support_democracy
+	x = 5
+	y = 1
+	relative_position_id=negotiate_with_japan
+	prerequisite = { 
+	focus = negotiate_with_japan 
+	focus = mobilize_the_revolutionary_army
+	}
+	cost = 10
+	
+	completion_reward = {
+	add_political_power = 150
+	add_ideas = taiwan_council
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  right_compulsory_education ##義務教育
+   icon = GFX_focus_generic_military_academy
+	x = 0
+	y = 1
+	relative_position_id=taiwanese_parliament
+	prerequisite = { 
+	focus = taiwanese_parliament 
+	}
+	cost = 10
+	
+	completion_reward = {
+	add_research_slot = 1
+	add_ideas = right_compulsory_education
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = universal_suffrage  ##普選
+   icon = GFX_goal_generic_forceful_treaty
+	x = 0
+	y = 1
+	relative_position_id=right_compulsory_education
+	prerequisite = { 
+	focus = right_compulsory_education 
+	}
+	prerequisite = { 
+	focus = taiwan_democracy 
+	}
+	mutually_exclusive = {
+	focus = join_democratic_china
+	focus = revive_the_kingdom
+	focus = revive_the_republic
+	focus = indigenous_president
+	}
+	cost = 10
+	
+	completion_reward = {
+	add_political_power = 50
+	set_politics = {
+	ruling_party = democratic
+	elections_allowed = yes
+	}
+	hidden_effect = {
+		country_event = tai_elect.3
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	
+	####
+	
+	
+	
+	######## 尊王攘夷
+	
+	focus = {
+   id =  sonno_joi ##尊王攘夷
+   icon = GFX_goal_generic_special_forces
+	x = 47
+	y = 0
+	mutually_exclusive = {
+	focus = against_japan
+	focus = civil_style_creation
+	}
+	cost = 5
+	
+	available = {
+	has_government = fascism
+	JAP = { NOT = { has_completed_focus = JAP_strengthen_civilian_government } }
+	}
+	
+	completion_reward = {
+	add_political_power	= -10
+	add_popularity = {
+	ideology = fascism
+	popularity = 0.02
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  future_of_empire ##帝國的未來
+   icon = GFX_goal_generic_more_territorial_claims
+	x = 0
+	y = 1
+	relative_position_id = sonno_joi
+	prerequisite = { focus = sonno_joi }
+	cost = 10
+	
+	available = {
+		OR = {
+		JAP = { has_completed_focus = JAP_support_the_kodoha_faction }
+		JAP = {
+		has_country_leader = { id = 700 }
+		}
+		}
+		
+	}
+	
+	completion_reward = {  
+	custom_effect_tooltip = "Our report indicated that Navy might want to take actions "
+	hidden_effect = {
+	JAP = {
+	every_navy_leader = { set_nationality = IJN }
+	transfer_navy = { target = IJN }
+	}
+	528 = {add_core_of = IJN}
+	529 = {add_core_of = IJN}
+	530 = {add_core_of = IJN}
+	531 = {add_core_of = IJN}
+	532 = {add_core_of = IJN}
+	533 = {add_core_of = IJN}
+	534 = {add_core_of = IJN}
+	535 = {add_core_of = IJN}
+	536 = {add_core_of = IJN}
+	282 = {add_core_of = IJN}
+	
+	IJN = {
+		set_state_owner = 528
+		set_state_owner = 529
+		set_state_owner = 530
+		set_state_controller = 528
+		set_state_controller = 529
+		set_state_controller = 530
+	}
+	TAI = {
+		set_state_controller = 526
+		set_state_controller = 645
+		set_state_controller = 646
+		set_state_owner = 526
+		set_state_owner = 645
+		set_state_owner = 646
+	}
+	526 ={ add_core_of = TAI}
+	645 = {add_core_of = TAI}
+	646 = {add_core_of = TAI}
+	
+	IJN = { load_oob = "IJN_war" }
+	JAP = {
+	declare_war_on = {
+		target = IJN
+		type = annex_everything
+	}
+	}
+	JAP = {
+	if = {
+	limit = { has_government = fascism }
+		create_country_leader = {
+			name = "Tojo_Hideki"
+			desc = ""
+			picture = "Tojo_Hideki.dds"
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {
+			}
+		}
+		set_party_name = { 
+			ideology = fascism 
+			long_name = ija_longname 
+			name = ija_name 
+		}
+	}
+	if = {
+	limit = { has_government = neutrality }
+		create_country_leader = {
+			name = "Tojo_Hideki"
+			desc = ""
+			picture = "Tojo_Hideki.dds"
+			expire = "1989.1.1"
+			ideology = oligarchism
+			traits = {
+			}
+		}
+		set_party_name = { 
+			ideology = neutrality 
+			long_name = ija_longname 
+			name = ija_name 
+		}
+		
+	}
+	}
+	JAP = { end_puppet = TAI}
+	JAP = { end_puppet = MAN}
+	JAP = { end_puppet = MEN}
+	add_war_support = 0.25
+	526 ={  set_demilitarized_zone = yes }
+	645 = {  set_demilitarized_zone = yes  }
+	646 = {  set_demilitarized_zone = yes }
+	}
+	
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  protect_the_emperor ##保護皇帝
+   icon = GFX_focus_jap_showa_restoration
+	x = 0
+	y = 1
+	relative_position_id = future_of_empire
+	prerequisite = { focus = future_of_empire }
+	cost = 2
+	
+	available = {
+		JAP = {
+		NOT = { has_country_leader = { id = 700 } }
+		}
+		has_government = fascism
+	}
+	
+	completion_reward = {  
+	add_political_power = 150
+	create_country_leader = {
+		name = "Hirohito"
+		desc = "POLITICS_Hirohito_DESC"
+		picture = "Portrait_Japan_Hirohito.dds"
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			warrior_code
+			emperor_showa
+			imperial_sanction
+		}
+	}
+	hidden_effect = {
+	TAI = {
+		set_state_controller = 526
+		set_state_controller = 645
+		set_state_controller = 646
+	}
+	526 ={ set_demilitarized_zone = no }
+	645 = { set_demilitarized_zone = no  }
+	646 = { set_demilitarized_zone = no }
+	set_cosmetic_tag = SHOWA
+	JAP = {
+	random_army_leader = {
+	set_nationality = TAI
+	}
+	random_army_leader = {
+	set_nationality = TAI
+	}
+	random_army_leader = {
+	set_nationality = TAI
+	}
+	random_army_leader = {
+	set_nationality = TAI
+	}
+	random_army_leader = {
+	set_nationality = TAI
+	}
+	random_army_leader = {
+	set_nationality = TAI
+	}
+	}
+	}
+	
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  fortify_taiwan ##台灣堡壘
+   icon = GFX_goal_generic_construct_military
+	x = -1
+	y = 1
+	relative_position_id = protect_the_emperor
+	prerequisite = { focus = protect_the_emperor }
+	mutually_exclusive = { focus = prepare_for_return }
+	cost = 10
+	
+	available = {
+		
+	}
+	
+	completion_reward = { 
+	add_political_power	= 150
+	524 = {
+		set_building_level = {
+		type = coastal_bunker 
+		level = 5
+		province = {
+        all_provinces = yes
+        limit_to_coastal = yes
+		}
+		}
+	}
+	848 = {
+		set_building_level = {
+		type = coastal_bunker 
+		level = 5
+		province = {
+        all_provinces = yes
+        limit_to_coastal = yes
+		}
+		}
+	}
+	849 = {
+		set_building_level = {
+		type = coastal_bunker 
+		level = 5
+		province = {
+        all_provinces = yes
+        limit_to_coastal = yes
+		}
+		}
+	}
+	850 = {
+		set_building_level = {
+		type = coastal_bunker 
+		level = 5
+		province = {
+        all_provinces = yes
+        limit_to_coastal = yes
+		}
+		}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  prepare_for_return ##準備反攻
+   icon = GFX_goal_generic_occupy_states_ongoing_war
+	x = 1
+	y = 1
+	relative_position_id = protect_the_emperor
+	prerequisite = { focus = protect_the_emperor }
+	mutually_exclusive = { focus = fortify_taiwan }
+	cost = 5
+	
+	available = {
+		
+	}
+	
+	completion_reward = {  
+	add_political_power = -150
+	add_war_support = 0.05
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	
+	
+	focus = {
+   id = radical_japanization_movement #激進的皇民化運動
+   icon = GFX_focus_jap_spiritual_mobilization
+	x = -2
+	y = 1
+	relative_position_id=fortify_taiwan
+	prerequisite = {
+	focus = fortify_taiwan 
+	}
+	available = {  }
+	
+	cost = 5
+	
+	completion_reward = {
+	add_ideas = taiwan_japanization_movement
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	focus = {
+   id = showas_speeches #昭和演說
+   icon = GFX_focus_jap_showa_restoration
+	x = 0
+	y = 1
+	relative_position_id=radical_japanization_movement
+	prerequisite = {
+	focus = radical_japanization_movement 
+	}
+	available = {  }
+	
+	cost = 5
+	
+	completion_reward = {
+	add_political_power = 120
+	add_stability = 0.2
+	add_war_support = 0.05
+	add_offsite_building = { type = industrial_complex level = 3 }
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	focus = {
+   id = defensive_alliance_with_manchu #和滿州的防禦同盟
+   icon = GFX_goal_generic_defence
+	x = 0
+	y = 1
+	relative_position_id=showas_speeches
+	prerequisite = {
+	focus = showas_speeches 
+	}
+	available = {  }
+	
+	cost = 5
+	
+	completion_reward = {
+	add_stability = 0.05
+	add_war_support = 0.05
+	give_military_access = MAN
+	give_guarantee = MAN
+	MAN = {
+	give_military_access = TAI
+	give_guarantee = TAI
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  retreat_gold_deposit ##撤出黃金儲備
+   icon = GFX_focus_usa_reestablish_the_gold_standard
+	x = -2
+	y = 1
+	relative_position_id = prepare_for_return
+	prerequisite = { 
+	focus = prepare_for_return 
+	focus = fortify_taiwan
+	}
+	cost = 5
+	available = {
+	}
+	completion_reward = {  
+	add_stability = 0.05
+	add_ideas = taiwan_gold_deposit
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	focus = {
+   id =  arrival_of_minseito_and_seiyukai ##民政黨和政友會政要的抵達
+   icon = GFX_goal_support_democracy
+	x = 0
+	y = 1
+	relative_position_id = retreat_gold_deposit
+	prerequisite = { 
+	focus = retreat_gold_deposit 
+	}
+	cost = 10
+	
+	available = {
+		
+	}
+	
+	completion_reward = {  
+	add_political_power = 150
+	add_popularity = {
+		ideology = democratic
+		popularity = 0.1
+	}
+	add_ideas = taiwan_idea_seiyukai
+	country_event = tai.6
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  rebuild_gakushuin_university ##重建學習院大學
+   icon = GFX_goal_tfv_generic_tech_sharing
+	x = 0
+	y = 1
+	relative_position_id = arrival_of_minseito_and_seiyukai
+	prerequisite = { 
+	focus = arrival_of_minseito_and_seiyukai 
+	}
+	cost = 10
+	
+	available = {
+		
+	}
+	
+	completion_reward = {  
+	add_research_slot = 1
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  refugee_from_japan_civil_war ##內戰中的難民
+   icon = GFX_focus_generic_coastal_fort
+	x = 0
+	y = 1
+	relative_position_id = prepare_for_return
+	prerequisite = { 
+	focus = prepare_for_return 
+	focus = fortify_taiwan
+	}
+	cost = 5
+	available = {
+	}
+	completion_reward = {  
+	add_ideas = taiwan_refugee
+	}
+	bypass = {
+	IJN = { exists = no }
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  rebuild_imperial_army_and_navy ##重建軍隊
+   icon = GFX_focus_generic_license_production
+	x = 0
+	y = 1
+	relative_position_id = refugee_from_japan_civil_war
+	prerequisite = { 
+	focus = refugee_from_japan_civil_war 
+	}
+	cost = 10
+	available = {
+	}
+	completion_reward = {  
+	load_oob = japan_new_army
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  form_imperial_japanese_air_force ##帝國空軍
+   icon = GFX_focus_jap_zero
+	x = 0
+	y = 1
+	relative_position_id = rebuild_imperial_army_and_navy
+	prerequisite = { 
+	focus = rebuild_imperial_army_and_navy 
+	}
+	cost = 10
+	available = {
+	}
+	completion_reward = {  
+	add_ideas = taiwan_aircraft_production
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  ecomomy_mobilization ##經濟動員
+   icon = GFX_goal_support_democracy
+	x = 2
+	y = 1
+	relative_position_id = prepare_for_return
+	prerequisite = { 
+	focus = prepare_for_return 
+	}
+	cost = 10
+	
+	available = {
+		
+	}
+	
+	completion_reward = { 
+	add_political_power	= -200
+	add_stability = -0.05
+	add_war_support = -0.1
+	add_offsite_building = { type = arms_factory level = 3 }
+	add_offsite_building = { type = industrial_complex level = 5 }
+	add_offsite_building = { type = dockyard level = 2 }
+	add_ideas = {  
+	tot_economic_mobilisation 
+	closed_economy }
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  manpower_mobilization ##人力動員
+   icon = GFX_focus_generic_little_entente
+	x = 0
+	y = 1
+	relative_position_id = ecomomy_mobilization
+	prerequisite = { 
+	focus = ecomomy_mobilization 
+	}
+	cost = 10
+	
+	available = {
+		
+	}
+	
+	completion_reward = {  
+	add_political_power = -100
+	add_stability = -0.05
+	add_ideas = { all_adults_serve  }
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  non_aggression_pact_with_china ##和中國的互不侵犯條約
+   icon = GFX_focus_chi_cooperation_with_the_nationalists
+	x = 0
+	y = 1
+	relative_position_id = manpower_mobilization
+	prerequisite = { 
+	focus = manpower_mobilization 
+	}
+	cost = 5
+	
+	available = {
+		
+	}
+	
+	completion_reward = {
+	add_political_power = 200
+	CHI	= {
+	add_stability = -0.1
+	add_war_support = -0.1
+	}
+	diplomatic_relation = { 
+		country = CHI 
+		relation = non_aggression_pact 
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = showa_democracy #昭和民主
+   icon = GFX_focus_jap_pacific_guardian
+	x = 1
+	y = 1
+	relative_position_id=defensive_alliance_with_manchu
+	prerequisite = {
+	focus = defensive_alliance_with_manchu 
+	}
+	prerequisite = {
+	focus = rebuild_gakushuin_university 
+	}
+	available = {  }
+	
+	cost = 5
+	
+	completion_reward = {
+	add_political_power = 150
+	add_popularity = {
+	ideology = fascism
+	popularity = -0.15
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = democratic_empire #民主日本帝國
+   icon = GFX_focus_hun_elect_a_king
+	x = -1
+	y = 1
+	relative_position_id=showa_democracy
+	prerequisite = {
+	focus = showa_democracy 
+	}
+	available = {  }
+	mutually_exclusive = { focus = republic_of_japan }
+	cost = 10
+	
+	completion_reward = {
+	add_political_power = 50
+	add_ideas = taiwan_hirohito 
+	##set_cosmetic_tag = 
+	add_popularity = {
+	ideology = democratic
+	popularity = 0.2
+	}
+	set_politics = {
+	ruling_party = democratic
+	elections_allowed = yes
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id = republic_of_japan #日本共和國
+   icon = GFX_focus_rom_handle_king
+	x = 1
+	y = 1
+	relative_position_id=showa_democracy
+	prerequisite = {
+	focus = showa_democracy 
+	}
+	mutually_exclusive = { focus = democratic_empire }
+	available = {  }
+	
+	cost = 10
+	
+	completion_reward = {
+	add_political_power = -50
+	add_popularity = {
+	ideology = democratic
+	popularity = 0.2
+	}
+	set_politics = {
+	ruling_party = democratic
+	elections_allowed = yes
+	}
+	set_cosmetic_tag = SHOWAR
+		hidden_effect = {
+		country_event = tai_elect.2
+		}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+   id =  the_time_has_come ##反攻本島
+   icon = GFX_goal_generic_major_war
+	x = -1
+	y = 1
+	relative_position_id = non_aggression_pact_with_china
+	prerequisite = { 
+	focus = non_aggression_pact_with_china 
+	}
+	prerequisite = { 
+	focus = form_imperial_japanese_air_force 
+	}
+	cost = 5
+	
+	available = {
+		
+	}
+	
+	completion_reward = {
+		282 = { add_claim_by = TAI }
+		528 = { add_claim_by = TAI }
+		529 = { add_claim_by = TAI }
+		530 = { add_claim_by = TAI }
+		531 = { add_claim_by = TAI }
+		532 = { add_claim_by = TAI }
+		533 = { add_claim_by = TAI }
+		534 = { add_claim_by = TAI }
+		535 = { add_claim_by = TAI }
+		536 = { add_claim_by = TAI }
+		555 = { add_claim_by = TAI }
+	if = {
+	limit = { JAP = { exists = yes } }
+	create_wargoal = {
+		type = annex_everything
+		target = JAP
+	}
+	}
+	if = {
+	limit = { IJN = { exists = yes } }
+	create_wargoal = {
+		type = annex_everything
+		target = IJN
+	}
+	}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	bypass = {
+	AND = {
+	IJN = { exists = no }
+	JAP = { exists = no }
+	}
+	}
+	}
+	
+	focus = {
+   id =  restore_the_empire ##恢復帝國
+   icon = GFX_focus_generic_home_defense
+	x = 0
+	y = 1
+	relative_position_id = the_time_has_come
+	prerequisite = { 
+	focus = the_time_has_come 
+	}
+	
+	cost = 5
+	
+	available = {
+		AND = {
+		IJN = { exists = no }
+		JAP = { exists = no }
+		}
+	}
+	
+	completion_reward = {
+	if = {
+	limit = { owns_state = 282 }
+	set_capital = 282
+	}
+		set_cosmetic_tag = JAP
+		hidden_effect = {
+		load_focus_tree = japan_wtt_focus
+			TAI = {
+			set_state_owner = 282
+			set_state_owner = 528
+			set_state_owner = 529
+			set_state_owner = 530
+			set_state_owner = 531
+			set_state_owner = 532
+			set_state_owner = 533
+			set_state_owner = 534
+			set_state_owner = 535
+			set_state_owner = 536
+			set_state_owner = 555
+			set_state_controller = 282
+			set_state_controller = 528
+			set_state_controller = 529
+			set_state_controller = 530
+			set_state_controller = 531
+			set_state_controller = 532
+			set_state_controller = 533
+			set_state_controller = 534
+			set_state_controller = 535
+			set_state_controller = 555
+			set_state_controller = 536
+			}
+			282 = { add_core_of = TAI }
+			528 = { add_core_of = TAI }
+			529 = { add_core_of = TAI }
+			530 = { add_core_of = TAI }
+			531 = { add_core_of = TAI }
+			532 = { add_core_of = TAI }
+			533 = { add_core_of = TAI }
+			534 = { add_core_of = TAI }
+			535 = { add_core_of = TAI }
+			536 = { add_core_of = TAI }
+			555 = { add_core_of = TAI }
+		}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	#總督戰爭
+	focus = {
+   id =  the_48_division #48師團
+   icon = GFX_goal_generic_allies_build_infantry
+	x = 0
+	y = 1
+	relative_position_id = public_opinion_control
+	prerequisite = { 
+	focus = public_opinion_control
+	}
+	prerequisite = { 
+	focus = invite_japanese_expert
+	focus = militarism_taiwan
+	}
+	
+	cost = 5
+	
+	available = {
+	OR = {
+		date > 1940.11.30
+		AND = { 
+		OR = {
+			JAP = { has_war_with = USA } 
+			JAP = { has_war_with = ENG } 
+		}
+		TAI = { is_puppet_of = JAP }
+		}
+		TAI = { has_war_with = ENG } 
+		TAI = { has_war_with = USA } 
+	}
+	}
+	completion_reward = {
+		848 = {
+			create_unit = {
+			division = "name = \"48 'Umi' Hohei Shidan\" division_template = \"Hohei Shidan\" start_experience_factor = 0.5 start_equipment_factor = 1"
+			owner = TAI
+			prioritize_location = 7186
+		}
+		}
+	create_corps_commander = {
+		name = "Yuitsu Tsuchihashi"
+		picture = "yuitsu_tsuchihashi.dds"
+		traits = { trickster brilliant_strategist }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 2
+		planning_skill = 4
+		logistics_skill = 3
+	}
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id =  army_volunteer #陸軍志願兵訓練所生徒募集要綱
+   icon = GFX_focus_army_volunteer
+	x = -1
+	y = 1
+	relative_position_id = the_48_division
+	prerequisite = { 
+	focus = the_48_division
+	}
+	
+	cost = 5
+	
+	available = {
+
+	}
+	
+	completion_reward = {
+     swap_ideas = {
+     remove_idea = JAP_colony_1
+     add_idea = JAP_colony_2}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	focus = {
+   id = takao_fortification #高雄要塞
+   icon = GFX_focus_generic_coastal_fort
+	x = 1
+	y = 1
+	relative_position_id = the_48_division
+	prerequisite = { 
+	focus = the_48_division
+	}
+	
+	cost = 5
+	
+	available = {
+
+	}
+	
+	completion_reward = {
+	524 ={
+	add_building_construction = { 
+    type = coastal_bunker
+    level = 3
+    instant_build = yes
+    province = 12068
+	}
+	add_building_construction = {
+    type = bunker
+    level = 3
+    instant_build = yes
+    province = 12068
+	}
+	}
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = tenth_area_army #10方面軍         
+   icon = GFX_focus_generic_little_entente 
+	x = 1
+	y = 1
+	relative_position_id = army_volunteer
+	prerequisite = { 
+	focus = takao_fortification
+	}
+	prerequisite = {focus = army_volunteer}
+	cost = 5
+	
+	available = {
+
+	}
+	
+	completion_reward = {
+     add_state_core = 526
+	transfer_state = 526
+	848 = {
+		create_unit = {
+			division = "name = \"50 'Ho' Hohei Shidan\" division_template = \"Hohei Shidan\" start_experience_factor = 0.5 start_equipment_factor = 1"
+			owner = TAI
+			prioritize_location = 7186
+		}
+		create_unit = {
+			division = "name = \"66 'Kan' Hohei Shidan\" division_template = \"Hohei Shidan\" start_experience_factor = 0.5 start_equipment_factor = 1"
+			owner = TAI
+			prioritize_location = 7186
+		}
+		create_unit = {
+			division = "name = \"76 'Tsu' Dokuritsu Shubirentai\" division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = TAI
+			prioritize_location = 7186
+		}
+	}
+	524 = {
+	    create_unit = {
+			division = "name = \"100 'Banjaku' Dokuritsu Shubirentai\" division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = TAI
+			prioritize_location = 12068
+		}
+	}
+	526 = {
+	    create_unit = {
+			division = "name = \"44 'Kyu' Dokuritsu Shubirentai\" division_template = \"Chuton-chi Shidan\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+			owner = TAI
+			prioritize_location = 11932
+		}
+	}
+	
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	
+	focus = {
+   id = implementation_conscription #徵兵制
+   icon = GFX_goal_generic_military_sphere
+	x = 0
+	y = 1
+	relative_position_id = tenth_area_army
+	prerequisite = { 
+	focus = tenth_area_army
+	}
+	
+	cost = 5
+	
+	available = {
+
+	}
+	
+	completion_reward = {
+	add_stability = -0.2
+     swap_ideas = {
+     remove_idea = JAP_colony_2
+     add_idea = JAP_colony_3}
+     
+       }
+
+	
+	
+
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}	
+	
+	
+	
+	#################################
+	
+	
+	##虛構工業
+	
+	
+	#################################
+	
+	focus = {
+   id = new_future   #新計畫
+   icon = GFX_goal_generic_construct_civilian
+
+	x = 56
+	y = 0
+	cost = 5
+	
+	available = {
+    TAI = { NOT = { is_puppet_of = JAP } }
+	}
+	completion_reward = {
+    add_tech_bonus = {
+				bonus = 0.4
+				uses = 1
+				category = industry
+			}
+    }
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = acquire_civ_factory   #收購民用工廠
+   icon = GFX_goal_generic_construct_civ_factory
+   relative_position_id = new_future
+   prerequisite = {
+   focus = new_future
+   }
+	x = -2
+	y = 1
+	cost = 5
+	
+
+	completion_reward = {
+    add_political_power = -80
+	524 ={
+	 add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+     type = industrial_complex
+     level = 1
+     instant_build = yes
+	}
+	}
+	848 ={
+	 add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+     type = industrial_complex
+     level = 1
+     instant_build = yes
+	}
+	}
+	850 ={
+	 add_extra_state_shared_building_slots = 1
+	 add_building_construction = {
+     type = industrial_complex
+     level = 1
+     instant_build = yes
+	}
+	}
+    }
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = japanese_assistance   #尋求日本協助
+   icon = GFX_focus_chi_collaboration_with_the_japanese
+   relative_position_id = acquire_civ_factory
+   prerequisite = {
+   focus = acquire_civ_factory
+   }
+   	available = {
+    JAP = { has_opinion = {
+    target = TAI
+    value > 74}
+}
+	}
+	x = -1
+	y = 1
+	cost = 5
+	
+
+	completion_reward = {
+	add_political_power	= -120
+	add_offsite_building = { type = arms_factory level = 1 }
+	add_offsite_building = { type = industrial_complex level = 2 }
+    }
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = soviet_assistance   #尋求蘇聯協助
+   icon = GFX_focus_chi_mission_to_the_soviet_union
+   relative_position_id = acquire_civ_factory
+   prerequisite = {
+   focus = acquire_civ_factory
+   }
+   	available = {
+    SOV = { has_opinion = {
+    target = TAI
+    value > 74}
+}
+	}
+	x = 1
+	y = 1
+	cost = 5
+	
+
+	completion_reward = {
+	add_political_power	= -120
+	add_offsite_building = { type = arms_factory level = 2 }
+	add_offsite_building = { type = industrial_complex level = 1 }
+    }
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = our_steelmaking   #虛構線製鐵
+   icon = GFX_focus_generic_steel
+   relative_position_id = soviet_assistance
+   prerequisite = {
+   focus = soviet_assistance
+   focus = japanese_assistance
+   }
+
+	x = 0
+	y = 1
+	cost = 5
+	
+
+	completion_reward = {
+	add_political_power	= -30
+    add_resource = {
+    type = steel
+    amount = 8   
+	state = 524} 
+	add_ideas = Imported_material
+    }
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = aborigines_develop_east   #虛構線開發東部
+   icon = GFX_focus_eastern_taiwan
+   relative_position_id = japanese_assistance
+   prerequisite = {
+   focus = soviet_assistance
+   focus = japanese_assistance
+   }
+
+	x = 0
+	y = 1
+	cost = 5
+	
+
+	completion_reward = {
+	 849 ={
+	 add_extra_state_shared_building_slots = 3
+	 add_building_construction = {
+     type = industrial_complex
+     level = 1
+     instant_build = yes
+	}
+	}
+    }
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = eastern_resources   #東部稀有資源
+   icon = GFX_goal_generic_construct_civilian
+   relative_position_id = aborigines_develop_east
+   prerequisite = {
+   focus = aborigines_develop_east
+   }
+
+	x = 0
+	y = 1
+	cost = 5
+	
+
+	completion_reward = {
+	add_political_power	= -20
+	 add_resource = {
+    type = tungsten
+    amount = 4   
+     state = 849
+	 }
+	add_resource = {
+    type = aluminium
+    amount = 4   
+	state = 849
+     }
+	add_resource = {
+    type = chromium
+    amount = 4   
+	state = 849
+     }
+    }
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = developing_nitaka_noko    #開發新高和能高
+   icon = GFX_goal_generic_construction2
+   relative_position_id = eastern_resources
+   prerequisite = {
+   focus = eastern_resources
+   }
+   prerequisite = {focus = our_steelmaking}
+
+	x = 1
+	y = 1
+	cost = 5
+	
+
+	completion_reward = {
+	850 ={
+     add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+
+	}
+	}
+    }
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = export_timber    #出口木材
+   icon = GFX_goal_generic_construct_civilian
+   relative_position_id = developing_nitaka_noko
+   prerequisite = {
+   focus = developing_nitaka_noko
+   }
+
+
+	x = 1
+	y = 1
+	cost = 5
+	
+
+	completion_reward = {
+    #添加國家精神:出口木材
+	#consumer_goods_factor = -0.05
+	add_ideas = export_timber_idea
+    }
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = set_up_university    #成立台大
+   icon = GFX_focus_research
+   relative_position_id = developing_nitaka_noko
+   prerequisite = {
+   focus = developing_nitaka_noko
+   }
+
+
+	x = -1
+	y = 1
+	cost = 5
+	
+
+	completion_reward = {
+    add_research_slot = 1
+    }
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = japanese_resources   #整理日本的資源
+   icon = GFX_goal_generic_demand_territory
+   relative_position_id = new_future
+   prerequisite = {
+   focus = new_future
+   }
+	x = 2
+	y = 1
+	cost = 5
+	
+
+	completion_reward = {
+    add_political_power = 150
+
+    }
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = continue_to_build_railway   #繼續建設鐵路
+   icon = GFX_goal_generic_construct_infrastructure
+   relative_position_id = japanese_resources
+   prerequisite = {
+   focus = japanese_resources
+   }
+	x = -1
+	y = 1
+	cost = 5
+	
+
+	completion_reward = {
+    add_political_power = -80
+	850 ={
+	add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+	}
+	}
+	524 ={
+	add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+	}
+	}
+	848 ={
+	add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+	}
+	}
+    }
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = imaginary_build_port   #繼續建設港口
+   icon = GFX_goal_generic_construct_naval_dockyard
+   relative_position_id = continue_to_build_railway
+   prerequisite = {
+   focus = continue_to_build_railway
+   }
+	x = 0
+	y = 1
+	cost = 10
+	
+
+	completion_reward = {
+	add_political_power = -100
+	848 ={
+	add_building_construction = {
+    type = naval_base
+    level = 2
+    instant_build = yes
+    province = 7186
+	}
+	add_extra_state_shared_building_slots = 1
+	 add_building_construction = {
+     type = dockyard
+     level = 1
+     instant_build = yes
+	}
+	}
+	
+	524 ={
+	add_building_construction = {
+    type = naval_base
+    level = 2
+    instant_build = yes
+    province = 12068
+	}
+	add_extra_state_shared_building_slots = 1
+	 add_building_construction = {
+     type = dockyard
+     level = 1
+     instant_build = yes
+	}
+	}
+    }
+	
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = continue_to_build_arms_factory   #建設兵工廠
+   icon = GFX_goal_generic_construct_mil_factory
+   relative_position_id = japanese_resources
+   prerequisite = {
+   focus = japanese_resources
+   }
+	x = 1
+	y = 1
+	cost = 5
+	
+
+	completion_reward = {
+    add_political_power = -20
+	850 ={
+	add_extra_state_shared_building_slots = 1
+	 add_building_construction = {
+     type = arms_factory
+     level = 1
+     instant_build = yes
+	}
+	}
+    }
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = defending_the_capital   #防衛首都
+   icon = GFX_goal_generic_construct_military
+   relative_position_id = continue_to_build_arms_factory
+   prerequisite = {
+   focus = continue_to_build_arms_factory
+   }
+	x = 0
+	y = 1
+	cost = 5
+	
+
+	completion_reward = {
+    add_political_power = -20
+	848 ={
+	add_building_construction = { 
+    type = coastal_bunker
+    level = 3
+    instant_build = yes
+    province = 7186
+	}
+	add_building_construction = {
+    type = bunker
+    level = 3
+    instant_build = yes
+    province = 7186
+	}
+	}
+    }
+	
+	ai_will_do = {
+	factor = 0
+	}
+	}
+	focus = {
+   id = our_finish_the_expansion_of_sun_moon_lake_power_plant #虛構線完成日月潭水力發電
+   icon = GFX_goal_generic_construct_civilian
+   relative_position_id = defending_the_capital
+    prerequisite = {
+   focus = defending_the_capital
+   }
+    prerequisite = {
+   focus = imaginary_build_port
+   }
+	x = -1
+	y = 1
+	
+	cost = 5
+	
+	completion_reward = {
+	remove_ideas = Taiwan_elect_ng
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = our_synthetic_refinery #虛構線合成資源
+   icon = GFX_goal_generic_construction
+   relative_position_id = our_finish_the_expansion_of_sun_moon_lake_power_plant
+    prerequisite = {
+   focus = our_finish_the_expansion_of_sun_moon_lake_power_plant
+   }
+
+	x = 0
+	y = 1
+	
+	cost = 5
+	
+	completion_reward = {
+     524 ={
+	 add_extra_state_shared_building_slots = 1
+	 add_building_construction = {
+     type = synthetic_refinery
+     level = 1
+     instant_build = yes
+	}
+	}
+	}
+	
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	focus = {
+   id = industrial_prosperity #工業繁榮
+   icon = GFX_goal_generic_construct_civ_factory
+   relative_position_id = our_synthetic_refinery
+    prerequisite = {
+   focus = our_synthetic_refinery
+   }
+
+	x = 0
+	y = 1
+	
+	cost = 5
+	
+	completion_reward = {
+    #添加國家精神:工業繁榮
+	#production_speed_industrial_complex_factor = 0.15
+	#stability_factor = 0.15
+	#political_power_gain = 0.1
+	add_ideas = industrial_prosperity_idea
+	}
+	
+	ai_will_do = {
+	factor = 1
+	}
+	
+	}
+	
+	#########################################
+	
+	##獨立軍事
+	
+	#########################################
+	
+	focus = {
+    id = new_independence_army ##成立台灣武裝力量
+    icon = GFX_goal_generic_allies_build_infantry
+	x = 38
+	y = 12
+	#relative_position_id=army_oppose_independence
+	cost = 10
+	
+	available = {
+	NOT = { is_puppet_of = JAP }
+	NOT = { has_completed_focus = sonno_joi }
+	TAI = {
+		controls_state = 524
+		controls_state = 848
+		controls_state = 849
+		controls_state = 850
+	}
+	}
+	
+	completion_reward = {  
+		add_political_power = 150
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	focus = {
+    id = form_army_command ##陸軍司令部
+    icon = GFX_focus_generic_military_mission
+	x = 3
+	y = 1
+	#relative_position_id=army_oppose_independence
+	prerequisite = { focus = new_independence_army }
+	relative_position_id = new_independence_army
+	cost = 5
+	
+	completion_reward = {  
+		army_experience = 50
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+    id = build_a_regular_army ##建立正規軍
+    icon = GFX_focus_generic_little_entente
+	x = -1
+	y = 1
+	#relative_position_id=army_oppose_independence
+	prerequisite = { focus = form_army_command }
+	relative_position_id = form_army_command
+	cost = 10
+	
+	available = {
+		controls_state = 524
+		controls_state = 848
+		controls_state = 849
+		controls_state = 850
+	} 
+	
+	completion_reward = {  
+		army_experience = 10
+		load_oob = independence_army
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+    id = technologies_breakthrough_army ##科技突破
+    icon = GFX_focus_research
+	x = 1
+	y = 1
+	#relative_position_id=army_oppose_independence
+	prerequisite = { focus = form_army_command }
+	relative_position_id = form_army_command
+	cost = 10
+	
+	completion_reward = {  
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = infantry_weapons
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = artillery
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = armor
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = support_tech
+		}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+    id = technologies_breakthrough_army_doc ##科技突破
+    icon = GFX_goal_generic_army_doctrines
+	x = -1
+	y = 1
+	#relative_position_id=army_oppose_independence
+	prerequisite = { focus = technologies_breakthrough_army }
+	prerequisite = { focus = build_a_regular_army }
+	relative_position_id = technologies_breakthrough_army
+	cost = 10
+	
+	completion_reward = {  
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 3
+			category = land_doctrine
+		}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+    id = form_navy_command ##海軍司令部
+    icon = GFX_goal_generic_amphibious_assault
+	x = -3
+	y = 1
+	#relative_position_id=army_oppose_independence
+	prerequisite = { focus = new_independence_army }
+	relative_position_id = new_independence_army
+	cost = 5
+	
+	completion_reward = {  
+		navy_experience = 50
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+    id = buy_foreign_heavy_ships ##買船
+    icon = GFX_focus_generic_navy_battleship2
+	x = -1
+	y = 1
+	
+	prerequisite = { focus = form_navy_command }
+	relative_position_id = form_navy_command
+	cost = 10
+	
+	available = {
+		controls_state = 524
+	}
+	
+	completion_reward = {  
+		navy_experience = 10
+		load_oob = independence_navy
+		add_timed_idea = {
+			idea = Taiwan_buy_ship_pay
+			days = 360
+		}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+    id = technologies_breakthrough_navy ##科技突破
+    icon = GFX_focus_research
+	x = 1
+	y = 1
+	#relative_position_id=army_oppose_independence
+	prerequisite = { focus = form_navy_command }
+	relative_position_id = form_navy_command
+	cost = 10
+	
+	completion_reward = {  
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 6
+			category = naval_equipment
+		}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+    id = technologies_breakthrough_navy_doc ##科技突破
+    icon = GFX_goal_generic_navy_doctrines_tactics
+	x = -1
+	y = 1
+	#relative_position_id=army_oppose_independence
+	prerequisite = { focus = technologies_breakthrough_navy }
+	prerequisite = { focus = buy_foreign_heavy_ships }
+	relative_position_id = technologies_breakthrough_navy
+	cost = 10
+	
+	completion_reward = {  
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 3
+			category = naval_doctrine
+		}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+    id = technologies_breakthrough_air ##科技突破
+    icon = GFX_goal_generic_air_fighter2
+	x = 3
+	y = 1
+	#relative_position_id=army_oppose_independence
+	prerequisite = { focus = form_navy_command }
+	prerequisite = { focus = form_army_command }
+	relative_position_id = form_navy_command
+	cost = 10
+	
+	completion_reward = {  
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 6
+			category = air_equipment
+		}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	focus = {
+    id = technologies_breakthrough_air_doc ##科技突破
+    icon = GFX_goal_generic_air_doctrine
+	x = 0
+	y = 1
+	#relative_position_id=army_oppose_independence
+	prerequisite = { focus = technologies_breakthrough_air }
+	relative_position_id = technologies_breakthrough_air
+	cost = 10
+	
+	completion_reward = {  
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 3
+			category = air_doctrine
+		}
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	}
+	
+	focus = {
+		id = taiwan_stragtic_command ##戰略司令部
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = -7
+		y = 2
+		#relative_position_id=army_oppose_independence
+		prerequisite = { focus = technologies_breakthrough_navy_doc }
+		prerequisite = { focus = technologies_breakthrough_air_doc }
+		prerequisite = { focus = technologies_breakthrough_army_doc }
+		prerequisite = { focus = ba_wan_producting }
+		relative_position_id = technologies_breakthrough_navy_doc
+		cost = 10
+		
+		completion_reward = {  
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 3
+				category = naval_doctrine
+			}
+		}
+		ai_will_do = {
+		factor = 1
+		}
+	}
+
+	##############################################
+
+	#核能線
+
+	##############################################
+
+	focus = {
+   		id = special_plan   # 特殊計畫
+   		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 13
+		y = 10
+		cost = 15
+
+		available = {
+		}
+		completion_reward = {
+		add_political_power = 120
+   		}
+	
+		ai_will_do = {
+		factor = 0
+		}
+	}
+	
+	focus = {
+   		id = baguashan_buddha_project   #八卦山大佛計畫
+   		icon = GFX_goal_generic_forceful_treaty
+   		relative_position_id = special_plan
+   		prerequisite = {
+   		focus = special_plan
+   		}
+   		mutually_exclusive = { focus = bunsaku_arakatsu_research }
+		x = 1
+		y = 1
+		cost = 10
+
+		available = {
+			has_idea = tai_syu_yun_ji
+			TAI = { NOT = { is_puppet_of = JAP } }
+		}
+		completion_reward = {
+			set_technology = {
+			atomic_research = 1
+		}
+    	}
+	
+		ai_will_do = {
+		factor = 0
+		}
+	}
+	
+	focus = {
+   		id = smuggle_reactor_core   #走私核心
+   		icon = GFX_goal_generic_dangerous_deal
+   		relative_position_id = baguashan_buddha_project
+   		prerequisite = {
+   			focus = baguashan_buddha_project
+   		}
+		x = 0
+		y = 1
+		cost = 10
+	
+		available = {
+		
+		}
+		completion_reward = {
+			set_technology = {
+			nuclear_reactor  = 1
+		}
+    	}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	focus = {
+   		id = uranium_mining   #挖鈾礦
+   		icon = GFX_goal_generic_construction2
+   		relative_position_id = smuggle_reactor_core
+  		prerequisite = {
+   			focus = smuggle_reactor_core
+   		}
+		x = -1
+		y = 1
+		cost = 10
+	
+		available = {
+		}
+		completion_reward = {
+			add_ideas = taiwan_uranium_mining 
+    	}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	focus = {
+   		id = built_baguashan_buddha   #建造八卦山大佛
+   		icon = GFX_focus_smiling_buddha
+   		relative_position_id = smuggle_reactor_core
+   		prerequisite = {
+   			focus = smuggle_reactor_core
+   		}
+		x = 1
+		y = 1
+		cost = 10
+	
+		available = {
+		}
+		completion_reward = {
+			850 = {
+			add_extra_state_shared_building_slots = 1
+	 		add_building_construction = {
+     		type = nuclear_reactor
+     		level = 1
+     		instant_build = yes
+			}
+		}
+    	}	
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
+   		id = ba_wan_producting   #生產"肉圓"
+   		icon = GFX_focus_ba_wan
+   		relative_position_id = built_baguashan_buddha
+   		prerequisite = {
+   		focus = built_baguashan_buddha
+   		}
+   		prerequisite = {
+   		focus = uranium_mining
+   		}
+		x = -1
+		y = 1
+		cost = 10
+	
+		available = {
+			TAI = { NOT = { is_puppet_of = JAP  } }
+		}
+		completion_reward = {
+			set_technology = {
+				nukes  = 1
+			}
+    	}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	focus = {
+   		id = bunsaku_arakatsu_research   #荒勝文策
+   		icon = GFX_focus_wonderweapons
+  		relative_position_id = special_plan
+  		prerequisite = {
+   		focus = special_plan
+   		}
+   		mutually_exclusive = { focus = baguashan_buddha_project }
+		x = -1
+		y = 1
+		cost = 20
+	
+		available = {
+		TAI = { is_puppet_of = JAP }
+		TAI = { has_completed_focus = invite_japanese_expert }
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = nuclear
+			}
+    	}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	focus = {
+   		id = tai_rocketry_research   #火箭計畫
+   		icon = GFX_focus_rocketry
+   		relative_position_id = bunsaku_arakatsu_research
+   		prerequisite = {
+   		focus = bunsaku_arakatsu_research
+   		}
+		x = 0
+		y = 1
+		cost = 20
+	
+		available = {
+		TAI = { is_puppet_of = JAP }
+		TAI = { has_completed_focus = invite_japanese_expert }
+		}
+		completion_reward = {
+			add_tech_bonus = {
+			bonus = 0.4
+			uses = 2
+			category = rocketry
+			}
+    	}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+
+	
+	##shared_focus = CHI_invite_foreign_investors
+}

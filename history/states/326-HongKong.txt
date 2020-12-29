@@ -11,17 +11,17 @@ state=
 		add_core_of = CHI
 		add_core_of = PRC
 		victory_points = {
-			13235 1 
+			13260 1 
 		}
 		buildings = {
 			infrastructure = 1
-			13235 = {
+			13260 = {
 				naval_base = 4
 				coastal_bunker = 1
 			}
 		}
 	}
 	provinces={
-		10062 13235
+		10062 13260
 	}
 }

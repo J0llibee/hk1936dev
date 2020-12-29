@@ -1,0 +1,44 @@
+ideas = {
+
+	country = {
+		SIA_policy = {
+
+			allowed = {
+				original_tag = SIA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				ai_get_ally_desire_factor = -2000
+				ai_join_ally_desire_factor = -2000
+			}
+			}
+
+		SIA_rama_8 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = SIA_king_rama_8
+			
+			modifier = {
+				stability_factor = 0.1
+				
+			}
+		}
+	}	
+	}	

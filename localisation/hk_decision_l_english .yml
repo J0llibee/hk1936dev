@@ -1,9 +1,11 @@
 ﻿l_english:
  Battle_of_Hong_Kong:0 "Battle of Hong Kong"
  HK_defense:0 "Defense Hong Kong"
+ HK_defence_scheme:0 "Hong Kong Defence Scheme 1936"
+ HK_defence_scheme_desc:0 "British defence studies concluded that Hong Kong would be extremely hard to defend in the event of a Japanese attack, but Arthur Wollaston Bartholomew, who is the Commander of British Troops in China, has proposed a plan to defend Hong Kong. This plan requires the construction of forts, and more fighters for air support. It is also predicted that Hong Kong can be hold for more than three months if all measures in the scheme have done."
  Retreat_to_HK_island:0 "Retreat to Hong Kong Island"
  Seek_help_from_the_commonwealth:0 "Seek help from the Commonwealth"
- form_cantonia_category:0 "Cantonia"
+ form_cantonia_category:0 "Territorial Ambition"
  form_cantonia:0 "Form Cantonia"
  ITA_Foreign_Policies:0 "Foreign Policies"
  Form_Italian_East_Africa:0 "Form Italian East Africa"

@@ -30,3 +30,39 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+	id = asia_news.2
+	title = asia_news.2.t
+	desc = asia_news.2.d
+	picture = GFX_news_event_franco_thai_war
+	
+	major = yes
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes	
+	
+	option = {
+		name = asia_news.2
+	}
+}
+
+news_event = {
+	id = asia_news.999
+	title = asia_news.999.t
+	desc = asia_news.999.d
+	picture = GFX_news_event_remember_peter_choi
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_only_once = yes	
+	
+	option = {
+		name = asia_news.999.a
+	}
+}

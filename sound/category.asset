@@ -20,6 +20,7 @@ category = {
 	tutorial_objective_done
 	operation_complete
 	
+	
 	######## INGAME ALERT - topbar
 	# simple sound effect. at least important and less important
 	alert_is_observer_sound #5
@@ -115,6 +116,7 @@ category = {
 	
 	###### OTHER
 	nuke
+	nuke_sfx
 	distance_nuke
 	building_repaired
 	building_collateral

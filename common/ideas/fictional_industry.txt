@@ -1,0 +1,49 @@
+
+ideas = {
+	country = {
+
+		export_timber_idea = {
+
+			name = export_timber_idea2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_flexible_foreign_policy2
+			
+			modifier = {
+			    consumer_goods_factor = -0.05
+			}
+		}
+			industrial_prosperity_idea = {
+
+			name = industrial_prosperity_idea2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+			    production_speed_industrial_complex_factor = 0.15
+	            stability_factor = 0.15
+	            political_power_gain = 0.1
+			}
+		}
+	}
+		
+}

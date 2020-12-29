@@ -33,6 +33,7 @@
  
  IND_communism_party:0 "Parti Communiste Indochinois"
  IND_democratic_party:0 "Gouvernement colonial de l'Indochine"
+ IND_vichy_party:0 "Gouvernement colonial de l'Indochine(Pro-Vichy)"
  IND_fascism_party:0 "Société de réforme"
  IND_neutrality:0 "Indochine Quoc Dan Dang"
  
@@ -62,3 +63,37 @@
  BRM_communism_party:0 "CPB"
  BRM_communism_party_long:0 "Communist Party of Burma"
  BRM_neutrality_party:0 "Konbaung Dynasty"
+ 
+ MAN_neutrality_party:0 "House of Aisin Gioro"
+ MAN_communism_party_long:0 "Communist Party of Manchuria"
+ MAN_communism_party:0 "CPM"
+ MAN_democratic_party:0 "Minchutang"
+ 
+ TAI_fascism_party:0 "Japanese Government"
+ TAI_fascism_party_long:0 "Government-General of Taiwan of Empire of Japan"
+ TAI_democratic_party:0 "TPP"
+ TAI_democratic_party_long:0 "Taiwanese People's Party"
+ TAI_communism_party:0 "TCP"
+ TAI_communism_party_long:0 "Taiwanese Communist Party"
+ TAI_neutrality_party:0 "TAA"
+ TAI_neutrality_party_long:0 "Takasago Autonomous Association"
+ 
+ tdf_longname:0 "Taiwanese Democratic Front"
+ tdf_name:0 "TDF"
+ taiwan_com_shanghai:0 "TCP"
+ taiwan_com_shanghai_long:0 "Taiwanese Communist Party-Shanghai Faction"
+ TDEM_party:0 "Nationalists"
+ TDEM_party_long:0 "Chinese Nationalists Government"
+ ZHENG_party:0 "Zheng dynasty"
+ ZHENG_party_long:0 "Zheng dynasty"
+ party_minseito:0 "Minseito"
+ party_minseito_long:0 "Rikken Minseito"
+ party_seiyukai:0 "Seiyukai"
+ party_seiyukai_long:0 "Rikken Seiyukai"
+ ##IJN
+ IJN_fascism_party:0 "IJN Government"
+ IJN_fascism_party_long:0 "Government of Imperial Japanese Navy"
+ ##IJA
+ ija_name:0 "IJA Goverment"
+ ija_longname:0 "Imperial Japanese Army Goverment"
+ 
